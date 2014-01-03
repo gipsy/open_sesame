@@ -1,0 +1,28 @@
+.m-header
+  background: url('../img/header-bg.jpg') center center
+  height: 649px
+  padding-top: 20px
+  .m-logo
+    @include span-columns(4)
+.m-header-nav
+  @include span-columns(6)
+  list-style-type: none
+  padding: 0
+  margin-top: -12px
+  overflow: hidden
+  > li
+    +inline-block
+    margin: 5px 10px
+    &:last-child
+      margin-right: 0px
+    a
+      color: white
+      font-weight: bold
+
+.m-search
+  @include span-columns(6)
+  border: 7px solid $light-light-gray
+  h1
+    color: white
+    line-height: 40px
+

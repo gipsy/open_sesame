@@ -39,18 +39,26 @@
     </head>
     <body>
 
-        <section class="l-single-centered-colum">
-            <nav role="navigation">
-                <ul class="m-nav">
-                    <li><a src="#">About</a></li>
-                    <li><a src="#">Blog</a></li>
-                    <li><a src="#">Resources</a></li>
-                    <li><a src="#">Help</a></li>
-                    <li><a class="sign">Sign In</a>
-                    <li><a class="sign">Sign Up</a>
-                </ul>
-            </nav>
-        </section>
+        <header class="m-header">
+            <section class="l-single-centered-colum">
+                <a class="m-logo" href="/"><img src="img/logo.png"></a>
+                <nav role="navigation">
+                    <ul class="m-header-nav">
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">RESOURCES</a></li>
+                        <li><a href="#">HELP</a></li>
+                        <li><a class="m-btn" href="#">Sign In</a>
+                        <li><a class="m-btn is-selected" href="#">Sign Up</a>
+                    </ul>
+                </nav>
+                <form id="" method="" action="" class="m-search">
+                  <h1>Thousands of online courses delivered instantly</h1>
+                  <input type="search" name="search" placeholder="Search for courses (Try: Business, Safety, Microsoft...)">
+                  <input type="submit" value="search">
+                </form>
+            </section>
+        </header>
 
         <script src="js/vendor/zepto.min.js"></script>
         <script src="js/helper.js"></script>
