@@ -3,9 +3,9 @@
   height: 649px
   padding-top: 20px
   .m-logo
-    @include span-columns(4)
+    +span-columns(4)
 .m-header-nav
-  @include span-columns(6)
+  +span-columns(6)
   list-style-type: none
   padding: 0
   margin-top: -12px
@@ -20,9 +20,34 @@
       font-weight: bold
 
 .m-search
-  @include span-columns(6)
-  border: 7px solid $light-light-gray
+  +span-columns(6)
   h1
     color: white
     line-height: 40px
+
+.m-search-wrapper
+  +inline-block
+  border-radius: 5px
+  background: rgba(white, 0.15)
+  padding: 7px
+  margin-top: 25px
+  input[type="search"], input[type="submit"]
+    border: 1px solid $medium-gray
+    blur: 0
+    height: 45px
+    padding: 0 10px
+  input[type="submit"]
+    border-top-right-radius: 5px
+    border-bottom-right-radius: 5px
+    margin-left: -6px
+    background: $orange url(../img/icon-search.png) center center no-repeat
+    cursor: pointer
+    text-indent: -9999px
+    width: 45px
+    border-left: 0
+    margin-top: -1px
+  input[type="search"]
+    border-top-left-radius: 5px
+    border-bottom-left-radius: 5px
+    font-size: 15px
 

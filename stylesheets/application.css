@@ -174,13 +174,42 @@ cite {
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 58.97436%;
-  border: 7px solid #fafafa; }
+  width: 58.97436%; }
   .m-search:last-child {
     margin-right: 0; }
   .m-search h1 {
     color: white;
     line-height: 40px; }
+
+.m-search-wrapper {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 7px;
+  margin-top: 25px; }
+  .m-search-wrapper input[type="search"], .m-search-wrapper input[type="submit"] {
+    border: 1px solid #999999;
+    blur: 0;
+    height: 45px;
+    padding: 0 10px; }
+  .m-search-wrapper input[type="submit"] {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -6px;
+    background: #f58220 url(../img/icon-search.png) center center no-repeat;
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 45px;
+    border-left: 0;
+    margin-top: -1px; }
+  .m-search-wrapper input[type="search"] {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px; }
 
 .m-btn {
   border-radius: 5px;
