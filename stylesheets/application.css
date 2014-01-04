@@ -7,12 +7,12 @@
 body:before {
   content: '';
   display: inline-block;
-  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 7.69231%, rgba(0, 0, 0, 0) 7.69231%, rgba(0, 0, 0, 0) 10.25641%, #eeeeee 10.25641%, #eeeeee 17.94872%, rgba(0, 0, 0, 0) 17.94872%, rgba(0, 0, 0, 0) 20.51282%, #eeeeee 20.51282%, #eeeeee 28.20513%, rgba(0, 0, 0, 0) 28.20513%, rgba(0, 0, 0, 0) 30.76923%, #eeeeee 30.76923%, #eeeeee 38.46154%, rgba(0, 0, 0, 0) 38.46154%, rgba(0, 0, 0, 0) 41.02564%, #eeeeee 41.02564%, #eeeeee 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, #eeeeee 51.28205%, #eeeeee 58.97436%, rgba(0, 0, 0, 0) 58.97436%, rgba(0, 0, 0, 0) 61.53846%, #eeeeee 61.53846%, #eeeeee 69.23077%, rgba(0, 0, 0, 0) 69.23077%, rgba(0, 0, 0, 0) 71.79487%, #eeeeee 71.79487%, #eeeeee 79.48718%, rgba(0, 0, 0, 0) 79.48718%, rgba(0, 0, 0, 0) 82.05128%, #eeeeee 82.05128%, #eeeeee 89.74359%, rgba(0, 0, 0, 0) 89.74359%, rgba(0, 0, 0, 0) 92.30769%, #eeeeee 92.30769%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.38298%, rgba(0, 0, 0, 0) 6.38298%, rgba(0, 0, 0, 0) 8.51064%, #eeeeee 8.51064%, #eeeeee 14.89362%, rgba(0, 0, 0, 0) 14.89362%, rgba(0, 0, 0, 0) 17.02128%, #eeeeee 17.02128%, #eeeeee 23.40426%, rgba(0, 0, 0, 0) 23.40426%, rgba(0, 0, 0, 0) 25.53191%, #eeeeee 25.53191%, #eeeeee 31.91489%, rgba(0, 0, 0, 0) 31.91489%, rgba(0, 0, 0, 0) 34.04255%, #eeeeee 34.04255%, #eeeeee 40.42553%, rgba(0, 0, 0, 0) 40.42553%, rgba(0, 0, 0, 0) 42.55319%, #eeeeee 42.55319%, #eeeeee 48.93617%, rgba(0, 0, 0, 0) 48.93617%, rgba(0, 0, 0, 0) 51.06383%, #eeeeee 51.06383%, #eeeeee 57.44681%, rgba(0, 0, 0, 0) 57.44681%, rgba(0, 0, 0, 0) 59.57447%, #eeeeee 59.57447%, #eeeeee 65.95745%, rgba(0, 0, 0, 0) 65.95745%, rgba(0, 0, 0, 0) 68.08511%, #eeeeee 68.08511%, #eeeeee 74.46809%, rgba(0, 0, 0, 0) 74.46809%, rgba(0, 0, 0, 0) 76.59574%, #eeeeee 76.59574%, #eeeeee 82.97872%, rgba(0, 0, 0, 0) 82.97872%, rgba(0, 0, 0, 0) 85.10638%, #eeeeee 85.10638%, #eeeeee 91.48936%, rgba(0, 0, 0, 0) 91.48936%, rgba(0, 0, 0, 0) 93.61702%, #eeeeee 93.61702%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
   height: 100%;
   left: 0;
   margin: 0 auto;
@@ -50,6 +50,22 @@ body:before {
     display: table; }
   .l-single-centered-column:after {
     clear: both; }
+
+.l-half-column {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  .l-half-column:last-child {
+    margin-right: 0; }
+
+.l-third-column {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%; }
+  .l-third-column:last-child {
+    margin-right: 0; }
 
 body {
   color: #333333;
@@ -142,16 +158,16 @@ cite {
   .m-header .m-logo {
     float: left;
     display: block;
-    margin-right: 2.5641%;
-    width: 38.46154%; }
+    margin-right: 2.12766%;
+    width: 31.91489%; }
     .m-header .m-logo:last-child {
       margin-right: 0; }
 
 .m-header-nav {
   float: left;
   display: block;
-  margin-right: 2.5641%;
-  width: 58.97436%;
+  margin-right: 2.12766%;
+  width: 65.95745%;
   list-style-type: none;
   padding: 0;
   margin-top: -12px;
@@ -174,8 +190,8 @@ cite {
 .m-search {
   float: left;
   display: block;
-  margin-right: 2.5641%;
-  width: 58.97436%;
+  margin-right: 2.12766%;
+  width: 48.93617%;
   margin-top: 140px; }
   .m-search:last-child {
     margin-right: 0; }
@@ -206,6 +222,8 @@ cite {
     height: 45px;
     padding: 0 10px;
     outline: none; }
+    .m-search-wrapper input[type="search"]:focus, .m-search-wrapper input[type="submit"]:focus {
+      background-color: white; }
   .m-search-wrapper input[type="submit"] {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -219,9 +237,10 @@ cite {
   .m-search-wrapper input[type="search"] {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-size: 15px; }
-    .m-search-wrapper input[type="search"]:active {
-      background-color: #dddddd; }
+    font-size: 15px;
+    background-color: #dddddd; }
+    .m-search-wrapper input[type="search"]:focus {
+      background-color: white; }
 
 .m-menu {
   background: rgba(255, 255, 255, 0.05);
@@ -256,7 +275,7 @@ cite {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
-      background-position: center center;
+      background-position: center 25px;
       background-repeat: no-repeat;
       position: relative;
       width: 164px;
@@ -267,7 +286,7 @@ cite {
         color: #f58220; }
       .m-menu .m-courses-menu [class^="icon-"] span, .m-menu .m-courses-menu [class*=" icon-"] span {
         position: absolute;
-        bottom: 5px;
+        bottom: 20px;
         width: 100%;
         text-align: center;
         color: white;
@@ -289,9 +308,9 @@ cite {
     .m-menu .icon-technology:hover, .m-menu .icon-technology.is-selected {
       background-image: url("../img/icon-active-technology.png"); }
   .m-menu .icon-healthcare {
-    background-image: url("../img/icon-technology.png"); }
+    background-image: url("../img/icon-healthcare.png"); }
     .m-menu .icon-healthcare:hover, .m-menu .icon-healthcare.is-selected {
-      background-image: url("../img/icon-active-technology.png"); }
+      background-image: url("../img/icon-active-healthcare.png"); }
   .m-menu .icon-software {
     background-image: url("../img/icon-software.png"); }
     .m-menu .icon-software:hover, .m-menu .icon-software.is-selected {
@@ -322,3 +341,34 @@ cite {
   *vertical-align: auto; }
   .m-btn-alt:hover, .m-btn-alt.is-selected {
     border: 1px solid #f58220; }
+
+.m-btn-orange {
+  border-radius: 5px;
+  border: 1px solid #f58220;
+  padding: 10px 22px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+  .m-btn-orange:hover, .m-btn-orange.is-selected {
+    background-color: #f58220;
+    color: white; }
+
+.m-training-packages {
+  padding-top: 70px;
+  background: white;
+  text-align: center; }
+  .m-training-packages .m-packages .m-packages-item {
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    padding-top: 140px; }
+  .m-training-packages .m-packages .title {
+    color: #192030; }
+  .m-training-packages .m-packages .icon-enterprise {
+    background-image: url("../img/icon-enterprise.png"); }
+  .m-training-packages .m-packages .icon-sm-med-business {
+    background-image: url("../img/icon-sm-med-business.png"); }
+  .m-training-packages .m-packages .icon-individual {
+    background-image: url("../img/icon-individual.png"); }

@@ -6,7 +6,7 @@
   .m-logo
     +span-columns(4)
 .m-header-nav
-  +span-columns(6)
+  +span-columns(8)
   list-style-type: none
   padding: 0
   margin-top: -12px
@@ -40,6 +40,8 @@
     height: 45px
     padding: 0 10px
     outline: none
+    &:focus
+      background-color: white
   input[type="submit"]
     border-top-right-radius: 5px
     border-bottom-right-radius: 5px
@@ -54,9 +56,9 @@
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
     font-size: 15px
-    &:active
-      background-color: $light-gray
-
+    background-color: $light-gray
+    &:focus
+      background-color: white
 
 .m-menu
   background: rgba(white, .05)
@@ -68,7 +70,7 @@
     +horizontal-list
     [class^="icon-"],[class*=" icon-"]
       +box-sizing(border-box)
-      background-position: center center
+      background-position: center 25px
       background-repeat: no-repeat
       position: relative
       width: 164px
@@ -79,7 +81,7 @@
         color: $orange
       span
         position: absolute
-        bottom: 5px
+        bottom: 20px
         width: 100%
         text-align: center
         color: white
@@ -102,9 +104,9 @@
     &:hover, &.is-selected
       background-image: url('../img/icon-active-technology.png')
   .icon-healthcare
-    background-image: url('../img/icon-technology.png')
+    background-image: url('../img/icon-healthcare.png')
     &:hover, &.is-selected
-      background-image: url('../img/icon-active-technology.png')
+      background-image: url('../img/icon-active-healthcare.png')
   .icon-software
     background-image: url('../img/icon-software.png')
     &:hover, &.is-selected
