@@ -1,4 +1,5 @@
-=has-layout($approach: $default-has-layout-approach)
+$legacy-support-for-ie: true
+=has-layout($approach: block)
   @if $legacy-support-for-ie
     @if $approach == zoom
       @include has-layout-zoom

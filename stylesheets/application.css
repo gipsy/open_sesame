@@ -40,15 +40,15 @@ body:before {
       background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, #eeeeee 26.66667%, #eeeeee 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, #eeeeee 53.33333%, #eeeeee 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, #eeeeee 80.0%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
       background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 26.66667%, #eeeeee 26.66667%, #eeeeee 46.66667%, rgba(0, 0, 0, 0) 46.66667%, rgba(0, 0, 0, 0) 53.33333%, #eeeeee 53.33333%, #eeeeee 73.33333%, rgba(0, 0, 0, 0) 73.33333%, rgba(0, 0, 0, 0) 80.0%, #eeeeee 80.0%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%); } }
 
-.l-single-centered-colum {
+.l-single-centered-column {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .l-single-centered-colum:before, .l-single-centered-colum:after {
+  .l-single-centered-column:before, .l-single-centered-column:after {
     content: " ";
     display: table; }
-  .l-single-centered-colum:after {
+  .l-single-centered-column:after {
     clear: both; }
 
 body {
@@ -136,6 +136,7 @@ cite {
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
+  position: relative;
   height: 649px;
   padding-top: 20px; }
   .m-header .m-logo {
@@ -174,7 +175,8 @@ cite {
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 58.97436%; }
+  width: 58.97436%;
+  margin-top: 140px; }
   .m-search:last-child {
     margin-right: 0; }
   .m-search h1 {
@@ -192,10 +194,18 @@ cite {
   padding: 7px;
   margin-top: 25px; }
   .m-search-wrapper input[type="search"], .m-search-wrapper input[type="submit"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     border: 1px solid #999999;
-    blur: 0;
     height: 45px;
-    padding: 0 10px; }
+    padding: 0 10px;
+    outline: none; }
   .m-search-wrapper input[type="submit"] {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -210,6 +220,82 @@ cite {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 15px; }
+    .m-search-wrapper input[type="search"]:active {
+      background-color: #dddddd; }
+
+.m-menu {
+  background: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0; }
+  .m-menu .m-courses-menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    display: inline-block; }
+    .m-menu .m-courses-menu {
+      display: block; }
+    .m-menu .m-courses-menu li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0px;
+      white-space: nowrap;
+      display: inline;
+      float: left;
+      padding-left: 4px;
+      padding-right: 4px; }
+      .m-menu .m-courses-menu li:first-child, .m-menu .m-courses-menu li.first {
+        padding-left: 0; }
+      .m-menu .m-courses-menu li:last-child {
+        padding-opposite-position(left): 0; }
+      .m-menu .m-courses-menu li.last {
+        padding-opposite-position(left): 0; }
+    .m-menu .m-courses-menu [class^="icon-"], .m-menu .m-courses-menu [class*=" icon-"] {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: relative;
+      width: 164px;
+      height: 125px; }
+      .m-menu .m-courses-menu [class^="icon-"]:hover, .m-menu .m-courses-menu [class^="icon-"].is-selected, .m-menu .m-courses-menu [class*=" icon-"]:hover, .m-menu .m-courses-menu [class*=" icon-"].is-selected {
+        background-color: rgba(34, 34, 34, 0.8); }
+      .m-menu .m-courses-menu [class^="icon-"]:hover span, .m-menu .m-courses-menu [class^="icon-"].is-selected span, .m-menu .m-courses-menu [class*=" icon-"]:hover span, .m-menu .m-courses-menu [class*=" icon-"].is-selected span {
+        color: #f58220; }
+      .m-menu .m-courses-menu [class^="icon-"] span, .m-menu .m-courses-menu [class*=" icon-"] span {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: bold; }
+  .m-menu .icon-business {
+    background-image: url("../img/icon-business.png"); }
+    .m-menu .icon-business:hover, .m-menu .icon-business.is-selected {
+      background-image: url("../img/icon-active-business.png"); }
+  .m-menu .icon-safety {
+    background-image: url("../img/icon-safety.png"); }
+    .m-menu .icon-safety:hover, .m-menu .icon-safety.is-selected {
+      background-image: url("../img/icon-active-safety.png"); }
+  .m-menu .icon-compliance {
+    background-image: url("../img/icon-compliance.png"); }
+    .m-menu .icon-compliance:hover, .m-menu .icon-compliance.is-selected {
+      background-image: url("../img/icon-active-compliance.png"); }
+  .m-menu .icon-technology {
+    background-image: url("../img/icon-technology.png"); }
+    .m-menu .icon-technology:hover, .m-menu .icon-technology.is-selected {
+      background-image: url("../img/icon-active-technology.png"); }
+  .m-menu .icon-healthcare {
+    background-image: url("../img/icon-technology.png"); }
+    .m-menu .icon-healthcare:hover, .m-menu .icon-healthcare.is-selected {
+      background-image: url("../img/icon-active-technology.png"); }
+  .m-menu .icon-software {
+    background-image: url("../img/icon-software.png"); }
+    .m-menu .icon-software:hover, .m-menu .icon-software.is-selected {
+      background-image: url("../img/icon-active-software.png"); }
 
 .m-btn {
   border-radius: 5px;
@@ -226,3 +312,13 @@ cite {
   .m-btn:hover, .m-btn.is-selected {
     border: 1px solid #f58220;
     background-color: #f58220; }
+
+.m-btn-alt {
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+  .m-btn-alt:hover, .m-btn-alt.is-selected {
+    border: 1px solid #f58220; }

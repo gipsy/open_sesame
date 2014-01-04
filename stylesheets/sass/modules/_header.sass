@@ -1,5 +1,6 @@
 .m-header
   background: url('../img/header-bg.jpg') center center
+  position: relative
   height: 649px
   padding-top: 20px
   .m-logo
@@ -21,6 +22,7 @@
 
 .m-search
   +span-columns(6)
+  margin-top: 140px
   h1
     color: white
     line-height: 40px
@@ -32,10 +34,12 @@
   padding: 7px
   margin-top: 25px
   input[type="search"], input[type="submit"]
+    +box-sizing(border-box)
+    +appearance(none)
     border: 1px solid $medium-gray
-    blur: 0
     height: 45px
     padding: 0 10px
+    outline: none
   input[type="submit"]
     border-top-right-radius: 5px
     border-bottom-right-radius: 5px
@@ -50,4 +54,61 @@
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
     font-size: 15px
+    &:active
+      background-color: $light-gray
 
+
+.m-menu
+  background: rgba(white, .05)
+  position: absolute
+  bottom: 0
+  width: 100%
+  padding: 20px 0
+  .m-courses-menu
+    +horizontal-list
+    [class^="icon-"],[class*=" icon-"]
+      +box-sizing(border-box)
+      background-position: center center
+      background-repeat: no-repeat
+      position: relative
+      width: 164px
+      height: 125px
+      &:hover, &.is-selected
+        background-color: rgba(#222222, 0.8)
+      &:hover span, &.is-selected span
+        color: $orange
+      span
+        position: absolute
+        bottom: 5px
+        width: 100%
+        text-align: center
+        color: white
+        font-weight: bold
+
+  .icon-business
+    background-image: url('../img/icon-business.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-business.png')
+  .icon-safety
+    background-image: url('../img/icon-safety.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-safety.png')
+  .icon-compliance
+    background-image: url('../img/icon-compliance.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-compliance.png')
+  .icon-technology
+    background-image: url('../img/icon-technology.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-technology.png')
+  .icon-healthcare
+    background-image: url('../img/icon-technology.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-technology.png')
+  .icon-software
+    background-image: url('../img/icon-software.png')
+    &:hover, &.is-selected
+      background-image: url('../img/icon-active-software.png')
+
+  
+  
