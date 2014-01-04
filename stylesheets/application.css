@@ -150,6 +150,16 @@ cite {
   cite:before {
     content: "\2014 \00A0"; }
 
+.title {
+  color: #192030; }
+  .title.small {
+    color: white;
+    font-size: 0.9em;
+    padding-bottom: 30px; }
+
+.uppercase {
+  text-transform: uppercase; }
+
 .m-header {
   background: url("../img/header-bg.jpg") center center;
   position: relative;
@@ -222,8 +232,6 @@ cite {
     height: 45px;
     padding: 0 10px;
     outline: none; }
-    .m-search-wrapper input[type="search"]:focus, .m-search-wrapper input[type="submit"]:focus {
-      background-color: white; }
   .m-search-wrapper input[type="submit"] {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -357,18 +365,52 @@ cite {
     color: white; }
 
 .m-training-packages {
-  padding-top: 70px;
+  padding: 70px 0;
   background: white;
   text-align: center; }
-  .m-training-packages .m-packages .m-packages-item {
+  .m-training-packages .m-packages-item {
     background-repeat: no-repeat;
     background-position: center 50px;
     padding-top: 140px; }
-  .m-training-packages .m-packages .title {
-    color: #192030; }
-  .m-training-packages .m-packages .icon-enterprise {
+  .m-training-packages .icon-enterprise {
     background-image: url("../img/icon-enterprise.png"); }
-  .m-training-packages .m-packages .icon-sm-med-business {
+  .m-training-packages .icon-sm-med-business {
     background-image: url("../img/icon-sm-med-business.png"); }
-  .m-training-packages .m-packages .icon-individual {
+  .m-training-packages .icon-individual {
     background-image: url("../img/icon-individual.png"); }
+
+.m-testimonials {
+  overflow: hidden;
+  display: inline-block;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  background: #3f4d57 url("../img/fc-logo-bg.png") no-repeat center center; }
+  .m-testimonials {
+    display: block; }
+  .m-testimonials .content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 65.95745%;
+    margin-left: 17.02128%;
+    line-height: 42px; }
+    .m-testimonials .content:last-child {
+      margin-right: 0; }
+  .m-testimonials .text {
+    font-size: 2em;
+    font-weight: 300; }
+  .m-testimonials .name, .m-testimonials .occupation, .m-testimonials .read-all {
+    margin-bottom: 0;
+    line-height: 1.5em; }
+  .m-testimonials .name {
+    font-size: 1.5em;
+    font-weight: normal; }
+  .m-testimonials .occupation {
+    font-size: 0.875em;
+    font-weight: 300; }
+  .m-testimonials .read-all {
+    font-size: 0.813em;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #f58220; }
