@@ -49,7 +49,6 @@
     text-indent: -9999px
     width: 45px
     border-left: 0
-    margin-top: -1px
   input[type="search"]
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
@@ -66,12 +65,15 @@
   padding: 20px 0
   .m-courses-menu
     +horizontal-list
+    .m-courses-menu-item
+      +span-columns(2)
+      +omega(6)
     [class^="icon-"],[class*=" icon-"]
       +box-sizing(border-box)
       background-position: center 25px
       background-repeat: no-repeat
       position: relative
-      width: 164px
+      width: 100%
       height: 125px
       &:hover, &.is-selected
         background-color: rgba(#222222, 0.8)

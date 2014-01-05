@@ -3,7 +3,13 @@
   background: white
   text-align: center
 
+  .m-packages
+    +clearfix
+    padding: 0
+
   .m-packages-item
+    +span-columns(4)
+    +omega(3n)
     background-repeat: no-repeat
     background-position: center 50px
     padding-top: 140px

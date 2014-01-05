@@ -1,4 +1,138 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  background: white;
+  color: black;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+mark {
+  background: yellow;
+  color: black; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type='button'], input[type='reset'], input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+input[type='checkbox'], input[type='radio'] {
+  box-sizing: border-box;
+  padding: 0; }
+input[type='search'] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+  input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -240,8 +374,7 @@ cite {
     cursor: pointer;
     text-indent: -9999px;
     width: 45px;
-    border-left: 0;
-    margin-top: -1px; }
+    border-left: 0; }
   .m-search-wrapper input[type="search"] {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -279,6 +412,17 @@ cite {
         padding-opposite-position(left): 0; }
       .m-menu .m-courses-menu li.last {
         padding-opposite-position(left): 0; }
+    .m-menu .m-courses-menu .m-courses-menu-item {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 14.89362%; }
+      .m-menu .m-courses-menu .m-courses-menu-item:last-child {
+        margin-right: 0; }
+      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6) {
+        margin-right: 0; }
+      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6+1) {
+        clear: left; }
     .m-menu .m-courses-menu [class^="icon-"], .m-menu .m-courses-menu [class*=" icon-"] {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -286,7 +430,7 @@ cite {
       background-position: center 25px;
       background-repeat: no-repeat;
       position: relative;
-      width: 164px;
+      width: 100%;
       height: 125px; }
       .m-menu .m-courses-menu [class^="icon-"]:hover, .m-menu .m-courses-menu [class^="icon-"].is-selected, .m-menu .m-courses-menu [class*=" icon-"]:hover, .m-menu .m-courses-menu [class*=" icon-"].is-selected {
         background-color: rgba(34, 34, 34, 0.8); }
@@ -368,10 +512,26 @@ cite {
   padding: 70px 0;
   background: white;
   text-align: center; }
+  .m-training-packages .m-packages {
+    overflow: hidden;
+    display: inline-block;
+    padding: 0; }
+    .m-training-packages .m-packages {
+      display: block; }
   .m-training-packages .m-packages-item {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%;
     background-repeat: no-repeat;
     background-position: center 50px;
     padding-top: 140px; }
+    .m-training-packages .m-packages-item:last-child {
+      margin-right: 0; }
+    .m-training-packages .m-packages-item:nth-child(3n) {
+      margin-right: 0; }
+    .m-training-packages .m-packages-item:nth-child(3n+1) {
+      clear: left; }
   .m-training-packages .icon-enterprise {
     background-image: url("../img/icon-enterprise.png"); }
   .m-training-packages .icon-sm-med-business {

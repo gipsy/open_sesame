@@ -1,0 +1,29 @@
+=respond-to($media)
+  @if $media == device-max
+    @media only screen and (max-width: $break-device)
+      @content
+
+  @else if $media == tablet
+    @media only screen and (min-width: $break-device + 1)
+      @content
+
+  @else if $media == smallscreen
+    @media only screen and (min-width: $break-smallscreen)
+      @content
+
+  @else if $media == desktop
+    @media only screen and (min-width: $break-large)
+      @content
+
+  @else if $media == desktop-large
+    @media only screen and (min-width: $break-xlarge)
+      @content
+
+  @else if $media == widescreen
+    @media only screen and (min-width: $break-xxlarge)
+      @content
+
+    //iPhone 5 or iPod Touch 5th generation
+  @else if $media == iphone5
+    @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 1.5)
+      @content
