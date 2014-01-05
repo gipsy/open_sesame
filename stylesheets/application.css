@@ -184,6 +184,8 @@ body:before {
     display: table; }
   .l-single-centered-column:after {
     clear: both; }
+  .l-single-centered-column.l-content {
+    padding: 40px 0; }
 
 .l-half-column {
   float: left;
@@ -287,12 +289,16 @@ cite {
 .title {
   color: #192030; }
   .title.small {
-    color: white;
     font-size: 0.9em;
     padding-bottom: 30px; }
 
 .uppercase {
   text-transform: uppercase; }
+
+.read-all {
+  font-size: 0.813em;
+  font-weight: 300;
+  text-decoration: underline; }
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
@@ -419,9 +425,9 @@ cite {
       width: 14.89362%; }
       .m-menu .m-courses-menu .m-courses-menu-item:last-child {
         margin-right: 0; }
-      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6) {
+      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6n) {
         margin-right: 0; }
-      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6+1) {
+      .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6n+1) {
         clear: left; }
     .m-menu .m-courses-menu [class^="icon-"], .m-menu .m-courses-menu [class*=" icon-"] {
       -webkit-box-sizing: border-box;
@@ -508,17 +514,17 @@ cite {
     background-color: #f58220;
     color: white; }
 
-.m-training-packages {
+.m-packages-block {
   padding: 70px 0;
   background: white;
   text-align: center; }
-  .m-training-packages .m-packages {
+  .m-packages-block .m-packages {
     overflow: hidden;
     display: inline-block;
     padding: 0; }
-    .m-training-packages .m-packages {
+    .m-packages-block .m-packages {
       display: block; }
-  .m-training-packages .m-packages-item {
+  .m-packages-block .m-packages-item {
     float: left;
     display: block;
     margin-right: 2.12766%;
@@ -526,51 +532,127 @@ cite {
     background-repeat: no-repeat;
     background-position: center 50px;
     padding-top: 140px; }
-    .m-training-packages .m-packages-item:last-child {
+    .m-packages-block .m-packages-item:last-child {
       margin-right: 0; }
-    .m-training-packages .m-packages-item:nth-child(3n) {
+    .m-packages-block .m-packages-item:nth-child(3n) {
       margin-right: 0; }
-    .m-training-packages .m-packages-item:nth-child(3n+1) {
+    .m-packages-block .m-packages-item:nth-child(3n+1) {
       clear: left; }
-  .m-training-packages .icon-enterprise {
+  .m-packages-block .icon-enterprise {
     background-image: url("../img/icon-enterprise.png"); }
-  .m-training-packages .icon-sm-med-business {
+  .m-packages-block .icon-sm-med-business {
     background-image: url("../img/icon-sm-med-business.png"); }
-  .m-training-packages .icon-individual {
+  .m-packages-block .icon-individual {
     background-image: url("../img/icon-individual.png"); }
 
-.m-testimonials {
+.m-testimonials-block {
   overflow: hidden;
   display: inline-block;
   padding: 50px 0;
   text-align: center;
   color: white;
   background: #3f4d57 url("../img/fc-logo-bg.png") no-repeat center center; }
-  .m-testimonials {
+  .m-testimonials-block {
     display: block; }
-  .m-testimonials .content {
+  .m-testimonials-block .content {
     float: left;
     display: block;
     margin-right: 2.12766%;
     width: 65.95745%;
     margin-left: 17.02128%;
     line-height: 42px; }
-    .m-testimonials .content:last-child {
+    .m-testimonials-block .content:last-child {
       margin-right: 0; }
-  .m-testimonials .text {
+  .m-testimonials-block .title {
+    color: white; }
+  .m-testimonials-block .text {
     font-size: 2em;
     font-weight: 300; }
-  .m-testimonials .name, .m-testimonials .occupation, .m-testimonials .read-all {
+  .m-testimonials-block .name, .m-testimonials-block .occupation, .m-testimonials-block .read-all {
     margin-bottom: 0;
     line-height: 1.5em; }
-  .m-testimonials .name {
+  .m-testimonials-block .name {
     font-size: 1.5em;
     font-weight: normal; }
-  .m-testimonials .occupation {
+  .m-testimonials-block .occupation {
     font-size: 0.875em;
     font-weight: 300; }
-  .m-testimonials .read-all {
-    font-size: 0.813em;
-    font-weight: 300;
-    text-decoration: underline;
+  .m-testimonials-block .read-all {
     color: #f58220; }
+
+.m-courses-block .title {
+  color: #192030; }
+.m-courses-block .read-all {
+  color: #192030;
+  font-size: 0.75em; }
+.m-courses-block .m-courses {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0; }
+  .m-courses-block .m-courses {
+    display: block; }
+.m-courses-block .m-courses-item {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 23.40426%;
+  border-radius: 5px;
+  border: 1px solid #999999; }
+  .m-courses-block .m-courses-item:last-child {
+    margin-right: 0; }
+  .m-courses-block .m-courses-item .img-wrapper {
+    position: relative; }
+    .m-courses-block .m-courses-item .img-wrapper .img-capture {
+      background-color: rgba(25, 32, 48, 0.9);
+      position: absolute;
+      padding: 8px 13px;
+      bottom: 0;
+      min-height: 20px;
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      font-size: 0.688em; }
+    .m-courses-block .m-courses-item .img-wrapper img {
+      display: block;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+  .m-courses-block .m-courses-item .m-course-content {
+    position: relative;
+    padding: 13px; }
+  .m-courses-block .m-courses-item .m-skills {
+    padding-left: 22px;
+    font-size: 0.625em;
+    color: #192030; }
+  .m-courses-block .m-courses-item .volume-available {
+    color: #999999;
+    font-size: 0.563em;
+    margin-right: 0; }
+  .m-courses-block .m-courses-item .m-course-provider span {
+    color: #192030; }
+  .m-courses-block .m-courses-item .m-course-price-duration {
+    overflow: hidden;
+    display: inline-block;
+    border-top: 1px solid #192030; }
+    .m-courses-block .m-courses-item .m-course-price-duration {
+      display: block; }
+    .m-courses-block .m-courses-item .m-course-price-duration .duration {
+      border-left: 1px solid #192030; }
+    .m-courses-block .m-courses-item .m-course-price-duration em {
+      color: #999999; }
+    .m-courses-block .m-courses-item .m-course-price-duration span {
+      width: 50%;
+      float: left;
+      display: block;
+      padding: 5px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.938em; }
+  .m-courses-block .m-courses-item [class^="icon-"], .m-courses-block .m-courses-item [class*=" icon-"] {
+    background-position: left center;
+    background-repeat: no-repeat; }
+  .m-courses-block .m-courses-item .icon-skills-business {
+    background-image: url("../img/icon-skills-business.png"); }
+  .m-courses-block .m-courses-item .icon-skills-safety {
+    background-image: url("../img/icon-skills-safety.png"); }
+  .m-courses-block .m-courses-item .icon-skills-industry {
+    background-image: url("../img/icon-skills-industry.png"); }

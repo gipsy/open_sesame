@@ -1,0 +1,76 @@
+.m-courses-block
+  .title
+    color: $medium-blue
+  .read-all
+    color: $medium-blue
+    font-size: 0.750em
+
+  .m-courses
+    +clearfix
+    padding: 0
+
+  .m-courses-item
+    +span-columns(3)
+    border-radius: 5px
+    border: 1px solid $medium-gray
+    .img-wrapper
+      position: relative
+      .img-capture
+        background-color: rgba($medium-blue, 0.9)
+        position: absolute
+        padding: 8px 13px
+        bottom: 0
+        min-height: 20px
+        width: 100%
+        color: white
+        font-weight: bold
+        font-size: 0.688em
+      img
+        display: block
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+    .m-course-content
+      position: relative
+      padding: 13px
+
+    .m-skills
+      padding-left: 22px
+      font-size: 0.625em
+      color: $medium-blue
+
+    .volume-available
+      color: $medium-gray
+      font-size: 0.563em
+      +omega
+
+    .m-course-provider
+      span
+        color: $medium-blue
+
+    .m-course-price-duration
+      +clearfix
+      border-top: 1px solid $medium-blue
+      .duration
+        border-left: 1px solid $medium-blue
+      em
+        color: $medium-gray
+      span
+        width: 50%
+        float: left
+        display: block
+        padding: 5px
+        text-align: center
+        font-weight: bold
+        font-size: 0.938em
+
+    [class^="icon-"],[class*=" icon-"]
+      background-position: left center
+      background-repeat: no-repeat
+
+    .icon-skills-business
+      background-image: url('../img/icon-skills-business.png')
+    .icon-skills-safety
+      background-image: url('../img/icon-skills-safety.png')
+    .icon-skills-industry
+      background-image: url('../img/icon-skills-industry.png')

@@ -39,84 +39,169 @@
     </head>
     <body>
 
-        <header class="m-header">
-            <section class="l-single-centered-column">
-                <a class="m-logo" href="/"><img src="img/logo.png"></a>
-                <nav role="navigation">
-                    <ul class="m-header-nav">
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">RESOURCES</a></li>
-                        <li><a href="#">HELP</a></li>
-                        <li><a class="m-btn" href="#">Sign In</a>
-                        <li><a class="m-btn is-selected" href="#">Sign Up</a>
-                    </ul>
-                </nav>
-                <div class="m-search">
-                    <h1>Thousands of online courses delivered instantly</h1>
-                    <form id="" method="" action="">
-                        <span class="m-search-wrapper">
-                            <input type="search" name="search" placeholder="Search for courses (Try: Business, Safety, Microsoft...)">
-                            <input type="submit" value="search">
-                        </span>
-                    </form>
+      <header class="m-header">
+        <section class="l-single-centered-column">
+          <a class="m-logo" href="/"><img src="img/logo.png"></a>
+
+          <nav role="navigation">
+            <ul class="m-header-nav">
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">RESOURCES</a></li>
+              <li><a href="#">HELP</a></li>
+              <li><a class="m-btn" href="#">Sign In</a>
+              <li><a class="m-btn is-selected" href="#">Sign Up</a>
+            </ul>
+          </nav>
+          <div class="m-search">
+            <h1>Thousands of online courses delivered instantly</h1>
+            <form id="" method="" action="">
+              <span class="m-search-wrapper">
+                <input type="search" name="search" placeholder="Search for courses (Try: Business, Safety, Microsoft...)">
+                <input type="submit" value="search">
+              </span>
+            </form>
+          </div>
+        </section>
+        <nav class="m-menu" role="navigation">
+          <section class="l-single-centered-column">
+            <ul class="m-courses-menu">
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business"><span>Business Skills</span></a></li>
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety"><span>Safety</span></a></li>
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance"><span>Compliance</span></a></li>
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology"><span>Technology</span></a></li>
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare"><span>Healthcare</span></a></li>
+              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software"><span>Software</span></a></li>
+            </ul>
+          </section>
+        </nav>
+      </header>
+
+      <section class="m-packages-block">
+        <section class="l-single-centered-column">
+          <h2 class="title">Start Training Instantly</h2>
+          <ul class="m-packages">
+            <li class="m-packages-item l-third-column icon-enterprise">
+              <h4 class="title">Enterprise</h4>
+              <p class="m-package-info">More flexible training solutions for a global workforce.</p>
+              <a href="#" class="m-btn-orange">Learn More</a>
+            </li>
+            <li class="m-packages-item l-third-column icon-sm-med-business">
+              <h4 class="title">Small/Medium Business</h4>
+              <p class="m-package-info">Easily train your employees online.</p>
+              <a href="#" class="m-btn-orange">Learn More</a>
+            </li>
+            <li class="m-packages-item l-third-column icon-individual">
+              <h4 class="title">Individual</h4>
+              <p class="m-package-info">Stay competitive with on-demand training.</p>
+              <a href="#" class="m-btn-orange">Learn More</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="m-testimonials-block">
+        <h6 class="title small uppercase">What Our customers say</h6>
+        <div class="content">
+          <p class="text">So impressed with the customer service from @OpenSesame. After all the stress from the move, it's nice for something to be easy.</p>
+          <p class="name">- Jack Donaghy</p>
+          <p class="occupation uppercase">Product Manager, FranklinCovey</p>
+          <a href="#" class="read-all uppercase">Read all Testimonials</a>
+        </div>
+      </section>
+
+      <section class="m-courses-block">
+        <section class="l-single-centered-column l-content">
+          <h6 class="title small uppercase">Recently Added Courses <a class="read-all uppercase" href="#">(BROWSE ALL)</a></h6>
+          <ul class="m-courses">
+            <li class="m-courses-item">
+              <div class="img-wrapper">
+                <img src="img/content-images/1.jpg">
+                <div class="img-capture">Free Preview</div>
+              </div>
+              <div class="m-course-content">
+                <span class="m-skills icon-skills-business">Business Skills</span>
+                <p><h5>Effective Time Management</h5></p>
+                <p><h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">Timely Intervention</a></span></h6></p>
+                <img src="img/stars.png">
+                <p>The ability to effectively and efficiently use time is essential skill for every manager and team leader.</p>
+              </div>
+              <div class="m-course-price-duration">
+                <span class="price">$35<sup>.00</sup> <em>/ User</em></span>
+                <span class="duration">1 hr 00 mins</span>
+              </div>
+            </li>
+            <li class="m-courses-item">
+              <div class="img-wrapper">
+                <img src="img/content-images/2.jpg">
+                <div class="img-capture">Free Preview</div>
+              </div>
+              <div class="m-course-content">
+                <span class="m-skills icon-skills-safety">Safety</span>
+                <span class="volume-available">Volume Pricing Available</span>
+                <p><h5>A Commitment to Safety</h5></p>
+                <p><h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">CDT MicroGraphics Inc</a></span></h6></p>
+                <img src="img/stars.png">
+                <p>This training course on forklift safety outlines the dos and don't of forklift operation.</p>
+              </div>
+              <div class="m-course-price-duration">
+                <span class="price">$25<sup>.00</sup> <em>/ User</em></span>
+                <span class="duration">1 hr 00 mins</span>
+              </div>
+            </li>
+            <li class="m-courses-item">
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="img/content-images/3.jpg">
+                  <div class="img-capture">Free Preview</div>
                 </div>
-            </section>
-            <nav class="m-menu" role="navigation">
-                <section class="l-single-centered-column">
-                    <ul class="m-courses-menu">
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business"><span>Business Skills</span></a></li>
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety"><span>Safety</span></a></li>
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance"><span>Compliance</span></a></li>
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology"><span>Technology</span></a></li>
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare"><span>Healthcare</span></a></li>
-                        <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software"><span>Software</span></a></li>
-                    </ul>
-                </section>
-            </nav>
-        </header>
-
-        <section class="m-training-packages">
-            <section class="l-single-centered-column">
-                <h2 class="title">Start Training Instantly</h2>
-                <ul class="m-packages">
-                    <li class="m-packages-item l-third-column icon-enterprise">
-                        <h4 class="title">Enterprise</h4>
-                        <p class="m-package-info">More flexible training solutions for a global workforce.</p>
-                        <a href="#" class="m-btn-orange">Learn More</a>
-                    </li>
-                    <li class="m-packages-item l-third-column icon-sm-med-business">
-                        <h4 class="title">Small/Medium Business</h4>
-                        <p class="m-package-info">Easily train your employees online.</p>
-                        <a href="#" class="m-btn-orange">Learn More</a>
-                    </li>
-                    <li class="m-packages-item l-third-column icon-individual">
-                        <h4 class="title">Individual</h4>
-                        <p class="m-package-info">Stay competitive with on-demand training.</p>
-                        <a href="#" class="m-btn-orange">Learn More</a>
-                    </li>
-                </ul>
-            </section>
+                <div class="m-course-content">
+                  <span class="m-skills icon-skills-safety">Safety</span>
+                  <span class="volume-available">Volume Pricing Available</span>
+                  <p><h5>Forklift Operation Safety</h5></p>
+                  <p><h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">360Training.com</a></span></h6></p>
+                  <img src="img/stars.png">
+                  <p>Accidents in long-term care facilities carry a high price. Focusing on preventing accidents before they oc...</p>
+                </div>
+                <div class="m-course-price-duration">
+                  <span class="price">$6<sup>.99</sup> <em>/ User</em></span>
+                  <span class="duration">1 hr 00 mins</span>
+                </div>
+              </a>
+            </li>
+            <li class="m-courses-item">
+              <a href="#">
+                <div class="img-wrapper">
+                  <img src="img/content-images/4.jpg">
+                  <div class="img-capture">Free Preview</div>
+                </div>
+                <div class="m-course-content">
+                  <span class="m-skills icon-skills-industry">Industry Specific</span>
+                  <span class="volume-available">Volume Pricing Available</span>
+                  <p><h5>Mine Ventilation System Design</h5></p>
+                  <p><h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">team@octavesim.com</a></span></h6></p>
+                  <img src="img/stars.png">
+                  <p>Through this course user will get an understanding of mine ventilation systems, user will be able to design...</p>
+                </div>
+                <div class="m-course-price-duration">
+                  <span class="price">$99<sup>.95</sup> <em>/ User</em></span>
+                  <span class="duration">1 hr 00 mins</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </section>
+      </section>
 
-        <section class="m-testimonials">
-          <h6 class="title small uppercase">What Our customers say</h6>
-          <div class="content">
-            <p class="text">So impressed with the customer service from @OpenSesame. After all the stress from the move, it's nice for something to be easy.</p>
-            <p class="name">- Jack Donaghy</p>
-            <p class="occupation uppercase">Product Manager, FranklinCovey</p>
-            <a href="#" class="read-all uppercase">Read all Testimonials</a>
-        </section>
+      <script src="js/vendor/zepto.min.js"></script>
+      <script src="js/helper.js"></script>
 
-        <script src="js/vendor/zepto.min.js"></script>
-        <script src="js/helper.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-            s.parentNode.insertBefore(g,s)}(document,"script"));
-        </script>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+          g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+          s.parentNode.insertBefore(g,s)}(document,"script"));
+      </script>
     </body>
 </html>
