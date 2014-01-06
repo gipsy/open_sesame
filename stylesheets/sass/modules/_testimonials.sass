@@ -24,3 +24,20 @@
     font-weight: 300
   .read-all
     color: $orange
+
+.m-testimonials-block_others
+  @extend .m-testimonials-block
+  +background-image(url('../img/testimonials-bg.png'))
+  color: $medium-medium-gray
+  .content
+    @extend .content
+    text-align: center
+  .title
+    color: $medium-medium-gray
+  .text
+    @extend .text
+  .logo
+    +background-image(url('../img/forbs-logo.png'))
+    background-repeat: no-repeat
+    background-position: center center
+    height: 37px
