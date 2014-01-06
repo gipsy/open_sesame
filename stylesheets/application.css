@@ -147,6 +147,9 @@ table {
   .l-row:after {
     clear: both; }
 
+.l-content {
+  padding-top: 60px; }
+
 .l-single-centered-column {
   *zoom: 1;
   max-width: 68em;
@@ -157,8 +160,6 @@ table {
     display: table; }
   .l-single-centered-column:after {
     clear: both; }
-  .l-single-centered-column.l-content {
-    padding-top: 60px; }
 
 .l-half-column {
   float: left;
@@ -187,6 +188,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   line-height: 1.25em;
   margin: 0;
+  padding-bottom: 15px;
   text-rendering: optimizeLegibility; }
 
 h1 {
@@ -330,8 +332,7 @@ input[type="search"], input[type="email"] {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%;
-  margin-top: 140px; }
+  width: 48.93617%; }
   .m-search:last-child {
     margin-right: 0; }
   .m-search h1 {
@@ -564,6 +565,7 @@ input[type="search"], input[type="email"] {
 .m-testimonials-block_others {
   background-image: url("../img/testimonials-bg.png");
   background-image: url("../img/testimonials-bg.png");
+  background-repeat: repeat;
   color: #646464; }
   .m-testimonials-block_others .content {
     text-align: center; }
@@ -695,3 +697,33 @@ input[type="search"], input[type="email"] {
     font-size: 0.813em;
     border-radius: 0.3125em;
     margin: 0 5px; }
+
+.m-media {
+  overflow: hidden;
+  display: inline-block; }
+  .m-media {
+    display: block; }
+  .m-media .m-object {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 30.43478%; }
+    .m-media .m-object:last-child {
+      margin-right: 0; }
+  .m-media .m-body {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 65.21739%; }
+    .m-media .m-body:last-child {
+      margin-right: 0; }
+
+.m-news-block {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 50px; }
+  .m-news-block {
+    display: block; }
+  .m-news-block .m-body h6 {
+    font-size: 1.125em;
+    color: #f58220; }
