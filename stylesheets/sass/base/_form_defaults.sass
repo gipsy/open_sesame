@@ -6,4 +6,7 @@ input[type="search"], input[type="submit"], input[type="email"]
 
 input[type="search"], input[type="email"]
   padding: 0 10px
-  width: 400px
+  width: 100%
+  &:before, &:after
+    content: ""
+    display: table

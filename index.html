@@ -33,26 +33,33 @@
         <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
         -->
 
+        <!-- For IE8 media query compatibility -->
+        <!--[if lte IE 8]><script src="js/vendor/respond.js"></script><![endif]-->
+
         <link rel="stylesheet" href="stylesheets/application.css">
         <script src="js/vendor/jquery-1.10.2.min.js">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-
       <header class="m-header">
         <section class="l-single-centered-column">
           <a class="m-logo" href="/"><img src="img/logo.png"></a>
 
-          <nav role="navigation">
-            <ul class="m-header-nav">
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">RESOURCES</a></li>
-              <li><a href="#">HELP</a></li>
-              <li><a class="m-btn" href="#">Sign In</a>
-              <li><a class="m-btn is-selected" href="#">Sign Up</a>
-            </ul>
-          </nav>
+          <div class="m-mobile-header-nav">
+            <a id="responsive-menu-button" href="#sidr-main">Toggle menu</a>
+          </div>
+          <div id="navigation">
+            <nav role="navigation">
+              <ul class="m-header-nav">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">RESOURCES</a></li>
+                <li><a href="#">HELP</a></li>
+                <li><a class="m-btn" href="#">Sign In</a>
+                <li><a class="m-btn is-selected" href="#">Sign Up</a>
+              </ul>
+            </nav>
+          </div>
           <div class="m-search">
             <h1>Thousands of online courses delivered instantly</h1>
             <form id="" method="" action="">
@@ -366,6 +373,7 @@
       </footer>
 
       <script src="js/vendor/zepto.min.js"></script>
+      <script src="js/vendor/jquery.sidr.min.js">
       <script src="js/helper.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -374,6 +382,13 @@
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
           g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
           s.parentNode.insertBefore(g,s)}(document,"script"));
+      </script>
+      <script>
+          $('#responsive-menu-button').sidr({
+              name: 'sidr-main',
+              source: '#navigation',
+              side: 'right'
+          });
       </script>
     </body>
 </html>
