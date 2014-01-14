@@ -178,28 +178,28 @@
   &:first-child
     margin-right: 100px
   button
-    background: #ccc
-    border: none
-    width: 48px
-    height: 45px
-    text-indent: -900em
+    padding: 25px
+    width: 100%
+    color: white
+    border: 1px solid $light-light-gray
+    border-radius: 5px
     overflow: hidden
     position: relative
     cursor: pointer
     outline: none
-    &:hover, &.dl-active
-      background: #aaa
+    background-color: transparent
+    background-position: 5px center
   ul
-    background: #aaa
-  button:after
-    content: ''
-    position: absolute
-    width: 68%
-    height: 5px
-    background: #fff
-    top: 10px
-    left: 16%
-    box-shadow: 0 10px 0 white, 0 20px 0 white
+    background: black
+  // button:after
+  //   content: ''
+  //   position: absolute
+  //   width: 68%
+  //   height: 5px
+  //   background: #fff
+  //   top: 10px
+  //   left: 16%
+  //   box-shadow: 0 10px 0 white, 0 20px 0 white
   ul
     padding: 0
     list-style: none
@@ -211,15 +211,15 @@
     a
       display: block
       position: relative
-      padding: 15px 20px
+      padding: 25px 0
       font-size: 16px
       line-height: 20px
-      font-weight: 300
+      font-weight: bold
       color: #fff
       outline: none
 
 .no-touch .dl-menuwrapper li a:hover
-  background: rgba(255, 248, 213, 0.1)
+  background-color: rgba(255, 248, 213, 0.1)
 
 .dl-menuwrapper
   li
@@ -252,6 +252,8 @@
       right: 10px
       color: rgba(0, 0, 0, 0.15)
   .dl-menu
+    +box-sizing(border-box)
+    padding: 10px
     margin: 5px 0 0 0
     position: absolute
     width: 100%

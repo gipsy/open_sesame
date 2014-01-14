@@ -3,6 +3,7 @@
   position: relative
   height: 649px
   padding-top: 20px
+  z-index: 100
   .m-logo
     +span-columns(4)
 .m-header-nav
@@ -93,48 +94,8 @@
     .m-courses-menu-item
       +span-columns(2)
       +omega(6n)
-    [class^="icon-"],[class*=" icon-"]
-      +box-sizing(border-box)
-      +size(100% 125px)
-      background-position: center 25px
-      background-repeat: no-repeat
-      position: relative
-      &:hover, &.is-selected
-        background-color: rgba(#222222, 0.8)
-      &:hover span, &.is-selected span
-        color: $orange
-      span
-        position: absolute
-        bottom: 20px
-        width: 100%
-        text-align: center
-        color: white
-        font-weight: bold
+      a
 
-  .icon-business
-    background-image: url('../img/icon-business.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-business.png')
-  .icon-safety
-    background-image: url('../img/icon-safety.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-safety.png')
-  .icon-compliance
-    background-image: url('../img/icon-compliance.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-compliance.png')
-  .icon-technology
-    background-image: url('../img/icon-technology.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-technology.png')
-  .icon-healthcare
-    background-image: url('../img/icon-healthcare.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-healthcare.png')
-  .icon-software
-    background-image: url('../img/icon-software.png')
-    &:hover, &.is-selected
-      background-image: url('../img/icon-active-software.png')
 
   
   
