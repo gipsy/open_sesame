@@ -37,8 +37,8 @@
         <!--[if lte IE 8]><script src="js/vendor/respond.js"></script><![endif]-->
 
         <link rel="stylesheet" href="stylesheets/application.css">
-        <script src="js/vendor/jquery-1.10.2.min.js">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
     </head>
     <body>
       <header class="m-header">
@@ -70,18 +70,31 @@
             </form>
           </div>
         </section>
-        <nav class="m-menu" role="navigation">
-          <section class="l-single-centered-column">
-            <ul class="m-courses-menu">
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business"><span>Business Skills</span></a></li>
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety"><span>Safety</span></a></li>
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance"><span>Compliance</span></a></li>
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology"><span>Technology</span></a></li>
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare"><span>Healthcare</span></a></li>
-              <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software"><span>Software</span></a></li>
-            </ul>
-          </section>
-        </nav>
+        <div id="dl-menu" class="m-mobile-menu dl-menuwrapper">
+          <button class="dl-trigger icon-business">Open Menu</button>
+          <ul class="dl-menu">
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business"><span>Business Skills</span></a></li>
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety"><span>Safety</span></a></li>
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance"><span>Compliance</span></a></li>
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology"><span>Technology</span></a></li>
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare"><span>Healthcare</span></a></li>
+            <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software"><span>Software</span></a></li>
+          <ul>
+        </div>
+        <div class="m-menu">
+          <nav role="navigation">
+            <section class="l-single-centered-column">
+              <ul class="m-courses-menu">
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business"><span>Business Skills</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety"><span>Safety</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance"><span>Compliance</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology"><span>Technology</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare"><span>Healthcare</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software"><span>Software</span></a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
       </header>
 
       <section class="m-packages-block">
@@ -373,7 +386,8 @@
       </footer>
 
       <script src="js/vendor/zepto.min.js"></script>
-      <script src="js/vendor/jquery.sidr.min.js">
+      <script src="js/vendor/jquery.sidr.min.js"></script>
+      <script src="js/vendor/jquery.dlmenu.js"></script>
       <script src="js/helper.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -389,6 +403,7 @@
               source: '#navigation',
               side: 'right'
           });
+          $( '#dl-menu' ).dlmenu();
       </script>
     </body>
 </html>

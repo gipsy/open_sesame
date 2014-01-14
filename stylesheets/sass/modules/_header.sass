@@ -75,12 +75,19 @@
     &:focus
       background-color: white
 
-.m-menu
+.m-menu, .m-mobile-menu
   background: rgba(white, .05)
   position: absolute
   bottom: 0
   width: 100%
   padding: 20px 0
+.m-mobile-menu
+  display: none
+  +breakpoint($mobile)
+    display: block
+.m-menu
+  +breakpoint($mobile)
+    display: none
   .m-courses-menu
     +horizontal-list
     .m-courses-menu-item
