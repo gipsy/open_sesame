@@ -789,8 +789,7 @@ input[type="search"], input[type="email"] {
   *zoom: 1;
   background-color: #242c31;
   text-align: center;
-  padding-top: 20px;
-  margin: 10px 0; }
+  padding-top: 20px; }
   .m-signup:before, .m-signup:after {
     content: " ";
     display: table; }
