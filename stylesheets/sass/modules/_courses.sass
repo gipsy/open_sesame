@@ -11,8 +11,12 @@
 
   .m-courses-item
     +span-columns(3)
+    +omega(4n)
     border-radius: 5px
     border: 1px solid $medium-gray
+    +breakpoint($mobile)
+      +span-columns(4)
+      margin: 10px 0
     .img-wrapper
       position: relative
       .img-capture
@@ -29,6 +33,7 @@
         display: block
         border-top-left-radius: 5px
         border-top-right-radius: 5px
+        width: 100%
 
     .m-course-content
       position: relative

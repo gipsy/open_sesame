@@ -9,6 +9,11 @@
 
 .l-half-column
   +span-columns(6)
+  +breakpoint($mobile)
+    +span-columns(4)
 
 .l-third-column
   +span-columns(4)
+  +omega(3n)
+  +breakpoint($mobile)
+    +span-columns(4)

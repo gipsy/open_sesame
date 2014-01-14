@@ -212,6 +212,14 @@ body:before {
   width: 48.93617%; }
   .l-half-column:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .l-half-column {
+      float: left;
+      display: block;
+      margin-right: 6.66667%;
+      width: 100%; }
+      .l-half-column:last-child {
+        margin-right: 0; } }
 
 .l-third-column {
   float: left;
@@ -220,6 +228,18 @@ body:before {
   width: 31.91489%; }
   .l-third-column:last-child {
     margin-right: 0; }
+  .l-third-column:nth-child(3n) {
+    margin-right: 0; }
+  .l-third-column:nth-child(3n+1) {
+    clear: left; }
+  @media screen and (max-width: 480px) {
+    .l-third-column {
+      float: left;
+      display: block;
+      margin-right: 6.66667%;
+      width: 100%; }
+      .l-third-column:last-child {
+        margin-right: 0; } }
 
 body {
   color: #333333;
@@ -506,6 +526,15 @@ input[type="search"], input[type="email"] {
   bottom: 0;
   width: 100%;
   padding: 20px 0; }
+  .m-menu h5, .m-mobile-menu h5 {
+    font-size: 0.813em;
+    color: white;
+    text-align: center; }
+  .m-menu a, .m-mobile-menu a {
+    text-decoration: underline;
+    color: white;
+    font-weight: 300;
+    font-size: 0.75em; }
 
 .m-mobile-menu {
   display: none; }
@@ -610,15 +639,9 @@ input[type="search"], input[type="email"] {
     .m-packages-block .m-packages:after {
       clear: both; }
   .m-packages-block .m-packages-item {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 31.91489%;
     background-repeat: no-repeat;
     background-position: center 50px;
     padding-top: 140px; }
-    .m-packages-block .m-packages-item:last-child {
-      margin-right: 0; }
     .m-packages-block .m-packages-item:nth-child(3n) {
       margin-right: 0; }
     .m-packages-block .m-packages-item:nth-child(3n+1) {
@@ -705,6 +728,19 @@ input[type="search"], input[type="email"] {
   border: 1px solid #999999; }
   .m-courses-block .m-courses-item:last-child {
     margin-right: 0; }
+  .m-courses-block .m-courses-item:nth-child(4n) {
+    margin-right: 0; }
+  .m-courses-block .m-courses-item:nth-child(4n+1) {
+    clear: left; }
+  @media screen and (max-width: 480px) {
+    .m-courses-block .m-courses-item {
+      float: left;
+      display: block;
+      margin-right: 6.66667%;
+      width: 100%;
+      margin: 10px 0; }
+      .m-courses-block .m-courses-item:last-child {
+        margin-right: 0; } }
   .m-courses-block .m-courses-item .img-wrapper {
     position: relative; }
     .m-courses-block .m-courses-item .img-wrapper .img-capture {
@@ -720,7 +756,8 @@ input[type="search"], input[type="email"] {
     .m-courses-block .m-courses-item .img-wrapper img {
       display: block;
       border-top-left-radius: 5px;
-      border-top-right-radius: 5px; }
+      border-top-right-radius: 5px;
+      width: 100%; }
   .m-courses-block .m-courses-item .m-course-content {
     position: relative;
     padding: 13px; }
@@ -794,12 +831,16 @@ input[type="search"], input[type="email"] {
   *zoom: 1;
   background-color: #242c31;
   text-align: center;
-  padding: 23px 0; }
+  padding-top: 20px;
+  margin: 10px 0; }
   .m-signup:before, .m-signup:after {
     content: " ";
     display: table; }
   .m-signup:after {
     clear: both; }
+  .m-signup .m-signup-wrapper {
+    width: 400px;
+    margin: 10px 0; }
   .m-signup form {
     height: 100%; }
   .m-signup label {
@@ -807,13 +848,17 @@ input[type="search"], input[type="email"] {
     height: 45px;
     line-height: 40px;
     color: white;
-    font-size: 1.5em;
-    display: inline-block;
-    vertical-align: middle; }
+    font-size: 1.5em; }
   .m-signup input[type="email"], .m-signup input[type="submit"] {
     font-size: 0.813em;
     border-radius: 0.3125em;
-    margin: 0 5px; }
+    margin: 0 5px;
+    margin-bottom: 20px; }
+  .m-signup input[type="email"] {
+    width: 400px; }
+    @media screen and (max-width: 480px) {
+      .m-signup input[type="email"] {
+        width: 90%; } }
 
 .m-media {
   *zoom: 1; }
@@ -1139,8 +1184,7 @@ input[type="search"], input[type="email"] {
     background-color: transparent;
     background-position: 5px center; }
   .dl-menuwrapper ul {
-    background: black; }
-  .dl-menuwrapper ul {
+    background: black;
     padding: 0;
     list-style: none;
     -webkit-transform-style: preserve-3d;
