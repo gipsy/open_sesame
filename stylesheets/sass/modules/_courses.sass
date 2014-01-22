@@ -11,6 +11,7 @@
   .m-courses-item
     +span-columns(3)
     +omega(4n)
+    +box-sizing(border-box)
     border-radius: 5px
     border: 1px solid $medium-gray
     +breakpoint($mobile)
@@ -50,7 +51,6 @@
     .volume-available
       color: $medium-gray
       font-size: 0.563em
-      +omega
 
     .m-course-name
       padding-bottom: 8px
@@ -60,6 +60,7 @@
       font-size: 0.813em
 
     .m-course-provider
+      +inline-block
       padding-bottom: 8px
       font-weight: 400
       span

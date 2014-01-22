@@ -286,6 +286,11 @@ cite {
     content: "\2014 \00A0"; }
 
 input[type="search"], input[type="submit"], input[type="email"] {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -294,11 +299,11 @@ input[type="search"], input[type="submit"], input[type="email"] {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  height: 45px;
-  outline: none; }
+  outline: none;
+  height: 50px; }
 
 input[type="search"], input[type="email"] {
-  padding: 0 10px;
+  padding: 13px;
   width: 100%; }
   input[type="search"]:before, input[type="search"]:after, input[type="email"]:before, input[type="email"]:after {
     content: "";
@@ -690,6 +695,9 @@ input[type="search"], input[type="email"] {
   display: block;
   margin-right: 2.12766%;
   width: 23.40426%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #999999; }
   .m-courses-block .m-courses-item:last-child {
@@ -741,14 +749,18 @@ input[type="search"], input[type="email"] {
     color: #192030; }
   .m-courses-block .m-courses-item .volume-available {
     color: #999999;
-    font-size: 0.563em;
-    margin-right: 0; }
+    font-size: 0.563em; }
   .m-courses-block .m-courses-item .m-course-name {
     padding-bottom: 8px; }
   .m-courses-block .m-courses-item .m-course-content--text {
     padding-top: 3px;
     font-size: 0.813em; }
   .m-courses-block .m-courses-item .m-course-provider {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
     padding-bottom: 8px;
     font-weight: 400; }
     .m-courses-block .m-courses-item .m-course-provider span {
