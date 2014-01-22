@@ -3,7 +3,6 @@
     color: $medium-blue
   .read-all
     color: $medium-blue
-    font-size: 0.750em
 
   .m-courses
     +clearfix
@@ -17,6 +16,8 @@
     +breakpoint($mobile)
       +span-columns(4)
       margin: 10px 0
+    .m-courses-item--link
+      cursor: pointer
     .img-wrapper
       position: relative
       .img-capture
@@ -42,6 +43,7 @@
     .m-skills
       +inline-block
       padding-left: 22px
+      text-transform: uppercase
       font-size: 0.625em
       color: $medium-blue
 
@@ -50,7 +52,16 @@
       font-size: 0.563em
       +omega
 
+    .m-course-name
+      padding-bottom: 8px
+
+    .m-course-content--text
+      padding-top: 3px
+      font-size: 0.813em
+
     .m-course-provider
+      padding-bottom: 8px
+      font-weight: 400
       span
         color: $medium-blue
 
@@ -83,18 +94,34 @@
 
   .m-course-wrapper
     +clearfix
+    .m-course-wrapper--part
+      &.left
+        +span-columns(6)
+      &.right
+        +shift(6)
+      +breakpoint($tablet)
+        &.left, &.right
+          margin: 0
+          width: 100%
     .l-row
       margin-top: 60px
+      min-height: 450px
+      position: relative
+    .img-screen, .img-team
+      width: 50%
+      max-width: 550px
+      +breakpoint($tablet)
+        width: 100%
+        position: relative !important
     .img-screen
+      position: absolute
+      right: 0
     .img-team
-      margin-top: 70px
-      display: block
+      position: absolute
+      left: 0
+      bottom: 0
     p
       color: $medium-medium-gray
-    .screen
-      +size(569px 630px)
-      background: url('../img/screen.jpg') no-repeat
-      float: right
-    .info-wrapper
+    .m-course-info
       padding-top: 50px
 

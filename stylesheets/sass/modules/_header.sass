@@ -1,5 +1,6 @@
 .m-header
   background: url('../img/header-bg.jpg') center center
+  background-size: cover
   position: relative
   height: 649px
   padding-top: 20px
@@ -11,13 +12,14 @@
   padding: 0
   margin: 0
   float: right
-  > li
+  .m-header-nav-item
     +inline-block
     margin: 5px 10px
     &:last-child
       margin-right: 0px
-    a
+    .m-header-nav-item--link
       color: white
+      font-size: 13px
       font-weight: bold
   +breakpoint($mobile)
     display: none
@@ -26,7 +28,7 @@
   display: none
   +breakpoint($mobile)
     display: block
-  a
+  .m-mobile-header-nav--link
     +hide-text
     float: right
     margin-right: 5px
@@ -35,7 +37,7 @@
     background: url('../img/hamburger.png')
 
 .m-search
-  +span-columns(7)
+  +span-columns(5)
   position: absolute
   top: 25%
   h1
@@ -73,6 +75,7 @@
     border-top-left-radius: 5px
     border-bottom-left-radius: 5px
     font-size: 15px
+    font-weight: 300
     background-color: $light-gray
     &:focus
       background-color: white
@@ -83,20 +86,23 @@
   bottom: 0
   width: 100%
   padding: 20px 0
-  h5
-    font-size: 0.813em
+  .read-all
     color: white
-    text-align: center
-  a
-    text-decoration: underline
+  .m-menu-browse-all
+    text-transform: uppercase
+    font-size: 13px
     color: white
-    font-weight: 300
-    font-size: 0.75em
+
 .m-mobile-menu
   display: none
+  .m-menu-browse-all
+    text-align: center
   +breakpoint($mobile)
     display: block
+
 .m-menu
+  .m-menu-browse-all
+    text-align: left
   +breakpoint($mobile)
     display: none
   .m-courses-menu
@@ -104,7 +110,6 @@
     .m-courses-menu-item
       +span-columns(2)
       +omega(6n)
-      a
 
 
   

@@ -148,11 +148,11 @@ table {
     clear: both; }
 
 .l-content {
-  padding-top: 60px; }
+  padding: 30px 0; }
 
 .l-single-centered-column {
   *zoom: 1;
-  max-width: 68em;
+  max-width: 71.25em;
   margin-left: auto;
   margin-right: auto; }
   .l-single-centered-column:before, .l-single-centered-column:after {
@@ -219,7 +219,7 @@ h2 {
   font-size: 2em; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.875em; }
 
 h4 {
   font-size: 1.5em; }
@@ -229,6 +229,9 @@ h5 {
 
 h6 {
   font-size: 1em; }
+
+h6.tiny {
+  font-size: 0.9em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -311,9 +314,11 @@ input[type="search"], input[type="email"] {
   text-transform: uppercase; }
 
 .read-all {
-  font-size: 0.813em;
-  font-weight: 300;
-  text-decoration: underline; }
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
+  padding-left: 5px; }
 
 [class^="icon-"], [class*=" icon-"] {
   -webkit-box-sizing: border-box;
@@ -371,6 +376,7 @@ input[type="search"], input[type="email"] {
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
+  background-size: cover;
   position: relative;
   height: 649px;
   padding-top: 20px;
@@ -388,17 +394,18 @@ input[type="search"], input[type="email"] {
   padding: 0;
   margin: 0;
   float: right; }
-  .m-header-nav > li {
+  .m-header-nav .m-header-nav-item {
     display: inline-block;
     vertical-align: baseline;
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
     margin: 5px 10px; }
-    .m-header-nav > li:last-child {
+    .m-header-nav .m-header-nav-item:last-child {
       margin-right: 0px; }
-    .m-header-nav > li a {
+    .m-header-nav .m-header-nav-item .m-header-nav-item--link {
       color: white;
+      font-size: 13px;
       font-weight: bold; }
   @media screen and (max-width: 480px) {
     .m-header-nav {
@@ -409,7 +416,7 @@ input[type="search"], input[type="email"] {
   @media screen and (max-width: 480px) {
     .m-mobile-header-nav {
       display: block; } }
-  .m-mobile-header-nav a {
+  .m-mobile-header-nav .m-mobile-header-nav--link {
     color: transparent;
     font: 0/0 a;
     text-shadow: none;
@@ -423,7 +430,7 @@ input[type="search"], input[type="email"] {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 57.44681%;
+  width: 40.42553%;
   position: absolute;
   top: 25%; }
   .m-search:last-child {
@@ -473,6 +480,7 @@ input[type="search"], input[type="email"] {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 15px;
+    font-weight: 300;
     background-color: #dddddd; }
     .m-search-wrapper input[type="search"]:focus {
       background-color: white; }
@@ -483,22 +491,23 @@ input[type="search"], input[type="email"] {
   bottom: 0;
   width: 100%;
   padding: 20px 0; }
-  .m-menu h5, .m-mobile-menu h5 {
-    font-size: 0.813em;
-    color: white;
-    text-align: center; }
-  .m-menu a, .m-mobile-menu a {
-    text-decoration: underline;
-    color: white;
-    font-weight: 300;
-    font-size: 0.75em; }
+  .m-menu .read-all, .m-mobile-menu .read-all {
+    color: white; }
+  .m-menu .m-menu-browse-all, .m-mobile-menu .m-menu-browse-all {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white; }
 
 .m-mobile-menu {
   display: none; }
+  .m-mobile-menu .m-menu-browse-all {
+    text-align: center; }
   @media screen and (max-width: 480px) {
     .m-mobile-menu {
       display: block; } }
 
+.m-menu .m-menu-browse-all {
+  text-align: left; }
 @media screen and (max-width: 480px) {
   .m-menu {
     display: none; } }
@@ -571,8 +580,8 @@ input[type="search"], input[type="email"] {
   background-color: transparent;
   border-radius: 5px;
   border: 1px solid #f58220;
-  padding: 10px 22px;
-  font-size: 14px;
+  padding: 14px 28px;
+  font-size: 1em;
   color: #f58220;
   display: inline-block;
   vertical-align: baseline;
@@ -667,8 +676,7 @@ input[type="search"], input[type="email"] {
 .m-courses-block .title {
   color: #192030; }
 .m-courses-block .read-all {
-  color: #192030;
-  font-size: 0.75em; }
+  color: #192030; }
 .m-courses-block .m-courses {
   *zoom: 1;
   padding: 0; }
@@ -699,6 +707,8 @@ input[type="search"], input[type="email"] {
       margin: 10px 0; }
       .m-courses-block .m-courses-item:last-child {
         margin-right: 0; } }
+  .m-courses-block .m-courses-item .m-courses-item--link {
+    cursor: pointer; }
   .m-courses-block .m-courses-item .img-wrapper {
     position: relative; }
     .m-courses-block .m-courses-item .img-wrapper .img-capture {
@@ -726,14 +736,23 @@ input[type="search"], input[type="email"] {
     *display: inline;
     *vertical-align: auto;
     padding-left: 22px;
+    text-transform: uppercase;
     font-size: 0.625em;
     color: #192030; }
   .m-courses-block .m-courses-item .volume-available {
     color: #999999;
     font-size: 0.563em;
     margin-right: 0; }
-  .m-courses-block .m-courses-item .m-course-provider span {
-    color: #192030; }
+  .m-courses-block .m-courses-item .m-course-name {
+    padding-bottom: 8px; }
+  .m-courses-block .m-courses-item .m-course-content--text {
+    padding-top: 3px;
+    font-size: 0.813em; }
+  .m-courses-block .m-courses-item .m-course-provider {
+    padding-bottom: 8px;
+    font-weight: 400; }
+    .m-courses-block .m-courses-item .m-course-provider span {
+      color: #192030; }
   .m-courses-block .m-courses-item .m-course-price-duration {
     *zoom: 1;
     border-top: 1px solid #192030; }
@@ -770,19 +789,40 @@ input[type="search"], input[type="email"] {
     display: table; }
   .m-courses-block .m-course-wrapper:after {
     clear: both; }
+  .m-courses-block .m-course-wrapper .m-course-wrapper--part.left {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%; }
+    .m-courses-block .m-course-wrapper .m-course-wrapper--part.left:last-child {
+      margin-right: 0; }
+  .m-courses-block .m-course-wrapper .m-course-wrapper--part.right {
+    margin-left: 51.06383%; }
+  @media screen and (max-width: 768px) {
+    .m-courses-block .m-course-wrapper .m-course-wrapper--part.left, .m-courses-block .m-course-wrapper .m-course-wrapper--part.right {
+      margin: 0;
+      width: 100%; } }
   .m-courses-block .m-course-wrapper .l-row {
-    margin-top: 60px; }
+    margin-top: 60px;
+    min-height: 450px;
+    position: relative; }
+  .m-courses-block .m-course-wrapper .img-screen, .m-courses-block .m-course-wrapper .img-team {
+    width: 50%;
+    max-width: 550px; }
+    @media screen and (max-width: 768px) {
+      .m-courses-block .m-course-wrapper .img-screen, .m-courses-block .m-course-wrapper .img-team {
+        width: 100%;
+        position: relative !important; } }
+  .m-courses-block .m-course-wrapper .img-screen {
+    position: absolute;
+    right: 0; }
   .m-courses-block .m-course-wrapper .img-team {
-    margin-top: 70px;
-    display: block; }
+    position: absolute;
+    left: 0;
+    bottom: 0; }
   .m-courses-block .m-course-wrapper p {
     color: #646464; }
-  .m-courses-block .m-course-wrapper .screen {
-    width: 569px;
-    height: 630px;
-    background: url("../img/screen.jpg") no-repeat;
-    float: right; }
-  .m-courses-block .m-course-wrapper .info-wrapper {
+  .m-courses-block .m-course-wrapper .m-course-info {
     padding-top: 50px; }
 
 .m-signup {
@@ -880,8 +920,9 @@ input[type="search"], input[type="email"] {
         padding-opposite-position(left): 0; }
       .m-footer .m-footer-nav li.last {
         padding-opposite-position(left): 0; }
-  .m-footer .m-footer-nav-item {
+  .m-footer .m-footer-nav-item > a {
     font-weight: bold;
+    font-size: 0.9em;
     margin: 0 10px; }
   .m-footer .m-footer-sitemap {
     margin: 0;
@@ -927,10 +968,10 @@ input[type="search"], input[type="email"] {
       .m-footer .m-footer-sitemap-col .ellipsis:after {
         background: white;
         background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#242c31), color-stop(50%, #242c31));
-        background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-        background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-        background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-        background: linear, to right, rgba(255, 255, 255, 0), white 50%, white;
+        background: -moz-linear-gradient(to right, rgba(0, 0, 0, 0), #242c31 50%, white);
+        background: -o-linear-gradient(to right, rgba(0, 0, 0, 0), #242c31 50%, #242c31);
+        background: -ms-linear-gradient(to right, rgba(0, 0, 0, 0), #242c31 50%, #242c31);
+        background: linear, to right, rgba(0, 0, 0, 0), #242c31 50%, #242c31;
         content: "\02026";
         float: right;
         left: 100%;

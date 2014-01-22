@@ -49,17 +49,17 @@
           <a class="m-logo" href="/"><img src="img/logo.png"></a>
 
           <div class="m-mobile-header-nav">
-            <a id="responsive-menu-button" href="#sidr-main">Toggle menu</a>
+            <a id="responsive-menu-button" class="m-mobile-header-nav--link" href="#sidr-main">Toggle menu</a>
           </div>
           <div id="navigation">
             <nav role="navigation">
               <ul class="m-header-nav">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">RESOURCES</a></li>
-                <li><a href="#">HELP</a></li>
-                <li><a class="m-btn" href="#">Sign In</a>
-                <li><a class="m-btn is-selected" href="#">Sign Up</a>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">ABOUT</a></li>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">BLOG</a></li>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">RESOURCES</a></li>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">HELP</a></li>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn" href="/open_sesame">Sign In</a>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn is-selected" href="/open_sesame">Sign Up</a>
               </ul>
             </nav>
           </div>
@@ -74,7 +74,7 @@
           </div>
         </section>
         <div id="dl-menu" class="m-mobile-menu dl-menuwrapper">
-          <h5>Popular Online Courses <a href="#">BROWSE ALL</a></h5>
+          <h5 class="m-menu-browse-all">Popular Online Courses <a class="read-all" href="#"> BROWSE ALL</a></h5>
           <button class="dl-trigger btn-alt">Business Skills</button>
           <ul class="dl-menu">
             <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business left-oriented">Business Skills</a></li>
@@ -88,13 +88,14 @@
         <div class="m-menu">
           <nav role="navigation">
             <section class="l-single-centered-column">
+              <h5 class="m-menu-browse-all">Popular Online Courses <a class="read-all" href="#"> BROWSE ALL</a></h5>
               <ul class="m-courses-menu">
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business centered"><span>Business Skills</span></a></li>
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety centered"><span>Safety</span></a></li>
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance centered"><span>Compliance</span></a></li>
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology centered"><span>Technology</span></a></li>
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare centered"><span>Healthcare</span></a></li>
-                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software centered"><span>Software</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-business centered uppercase"><span>Business Skills</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-safety centered uppercase"><span>Safety</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-compliance centered uppercase"><span>Compliance</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-technology centered uppercase"><span>Technology</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-healthcare centered uppercase"><span>Healthcare</span></a></li>
+                <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software centered uppercase"><span>Software</span></a></li>
               </ul>
             </section>
           </nav>
@@ -139,42 +140,46 @@
           <h6 class="title small uppercase">Recently Added Courses <a class="read-all uppercase" href="#">(BROWSE ALL)</a></h6>
           <ul class="m-courses">
             <li class="m-courses-item">
-              <div class="img-wrapper">
-                <img src="img/content-images/1.jpg">
-                <div class="img-capture">Free Preview</div>
-              </div>
-              <div class="m-course-content">
-                <span class="m-skills icon-skills-business">Business Skills</span>
-                <h5>Effective Time Management</h5>
-                <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">Timely Intervention</a></span></h6>
-                <img src="img/stars.png">
-                <p>The ability to effectively and efficiently use time is essential skill for every manager and team leader.</p>
-              </div>
-              <div class="m-course-price-duration">
-                <span class="price">$35<sup>.00</sup> <em>/ User</em></span>
-                <span class="duration">1 hr 00 mins</span>
-              </div>
+              <a class="m-courses-item--link">
+                <div class="img-wrapper">
+                  <img src="img/content-images/1.jpg">
+                  <div class="img-capture">Free Preview</div>
+                </div>
+                <div class="m-course-content">
+                  <span class="m-skills icon-skills-business">Business Skills</span>
+                  <h5 class="m-course-name">Effective Time Management</h5>
+                  <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">Timely Intervention</a></span></h6>
+                  <img src="img/stars.png">
+                  <p class="m-course-content--text">The ability to effectively and efficiently use time is essential skill for every manager and team leader.</p>
+                </div>
+                <div class="m-course-price-duration">
+                  <span class="price">$35<sup>.00</sup> <em>/ User</em></span>
+                  <span class="duration">1 hr 00 mins</span>
+                </div>
+              </a>
             </li>
             <li class="m-courses-item">
-              <div class="img-wrapper">
-                <img src="img/content-images/2.jpg">
-                <div class="img-capture">Free Preview</div>
-              </div>
-              <div class="m-course-content">
-                <span class="m-skills icon-skills-safety">Safety</span>
-                <span class="volume-available">Volume Pricing Available</span>
-                <h5>A Commitment to Safety</h5>
-                <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">CDT MicroGraphics Inc</a></span></h6>
-                <img src="img/stars.png">
-                <p>This training course on forklift safety outlines the dos and don't of forklift operation.</p>
-              </div>
-              <div class="m-course-price-duration">
-                <span class="price">$25<sup>.00</sup> <em>/ User</em></span>
-                <span class="duration">1 hr 00 mins</span>
-              </div>
+              <a class="m-courses-item--link" href="#">
+                <div class="img-wrapper">
+                  <img src="img/content-images/2.jpg">
+                  <div class="img-capture">Free Preview</div>
+                </div>
+                <div class="m-course-content">
+                  <span class="m-skills icon-skills-safety">Safety</span>
+                  <span class="volume-available">Volume Pricing Available</span>
+                  <h5 class="m-course-name">A Commitment to Safety</h5>
+                  <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">CDT MicroGraphics Inc</a></span></h6>
+                  <img src="img/stars.png">
+                  <p class="m-course-content--text">This training course on forklift safety outlines the dos and don't of forklift operation.</p>
+                </div>
+                <div class="m-course-price-duration">
+                  <span class="price">$25<sup>.00</sup> <em>/ User</em></span>
+                  <span class="duration">1 hr 00 mins</span>
+                </div>
+              </li>
             </li>
             <li class="m-courses-item">
-              <a href="#">
+              <a class="m-courses-item--link" href="#">
                 <div class="img-wrapper">
                   <img src="img/content-images/3.jpg">
                   <div class="img-capture">Free Preview</div>
@@ -182,10 +187,10 @@
                 <div class="m-course-content">
                   <span class="m-skills icon-skills-safety">Safety</span>
                   <span class="volume-available">Volume Pricing Available</span>
-                  <h5>Forklift Operation Safety</h5>
+                  <h5 class="m-course-name">Forklift Operation Safety</h5>
                   <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">360Training.com</a></span></h6>
                   <img src="img/stars.png">
-                  <p>Accidents in long-term care facilities carry a high price. Focusing on preventing accidents before they oc...</p>
+                  <p class="m-course-content--text">Accidents in long-term care facilities carry a high price. Focusing on preventing accidents before they oc...</p>
                 </div>
                 <div class="m-course-price-duration">
                   <span class="price">$6<sup>.99</sup> <em>/ User</em></span>
@@ -194,7 +199,7 @@
               </a>
             </li>
             <li class="m-courses-item">
-              <a href="#">
+              <a class="m-courses-item--link" href="#">
                 <div class="img-wrapper">
                   <img src="img/content-images/4.jpg">
                   <div class="img-capture">Free Preview</div>
@@ -202,10 +207,10 @@
                 <div class="m-course-content">
                   <span class="m-skills icon-skills-industry">Industry Specific</span>
                   <span class="volume-available">Volume Pricing Available</span>
-                  <h5>Mine Ventilation System Design</h5>
+                  <h5 class="m-course-name">Mine Ventilation System Design</h5>
                   <h6 class="m-course-provider"><span>By</span>&nbsp;<span><a href="#">team@octavesim.com</a></span></h6>
                   <img src="img/stars.png">
-                  <p>Through this course user will get an understanding of mine ventilation systems, user will be able to design...</p>
+                  <p class="m-course-content--text">Through this course user will get an understanding of mine ventilation systems, user will be able to design...</p>
                 </div>
                 <div class="m-course-price-duration">
                   <span class="price">$99<sup>.95</sup> <em>/ User</em></span>
@@ -214,9 +219,12 @@
               </a>
             </li>
           </ul>
-          <section class="m-course-wrapper">
-            <div class="l-row">
-              <div class="l-half-column">
+        </section><!-- end of l-single-centered-column -->
+        <section class="m-course-wrapper">
+          <div class="l-row">
+            <img class="img-screen" src="img/screen.jpg">
+            <div class="l-single-centered-column l-content">
+              <div class="m-course-wrapper--part left">
                 <div class="info-wrapper">
                   <h3>Find a course. Quickly.</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
@@ -224,31 +232,31 @@
                 </div>
                 <a href="#" class="m-btn-orange">Take the Tour</a>
               </div>
-              <div class="l-half-column">
-                <img class="img-screen" src="img/screen.jpg">
-              </div>
             </div>
-            <div class="l-row">
-              <div class="l-half-column">
-                <img class="img-team" src="img/team-photo.jpg">
-              </div>
-              <div class="l-half-column">
-                <h3>World-Class Customer Experience</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+          <div class="l-row">
+            <img class="img-team" src="img/team-photo.jpg">
+            <div class="l-single-centered-column l-content">
+              <div class="m-course-wrapper--part right">
+                <div class="m-course-info">
+                  <h3>World-Class Customer Experience</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
                 <a href="#" class="m-btn-orange">Get Started</a>
               </div>
             </div>
-          </section>
+          </div>
         </section>
-        <section class="m-signup">
-          <form id="" method="" action="">
-            <label>Sign up for our monthly newsletter</label>
-            <input type="email" name="email" placeholder="Enter your email address">
-            <input class="m-btn-orange" type="submit" value="Submit">
-          </form>
+      </section>
+      <section class="m-signup">
+        <form id="" method="" action="">
+          <label>Sign up for our monthly newsletter</label>
+          <input type="email" name="email" placeholder="Enter your email address">
+          <input class="m-btn-orange" type="submit" value="Submit">
+        </form>
 
-        </section>
+      </section>
       </section>
 
       <section class="m-testimonials-block_others">
@@ -262,13 +270,13 @@
       <section class="m-news-block">
         <section class="l-single-centered-column l-content">
           <section class="l-half-column">
-            <h5>Featured Blog Post</h5>
+            <h6 class="tiny uppercase">Featured Blog Post</h6>
             <div class="m-media">
               <div class="m-object">
                 <img src="img/content-images/5.jpg">
               </div>
               <div class="m-body">
-                <h6>There's Still Time for Learning in 2013</h4>
+                <h6>There's Still Time for Learning in 2013</h6>
                 <p>Want to squeeze in some learning for your team before the end of the year, but worried you’re out of time? Have no fear! OpenSesame has 
                 you covered.</p>
                 <a class="m-btn-orange" href="#">Seller Details</a>
@@ -276,13 +284,13 @@
             </div>
           </section>
           <section class="l-half-column">
-            <h5>Featured Seller</h5>
+            <h6 class="tiny uppercase">Featured Seller</h6>
             <div class="m-media">
               <div class="m-object">
                 <img src="img/content-images/6.jpg">
               </div>
               <div class="m-body">
-                <h6>Timely Intervention</h4>
+                <h6>Timely Intervention</h6>
                 <p>Timely Intervention is based in Berkshire, England and has over 15 years’ experience delivering, designing, and deploying awarding wining learning solutions.</p>
                 <a class="m-btn-orange" href="#">Seller Details</a>
               </div>
@@ -311,72 +319,72 @@
             <ul class="m-footer-sitemap">
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5 class="">Academic</h5>
-                  <li class="ellipsis"><a href="#">K-12</a></li>
-                  <li class="ellipsis"><a href="#">Language Training</a></li>
-                  <li class="ellipsis"><a href="#">Mathematics</a></li>
-                  <li class="ellipsis"><a href="#">Science</a></li>
-                  <li class="ellipsis"><a href="#">Writing</a></li>
+                  <h5 class="uppercase">Academic</h5>
+                  <li class=""><a href="#">K-12</a></li>
+                  <li class=""><a href="#">Language Training</a></li>
+                  <li class=""><a href="#">Mathematics</a></li>
+                  <li class=""><a href="#">Science</a></li>
+                  <li class=""><a href="#">Writing</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>Business Skills</h5>
-                  <li class="ellipsis"><a href="#">20 for $20</a></li>
-                  <li class="ellipsis"><a href="#">Assessments</a></li>
-                  <li class="ellipsis"><a href="#">Business Operations</a></li>
-                  <li class="ellipsis"><a href="#">Business Strategy</a></li>
-                  <li class="ellipsis"><a href="#">Management</a></li>
+                  <h5 class="uppercase">Business Skills</h5>
+                  <li class=""><a href="#">20 for $20</a></li>
+                  <li class=""><a href="#">Assessments</a></li>
+                  <li class=""><a href="#">Business Operations</a></li>
+                  <li class=""><a href="#">Business Strategy</a></li>
+                  <li class=""><a href="#">Management</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>Compliance</h5>
-                  <li class="ellipsis"><a href="#">AB 1825</a></li>
-                  <li class="ellipsis"><a href="#">Business Law</a></li>
-                  <li class="ellipsis"><a href="#">Diversity</a></li>
-                  <li class="ellipsis"><a href="#">Sexual Harassment</a></li>
-                  <li class="ellipsis"><a href="#">Workplace Harassment</a></li>
+                  <h5 class="uppercase">Compliance</h5>
+                  <li class=""><a href="#">AB 1825</a></li>
+                  <li class=""><a href="#">Business Law</a></li>
+                  <li class=""><a href="#">Diversity</a></li>
+                  <li class=""><a href="#">Sexual Harassment</a></li>
+                  <li class=""><a href="#">Workplace Harassment</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>HealthCare</h5>
-                  <li class="ellipsis"><a href="#">Bloodborne Pathogens</a></li>
-                  <li class="ellipsis"><a href="#">Diabetes</a></li>
-                  <li class="ellipsis"><a href="#">Healthcare Administration</a></li>
-                  <li class="ellipsis"><a href="#">Infectious Diseases</a></li>
-                  <li class="ellipsis"><a href="#">Nursing</a></li>
+                  <h5 class="uppercase">HealthCare</h5>
+                  <li class=""><a href="#">Bloodborne Pathogens</a></li>
+                  <li class=""><a href="#">Diabetes</a></li>
+                  <li class=""><a href="#">Healthcare Administration</a></li>
+                  <li class=""><a href="#">Infectious Diseases</a></li>
+                  <li class=""><a href="#">Nursing</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>Industry Specific</h5>
-                  <li class="ellipsis"><a href="#">Construction</a></li>
-                  <li class="ellipsis"><a href="#">Electrical</a></li>
-                  <li class="ellipsis"><a href="#">Food Service</a></li>
-                  <li class="ellipsis"><a href="#">Manufacturing</a></li>
-                  <li class="ellipsis"><a href="#">Retail</a></li>
+                  <h5 class="uppercase">Industry Specific</h5>
+                  <li class=""><a href="#">Construction</a></li>
+                  <li class=""><a href="#">Electrical</a></li>
+                  <li class=""><a href="#">Food Service</a></li>
+                  <li class=""><a href="#">Manufacturing</a></li>
+                  <li class=""><a href="#">Retail</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>IT</h5>
-                  <li class="ellipsis"><a href="#">Certification Test Prep</a></li>
-                  <li class="ellipsis"><a href="#">CompTIA Network+</a></li>
-                  <li class="ellipsis"><a href="#">Database</a></li>
-                  <li class="ellipsis"><a href="#">IT Support</a></li>
-                  <li class="ellipsis"><a href="#">Social Media</a></li>
+                  <h5 class="uppercase">IT</h5>
+                  <li class=""><a href="#">Certification Test Prep</a></li>
+                  <li class=""><a href="#">CompTIA Network+</a></li>
+                  <li class=""><a href="#">Database</a></li>
+                  <li class=""><a href="#">IT Support</a></li>
+                  <li class=""><a href="#">Social Media</a></li>
                 </ul>
               </li>
               <li class="m-footer-sitemap-col">
                 <ul>
-                  <h5>Safety</h5>
-                  <li class="ellipsis"><a href="#">Alcohol & Food Safety</a></li>
-                  <li class="ellipsis"><a href="#">Ergonomics</a></li>
-                  <li class="ellipsis"><a href="#">Forklift Safety</a></li>
-                  <li class="ellipsis"><a href="#">OSHA</a></li>
-                  <li class="ellipsis"><a href="#">Workplace Safety</a></li>
+                  <h5 class="uppercase">Safety</h5>
+                  <li class=""><a href="#">Alcohol & Food Safety</a></li>
+                  <li class=""><a href="#">Ergonomics</a></li>
+                  <li class=""><a href="#">Forklift Safety</a></li>
+                  <li class=""><a href="#">OSHA</a></li>
+                  <li class=""><a href="#">Workplace Safety</a></li>
                 </ul>
               </li>
             </ul>
