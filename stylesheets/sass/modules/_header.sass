@@ -11,7 +11,10 @@
   list-style-type: none
   padding: 0
   margin: 0
-  float: right
+  margin-top: -13px
+  text-align: right
+  +span-columns(8)
+  +omega
   .m-header-nav-item
     +inline-block
     margin: 5px 10px
@@ -62,10 +65,13 @@
     outline: none
 
   input[type="submit"]
+    +retina-image('../img/icon-search', 30px 30px)
     border-top-right-radius: 5px
     border-bottom-right-radius: 5px
     margin-left: -6px
-    background: $orange url(../img/icon-search.png) center center no-repeat
+    background-color: $orange
+    background-repeat: no-repeat
+    background-position: center center
     cursor: pointer
     text-indent: -9999px
     width: 45px
