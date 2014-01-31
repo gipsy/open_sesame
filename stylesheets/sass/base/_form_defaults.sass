@@ -1,9 +1,15 @@
-input[type="search"], input[type="submit"], input[type="email"]
+input[type="search"], input[type="email"], input[type="text"]
   +inline-block
   +box-sizing(border-box)
   +appearance(none)
+  width: 100%
   outline: none
-  height: 50px
+
+select
+  +box-sizing(border-box)
+  +inline-block
+  width: 100%
+  outline: none
 
 input[type="search"], input[type="email"]
   padding: 13px
@@ -11,3 +17,6 @@ input[type="search"], input[type="email"]
   &:before, &:after
     content: ""
     display: table
+
+label
+  margin-right: 10px

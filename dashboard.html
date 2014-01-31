@@ -68,13 +68,40 @@
         <section class="l-single-centered-column">
           <h4>Your Reports</h4>
           <div id="tabs" class="m-tabs">
-            <ul class="m-tabs--list">
-              <li><a class="m-tabs--list-item" href="#overview"><span>Overview</span></a></li>
-              <li><a class="m-tabs--list-item" href="#charges"><span>PPU Charges</span></a></li>
-              <li><a class="m-tabs--list-item" href="#launchHistory"><span>PPU Launch History</span></a></li>
-              <li><a class="m-tabs--list-item" href="#studentActivity"><span>Student Activity</span></a></li>
-              <li><a class="m-tabs--list-item" href="#orderHistory"><span>Order History</span></a></li>
-            </ul>
+            <div class="m-tabs--wrapper">
+              <ul class="m-tabs--list">
+                <li><a class="m-tabs--list-item" href="#overview"><span>Overview</span></a></li>
+                <li><a class="m-tabs--list-item" href="#charges"><span>PPU Charges</span></a></li>
+                <li><a class="m-tabs--list-item" href="#launchHistory"><span>PPU Launch History</span></a></li>
+                <li><a class="m-tabs--list-item" href="#studentActivity"><span>Student Activity</span></a></li>
+                <li><a class="m-tabs--list-item" href="#orderHistory"><span>Order History</span></a></li>
+              </ul>
+              <div class="m-filter">
+                <form id="" method="" action="">
+                  <div class="m-filter-input-wrapper">
+                    <label class="m-filter-label" for="user">Filter by User</label>
+                    <div class="m-filter-input-controls">
+                      <input type="text" name="user">
+                    </div>
+                  </div>
+                  <div class="m-filter-input-wrapper">
+                    <label class="m-filter-label" for="course">Filter by Course</label>
+                    <div class="m-filter-input-controls">
+                      <input type="text" name="course">
+                    </div>
+                  </div>
+                  <div class="m-filter-input-wrapper">
+                    <label class="m-filter-label" for="course">Delivery Preference</label>
+                    <div class="m-filter-input-controls">
+                      <select>
+                        <options>test</options>
+                        <options>test2</options>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
             <div id="overview">
               <section class="l-half-column">
                 <section class="m-overview-block">
