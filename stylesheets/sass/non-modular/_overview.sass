@@ -1,0 +1,24 @@
+.m-overview-block
+  text-align: center
+  border: 3px solid $light-light-blue
+  border-radius: $default-border-radius
+
+.m-overview--middle
+  +clearfix
+  border-top: 1px solid $light-light-blue
+  border-bottom: 1px solid $light-light-blue
+  .icon-users
+    height: 45px
+    line-height: 45px
+
+.m-overview--bottom
+  +clearfix
+  .m-overview--price
+    +float(left)
+    width: 50%
+    font-size: 1.313em
+    font-weight: bold
+    padding: 22px 0
+    &.per-user
+      border-right: 1px solid $light-light-blue
+    &.per-month

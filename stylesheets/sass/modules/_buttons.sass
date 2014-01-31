@@ -1,7 +1,7 @@
 %m-btn
+  +inline-block
   border-radius: 5px
   border: 1px solid white
-  +inline-block
 
 .m-btn
   @extend %m-btn
@@ -12,21 +12,45 @@
     background-color: $orange
 
 .m-btn-alt
-  border-radius: 5px
   +inline-block
+  border-radius: 5px
   &:hover, &.is-selected
     background-color: rgba(#222222, 0.8)
     color: $orange
     border: 1px solid $orange
 
 .m-btn-orange
+  +inline-block
   background-color: transparent
   border-radius: 5px
   border: 1px solid $orange
   padding: 14px 28px
   font-size: 1em
   color: $orange
-  +inline-block
   &:hover, &.is-selected
     background-color: $orange
     color: white
+
+.m-btn-square
+  +inline-block
+  background-color: $orange
+  padding: 9px 22px
+  color: white
+  border-radius: 3px
+  border: 1px solid $orange
+  border-top-color: $light-orange
+  border-left-color: $light-orange
+  &:hover, &.is-selected
+    +linear-gradient($orange 0, lighten($orange, 3%) 49%, darken($orange, 3%) 53%)
+    border: 1px solid $medium-orange
+    color: white
+
+.m-btn-square-dark
+  @extend .m-btn-square
+  background-color: $medium-blue
+  border: 1px solid $medium-blue
+  border-top-color: $light-blue
+  border-left-color: $light-blue
+  &:hover, &.is-selected
+    +linear-gradient($medium-blue 0, lighten($medium-blue, 3%) 49%, darken($medium-blue, 3%) 53%)
+    border: 1px solid $dark-dark-blue
