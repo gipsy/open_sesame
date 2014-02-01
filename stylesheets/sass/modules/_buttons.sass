@@ -45,6 +45,10 @@
     border: 1px solid $medium-orange
     color: white
 
+.m-btn-square--small
+  @extend .m-btn-square
+  padding: 4px 16px
+
 .m-btn-square-dark
   @extend .m-btn-square
   background-color: $medium-blue
@@ -54,3 +58,9 @@
   &:hover, &.is-selected
     +linear-gradient($medium-blue 0, lighten($medium-blue, 3%) 49%, darken($medium-blue, 3%) 53%)
     border: 1px solid $dark-dark-blue
+
+.m-btn-square-dark--full-width
+  @extend .m-btn-square-dark
+  text-align: center
+  margin: 5px 0
+  width: 100%
