@@ -33,6 +33,7 @@
 
 .m-btn-square
   +inline-block
+  text-shadow: 0px -2px 0px darken($orange, 10%)
   background-color: $orange
   padding: 9px 22px
   color: white
@@ -48,9 +49,11 @@
 .m-btn-square--small
   @extend .m-btn-square
   padding: 4px 16px
+  font-size: 0.750em
 
 .m-btn-square-dark
   @extend .m-btn-square
+  text-shadow: 0px -2px 0px darken($medium-blue, 10%)
   background-color: $medium-blue
   border: 1px solid $medium-blue
   border-top-color: $light-blue
@@ -59,8 +62,14 @@
     +linear-gradient($medium-blue 0, lighten($medium-blue, 3%) 49%, darken($medium-blue, 3%) 53%)
     border: 1px solid $dark-dark-blue
 
-.m-btn-square-dark--full-width
+.m-btn-round-dark
   @extend .m-btn-square-dark
+  border-radius: 5px
+  background-color: $dark-blue
+  border-color: $dark-dark-blue
+
+.m-btn-round-dark--full-width
+  @extend .m-btn-round-dark
   text-align: center
   margin: 5px 0
   width: 100%
