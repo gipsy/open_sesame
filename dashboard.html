@@ -68,12 +68,12 @@
         <section class="l-single-centered-column">
           <h4>Your Reports</h4>
           <div id="reports_tabs">
-            <ul class="m-tabs--list">
-              <li><a class="m-tabs--list-item" href="#overview"><span>Overview</span></a></li>
-              <li><a class="m-tabs--list-item" href="#charges"><span>PPU Charges</span></a></li>
-              <li><a class="m-tabs--list-item" href="#launchHistory"><span>PPU Launch History</span></a></li>
-              <li><a class="m-tabs--list-item" href="#studentActivity"><span>Student Activity</span></a></li>
-              <li><a class="m-tabs--list-item" href="#orderHistory"><span>Order History</span></a></li>
+            <ul class="m-tabs-list">
+              <li><a class="m-tabs-list--item" href="#overview"><span>Overview</span></a></li>
+              <li><a class="m-tabs-list--item" href="#charges"><span>PPU Charges</span></a></li>
+              <li><a class="m-tabs-list--item" href="#launchHistory"><span>PPU Launch History</span></a></li>
+              <li><a class="m-tabs-list--item" href="#studentActivity"><span>Student Activity</span></a></li>
+              <li><a class="m-tabs-list--item" href="#orderHistory"><span>Order History</span></a></li>
             </ul>
             <div class="m-filter">
               <form id="" method="" action="">
@@ -130,9 +130,59 @@
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             </div>
             <div id="studentActivity" class="m-tabs">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+              <table class="m-table">
+                <!-- <colgroup /> -->
+                <!-- <colgroup span="2" title="title" /> -->
+                <thead>
+                  <tr>
+                    <th class="text-left" scope="col">User</th>
+                    <th class="text-center" scope="col">Date Added</th>
+                    <th class="text-center" scope="col">Last Access</th>
+                    <th class="text-center" scope="col">Completed</th>
+                    <th class="text-center" scope="col">Enrolled</th>
+                    <th class="text-left" scope="col">Action</th>
+                  </tr>
+                </thead>
+                <!-- <tfoot> -->
+                <!--   <tr> -->
+                <!--     <td>Darth Vader</td> -->
+                <!--     <td>Dark</td> -->
+                <!--     <td>Sith</td> -->
+                <!--   </tr> -->
+                <!-- </tfoot> -->
+                <tbody>
+                  <tr>
+                    <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                      aaron.bridges@opensesame.com</a></td>
+                    <td class="text-center"><time>7/16/12</time></td>
+                    <td class="text-center">6/20/13</td>
+                    <td class="text-center"><strong>2</strong></td>
+                    <td class="text-center"><strong>5</strong></td>
+                    <td class="text-left"><a id="toggle_details" href="#"><strong>View Detail</strong></a></td>
+                  </tr>
+                  <tbody id="details" style="display: none;">
+                    <tr class="m-table-details">
+                      <td class="text-right" colspan="4"><a class="m-table--link" href="#">Safety Training 101</a></td>
+                      <td>Enrolled on June 23, 2013</td>
+                      <td><a class="m-btn-square-dark" href="#">Resend Invite</a>
+                    </tr>
+                    <tr class="m-table-details">
+                      <td class="text-right" colspan="4"><a class="m-table--link" href="#">Sexual Harrassment</a></td>
+                      <td>Enrolled on June 23, 2013</td>
+                      <td><a class="m-btn-square" href="#">Certificate</a></td>
+                    </tr>
+                  </tbody>
+                  <tr>
+                    <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                      aaron.bridges@opensesame.com</a></td>
+                    <td class="text-center"><time>7/16/12</time></td>
+                    <td class="text-center"><time>6/20/13</time></td>
+                    <td class="text-center"><strong>2</strong></td>
+                    <td class="text-center"><strong>5</strong></td>
+                    <td class="text-left"><a href="#"><strong>View Detail</strong</a></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div id="orderHistory" class="m-tabs">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -146,11 +196,11 @@
       <section class="l-single-centered-column l-content">
         <h4>Your Courses</h4>
         <div id="courses_tabs">
-          <ul class="m-tabs--list">
-            <li><a class="m-tabs--list-item" href="#purchasedCourses"><span>Purchased Courses</span></a></li>
-            <li><a class="m-tabs--list-item" href="#openPlus"><span>OpenSesame+</span></a></li>
-            <li><a class="m-tabs--list-item" href="#courses"><span>PPU Courses</span></a></li>
-            <li><a class="m-tabs--list-item" href="#demoCourses"><span>Demo Courses</span></a></li>
+          <ul class="m-tabs-list">
+            <li><a class="m-tabs-list--item" href="#purchasedCourses"><span>Purchased Courses</span></a></li>
+            <li><a class="m-tabs-list--item" href="#openPlus"><span>OpenSesame+</span></a></li>
+            <li><a class="m-tabs-list--item" href="#courses"><span>PPU Courses</span></a></li>
+            <li><a class="m-tabs-list--item" href="#demoCourses"><span>Demo Courses</span></a></li>
           </ul>
           <div class="m-filter">
             <form id="" method="" action="">
@@ -183,42 +233,70 @@
           </div>
 
           <div id="purchasedCourses" class="m-tabs">
-            <section class="m-courses-list">
-              <div class="m-media--small">
-                <div class="m-object">
-                  <img src="img/content-images/7.jpg">
-                </div>
-                <div class="m-body">
-                  <div class="m-courses-list--info">
-                    <div class="m-courses-list--top">
-                      <h6>Ladder Safety</h6>
-                      <p>By <span>Timely Intervention</span></p>
+            <ul class="m-courses-list">
+              <li class="l-content">
+                <div class="m-media--small">
+                  <div class="m-object">
+                    <img src="img/content-images/7.jpg">
+                  </div>
+                  <div class="m-body">
+                    <div class="m-courses-list--info">
+                      <div class="m-courses-list--top">
+                        <h6>Ladder Safety</h6>
+                        <p>By <span>Timely Intervention</span></p>
+                      </div>
+                      <div class="m-courses-list--middle">
+                        <strong><span class="quiet-color">Seats used:</span>&nbsp;&nbsp;<span class="accent-color">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="quiet-color">License type:</span>&nbsp;&nbsp;<span class="accent-color">Site License</span></strong>
+                      </div>
+                      <div class="m-courses-list--bottom">
+                        <p><strong><span class="quiet-color">License Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
+                        <p><strong><span class="quiet-color">Course Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
+                      </div>
                     </div>
-                    <div class="m-courses-list--middle">
-                      <strong><span class="quiet-color">Seats used:</span>&nbsp;&nbsp;<span class="accent-color">9</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="quiet-color">License type:</span>&nbsp;&nbsp;<span class="accent-color">Site License</span></strong>
-                    </div>
-                    <div class="m-courses-list--bottom">
-                      <p><strong><span class="quiet-color">License Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
-                      <p><strong><span class="quiet-color">Course Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
+                    <div class="m-courses-list--actions">
+                      <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
+                      <a href="#" class="m-btn-round-dark--full-width">Invite Team</a>
+                      <a href="#" class="m-btn-round-dark--full-width">Manage</a>
                     </div>
                   </div>
-                  <div class="m-courses-list--actions">
-                    <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
-                    <a href="#" class="m-btn-round-dark--full-width">Invite Team</a>
-                    <a href="#" class="m-btn-round-dark--full-width">Manage</a>
+                </div>
+                <div class="m-notification">
+                  <section class="l-half-column">
+                    <span class="icon-alert left-oriented small">A new version of this course has been published</span>
+                  </section>
+                  <section class="l-half-column text-right">
+                    <a href="#" class="m-btn-square--small">Preview New Version</a>
+                    <a href="#" class="m-btn-square--small">Upgrade Course</a>
+                  </section>
+                </div>
+              </li>
+              <li class="l-content">
+                <div class="m-media--small">
+                  <div class="m-object">
+                    <img src="img/content-images/7.jpg">
+                  </div>
+                  <div class="m-body">
+                    <div class="m-courses-list--info">
+                      <div class="m-courses-list--top">
+                        <h6>Ladder Safety</h6>
+                        <p>By <span>Timely Intervention</span></p>
+                      </div>
+                      <div class="m-courses-list--middle">
+                        <strong><span class="quiet-color">Seats used:</span>&nbsp;&nbsp;<span class="accent-color">72</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="quiet-color">License type:</span>&nbsp;&nbsp;<span class="accent-color">Site License</span></strong>
+                      </div>
+                      <div class="m-courses-list--bottom">
+                        <p><strong><span class="quiet-color">License Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
+                        <p><strong><span class="quiet-color">Course Guid:</span>&nbsp;&nbsp;<span>5239f942-92034j98-29389s92-23489n</span></strong></p>
+                      </div>
+                    </div>
+                    <div class="m-courses-list--actions">
+                      <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
+                      <a href="#" class="m-btn-round-dark--full-width">Invite Team</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="m-notification">
-                <section class="l-half-column">
-                  <span class="icon-alert left-oriented small">A new version of this course has been published</span>
-                </section>
-                <section class="l-half-column text-right">
-                  <a href="#" class="m-btn-square--small">Preview New Version</a>
-                  <a href="#" class="m-btn-square--small">Upgrade Course</a>
-                </section>
-              </div>
-            </section>
+              </li>
+            </ul>
           </div>
           <div id="openPlus" class="m-tabs">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -249,8 +327,12 @@
           s.parentNode.insertBefore(g,s)}(document,"script"));
       </script>
       <script>
-        $( "#reports_tabs" ).tabs();
-        $( "#courses_tabs").tabs();
+        $( "#reports_tabs, #courses_tabs" ).tabs();
+        $( "#toggle_details" ).click(function() {
+            $( "#details" ).toggle( "easy-in", function() {
+            // Animation complete.
+            });
+        });
       </script>
     </body>
 </html>
