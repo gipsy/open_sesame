@@ -140,6 +140,7 @@
                     <th class="text-center" scope="col">Last Access</th>
                     <th class="text-center" scope="col">Completed</th>
                     <th class="text-center" scope="col">Enrolled</th>
+                    <th class="text-center" scope="col">Score</th>
                     <th class="text-left" scope="col">Action</th>
                   </tr>
                 </thead>
@@ -155,20 +156,23 @@
                     <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
                       aaron.bridges@opensesame.com</a></td>
                     <td class="text-center"><time>7/16/12</time></td>
-                    <td class="text-center">6/20/13</td>
+                    <td class="text-center"><time>6/20/13</time></td>
                     <td class="text-center"><strong>2</strong></td>
                     <td class="text-center"><strong>5</strong></td>
-                    <td class="text-left"><a id="toggle_details" href="#"><strong>View Detail</strong></a></td>
+                    <td class="text-center">85%</td>
+                    <td class="text-left"><a class="m-table--link" id="toggle_details" href="#"><strong>View Detail &#x25BE;</strong></a></td>
                   </tr>
                   <tbody id="details" style="display: none;">
                     <tr class="m-table-details">
                       <td class="text-right" colspan="4"><a class="m-table--link" href="#">Safety Training 101</a></td>
                       <td>Enrolled on June 23, 2013</td>
+                      <td class="text-center">85%</td>
                       <td><a class="m-btn-square-dark" href="#">Resend Invite</a>
                     </tr>
                     <tr class="m-table-details">
                       <td class="text-right" colspan="4"><a class="m-table--link" href="#">Sexual Harrassment</a></td>
                       <td>Enrolled on June 23, 2013</td>
+                      <td class="text-center">85%</td>
                       <td><a class="m-btn-square" href="#">Certificate</a></td>
                     </tr>
                   </tbody>
@@ -179,7 +183,8 @@
                     <td class="text-center"><time>6/20/13</time></td>
                     <td class="text-center"><strong>2</strong></td>
                     <td class="text-center"><strong>5</strong></td>
-                    <td class="text-left"><a href="#"><strong>View Detail</strong</a></td>
+                    <td class="text-center">85%</td>
+                    <td class="text-left"><a class="m-table--link" href="#"><strong>View Detail &#x25BE;</strong</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -329,7 +334,7 @@
       <script>
         $( "#reports_tabs, #courses_tabs" ).tabs();
         $( "#toggle_details" ).click(function() {
-            $( "#details" ).toggle( "easy-in", function() {
+            $( "#details" ).toggle( "fast", function() {
             // Animation complete.
             });
         });
