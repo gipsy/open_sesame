@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <!-- For IE8 media query compatibility -->
+        <!--[if lte IE 8]>
+          <script src="js/vendor/respond.js"></script>
+          <script src="js/vendor/selectivizr-min.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="stylesheets/application.css">
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+    </head>
+    <body>
+      <header class="">
+      </header>
+      <section class="m-pricing-top-block">
+        <section class="l-single-centered-column">
+          <div class="l-content text-center">
+            <img src="img/os-plus-logo-white.png">
+            <h3 class="m-pricing-top--title">2,500 elearning courses. Unlimited access.</br> One low price!</h3>
+          </div>
+        </section>
+      </section>
+
+      <section class="m-pricing">
+        <section class="l-single-centered-column">
+          <section class="l-content text-center">
+            <h4>Pricing</h4>
+            <div id="pricing_tabs">
+              <ul class="m-tabs-list--pricing">
+                <li><a class="m-tabs-list--pricing-item left" href="#monthly">Monthly</a></li>
+                <li><a class="m-tabs-list--pricing-item right" href="#annual">Annual</a></li>
+              </ul>
+
+              <div id="monthly">
+                <ul class="m-pricing-list">
+                  <li class="m-pricing-item l-third-column">
+                    <div class="m-pricing-top icon-individual-dark">
+                      <h4 class="title">Individual</h4>
+                      <p>Stay competitive with  on-demand training.</p>
+                    </div>
+                    <div class="m-pricing-middle">
+                      <p class="uppercase">1 user</p>
+                    </div>
+                    <div class="m-pricing-bottom">
+                      <p>$19.99</p>
+                      <p>user/month</p>
+                      <p>$199.90 total/month</p>
+                      <a href="#" class="m-btn-square--big">Choose Plan</a>
+                    </div>
+                  </li>
+                  <li class="m-pricing-item l-third-column">
+                    <div class="m-pricing-top icon-sm-med-business-dark">
+                      <h4 class="title">SMB</h4>
+                      <p>Easily train your employees online.</p>
+                    </div>
+                    <div class="m-pricing-middle">
+                      <span class="tooltip"></span>
+                      <div id="smb_slider"></div>
+                      <span class="users-range text-left">2</span>
+                      <span class="users-range text-left">25</span>
+                      <span class="users-range text-center">50</span>
+                      <span class="users-range text-right">75</span>
+                      <span class="users-range text-right">100</span>
+                    </div>
+                    <div class="m-pricing-bottom">
+                      <p>$19.99</p>
+                      <p>user/month</p>
+                      <p>$199.90 total/month</p>
+                      <a href="#" class="m-btn-square--big">Choose Plan</a>
+                    </div>
+                  </li>
+                  <li class="m-pricing-item l-third-column">
+                    <div class="m-pricing-top icon-enterprise-dark">
+                      <h4>Enterprise</h4>
+                      <p>Compatible with your LMS.</p>
+                    </div>
+                    <div class="m-pricing-middle">
+                      <p class="uppercase">101 - 10,000+ users</p>
+                    </div>
+                    <div class="m-pricing-bottom">
+                      <p>Contact Us!</p>
+                      <p>1-877-222-3318</p>
+                      <p>&nbsp;</p>
+                      <a href="#" class="m-btn-square--big">Get Pricing</a>
+                    </div>
+                  </li>
+              </div>
+
+              <div id="annual">
+                </ul>
+                Annual
+              </div>
+
+            </div>
+          </section>
+        </section>
+      </section>
+
+
+      <footer></footer>
+      <script src="js/vendor/zepto.min.js"></script>
+      <script src="js/helper.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+          var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+          g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+          s.parentNode.insertBefore(g,s)}(document,"script"));
+      </script>
+      <script>
+        $(function() {
+
+          $( "#pricing_tabs" ).tabs({ active: 1 });
+
+          //Store frequently elements in variables
+          var slider  = $('#smb_slider'),
+          tooltip = $('.tooltip');
+
+          //Hide the Tooltip at first
+          tooltip.hide();
+
+          //Call the Slider
+          slider.slider({
+            //Config
+            value: 2,
+            range: "min",
+            min: 2,
+
+            start: function(event,ui) {
+              tooltip.fadeIn('fast');
+            },
+            //Slider Event
+            slide: function(event, ui) { //When the slider is sliding
+
+              var value  = slider.slider('value');
+
+              tooltip.text(ui.value);
+            },
+          }).find(".ui-slider-handle").append(tooltip);
+        });
+      </script>
+    </body>
+</html>

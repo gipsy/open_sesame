@@ -1,0 +1,72 @@
+#smb_slider
+  border-width: 1px
+  border-style: solid
+  border-color: #333 #333 #777 #333
+  border-radius: 25px
+  height: 4px
+  background-color: #8e8d8d
+  background: url('../images/bg-track.png') repeat top left
+  box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 0 1px 0 0px rgba(250, 250, 250, .5)
+  margin-top: 25px
+
+.tooltip
+  +inline-block
+  position: absolute
+  top: -50px
+  left: -35px
+  padding: 7px 9px
+  color: white
+  text-align: center
+  border-radius: 3px
+  text-transform: uppercase
+  box-sizing: border-box
+  background-color: $orange
+  width: 80px
+  font-size: 0.688em
+  &:after
+    +arrow(15px, 10px, down, $orange)
+    content: ''
+    left: 0
+    margin: 36px 0 0 42%
+    position: absolute
+    top: 0
+  &:before
+    content: "users "
+
+.m-pricing-middle
+  .ui-slider
+    position: relative
+    text-align: left
+
+  .ui-state-default
+    background: $orange url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x
+    font-weight: normal
+    color: #555555
+
+  .ui-widget-content
+    border: 1px solid #aaaaaa
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x
+    color: #222222
+
+  .ui-slider-handle
+    top: -.6em
+    margin-left: -4px
+    position: absolute
+    border-radius: 3px
+    z-index: 2
+    width: 9px
+    height: 20px
+    cursor: pointer
+
+  .ui-slider-range
+    background: $orange
+    position: absolute
+    border: 0
+    top: 0
+    height: 100%
+
+  .users-range
+    +float(left)
+    margin-top: 5px
+    width: 20%
+    font-size: 0.625em

@@ -7,23 +7,55 @@
   +horizontal-list
   border-bottom: 1px solid $medium-gray
 
-.m-tabs-list--item
+  .m-tabs-list--item
+    +inline-block
+    margin-bottom: -1px
+
+  // Jquery UI styles
+  .ui-state-default a
+    padding: 15px 50px
+    font-size: 0.813em
+    color: $medium-blue
+
+  .ui-tabs-active a
+    border-top-right-radius: 5px
+    border-top-left-radius: 5px
+    background-color: $near-white
+    border: 1px solid $medium-gray
+    border-bottom-color: $near-white
+    padding: 15px 50px
+    color: $orange
+
+
+.m-tabs-list--pricing
+  +horizontal-list
   +inline-block
-  margin-bottom: -1px
+  margin: 10px
+  border-radius: 5px
+  border: 1px solid $dark-dark-blue
+  li
+    padding: 0
+    float: none
 
-// Jquery UI styles
-.ui-state-default a
-  padding: 15px 50px
-  font-size: 0.813em
-  color: $medium-blue
+  .m-tabs-list--pricing-item
+    +inline-block
+    border-radius: 3px
+    &.left
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+    &.right
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
 
-.ui-tabs-active a
-  border-top-right-radius: 5px
-  border-top-left-radius: 5px
-  background-color: $near-white
-  border: 1px solid $medium-gray
-  border-bottom-color: $near-white
-  padding: 15px 50px
-  color: $orange
+  // Jquery UI styles
+  .ui-state-default a
+    padding: 15px 27px
+    font-weight: 300
+    color: $medium-blue
+    background-color: white
 
+  .ui-tabs-active a
+    font-weight: bold
+    background-color: black
+    color: white
 
