@@ -153,6 +153,9 @@ table {
 .l-content-thin {
   padding: 22px 14px; }
 
+.l-content-thick {
+  padding: 55px 0; }
+
 .l-single-centered-column {
   *zoom: 1;
   max-width: 71.25em;
@@ -332,6 +335,9 @@ label {
   .title.small {
     font-size: 0.9em;
     padding-bottom: 30px; }
+
+.inverted {
+  color: white; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -526,6 +532,15 @@ label {
 
 .icon-enterprise-dark {
   background-image: url("../img/icon-enterprise-dark.png"); }
+
+.icon-furniture {
+  background-image: url("../img/icon-furniture.png"); }
+
+.icon-basic {
+  background-image: url("../img/icon-basic.png"); }
+
+.icon-navigation {
+  background-image: url("../img/icon-navigation.png"); }
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
@@ -2596,7 +2611,14 @@ label {
 .m-pricing-list {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0px; }
+  margin-left: 0px;
+  *zoom: 1;
+  padding: 0; }
+  .m-pricing-list:before, .m-pricing-list:after {
+    content: " ";
+    display: table; }
+  .m-pricing-list:after {
+    clear: both; }
 
 .m-pricing-item {
   border-radius: 5px;
@@ -2615,3 +2637,23 @@ label {
 
 .m-pricing-bottom {
   padding: 25px 0; }
+
+.m-low-pricing-block {
+  height: 340px;
+  background-color: #242c31; }
+
+.m-low-pricing--list {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  *zoom: 1;
+  padding: 0; }
+  .m-low-pricing--list:before, .m-low-pricing--list:after {
+    content: " ";
+    display: table; }
+  .m-low-pricing--list:after {
+    clear: both; }
+
+.m-low-pricing--list-item {
+  padding: 85px 0 0 0;
+  background-position: center 0; }
