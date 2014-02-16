@@ -1969,13 +1969,14 @@ label {
       padding-opposite-position(left): 0; }
     .m-tabs-list li.last {
       padding-opposite-position(left): 0; }
+  .m-tabs-list li {
+    margin-bottom: -1px; }
   .m-tabs-list .m-tabs-list--item {
     display: inline-block;
     vertical-align: baseline;
     zoom: 1;
     *display: inline;
-    *vertical-align: auto;
-    margin-bottom: -1px; }
+    *vertical-align: auto; }
   .m-tabs-list .ui-state-default a {
     padding: 15px 50px;
     font-size: 0.813em;
@@ -2172,10 +2173,10 @@ label {
   border-width: 1px;
   border-style: solid;
   border-color: #333333 #333333 #777777 #333333;
-  border-radius: 25px;
-  height: 4px;
+  border-radius: 3px;
+  height: 5px;
   background-color: #8e8d8d;
-  background: url("../images/bg-track.png") repeat top left;
+  background: url("../img/bg-track.png") repeat top left;
   box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, 0.5), 0 1px 0 0px rgba(250, 250, 250, 0.5);
   margin-top: 25px; }
 
@@ -2223,7 +2224,7 @@ label {
   background: white url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
   color: #222222; }
 .m-pricing-middle .ui-slider-handle {
-  top: -0.6em;
+  top: -0.55em;
   margin-left: -4px;
   position: absolute;
   border-radius: 3px;
@@ -2348,10 +2349,6 @@ label {
   border: 1px solid #999999; }
   .m-courses-block .m-courses-item:last-child {
     margin-right: 0; }
-  .m-courses-block .m-courses-item:nth-child(4n) {
-    margin-right: 0; }
-  .m-courses-block .m-courses-item:nth-child(4n+1) {
-    clear: left; }
   @media screen and (max-width: 480px) {
     .m-courses-block .m-courses-item {
       float: left;
@@ -2622,7 +2619,8 @@ label {
 
 .m-pricing-item {
   border-radius: 5px;
-  border: 1px solid #242c31; }
+  border: 1px solid #242c31;
+  margin-bottom: 10px; }
 
 .m-pricing-top {
   padding-top: 75px;
@@ -2639,7 +2637,7 @@ label {
   padding: 25px 0; }
 
 .m-low-pricing-block {
-  height: 340px;
+  min-height: 340px;
   background-color: #242c31; }
 
 .m-low-pricing--list {
