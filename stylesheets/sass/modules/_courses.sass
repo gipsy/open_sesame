@@ -1,20 +1,36 @@
-.m-courses-block
+.m-courses
   .title
     color: $medium-blue
   .read-all
     color: $medium-blue
 
-  .m-courses
+  .m-courses-list
     +clearfix
     padding: 0
 
   #liquid_carousel .m-courses-item
     // height: 345px
     // +span-columns(3)
+    margin-right: 0
+
+  .navigation
+    +inline-block
+    width: 66px
+    height: 122px
+    position: absolute
+    z-index: 10
+    top: 50%
+    margin-top: -61px
+    &.prev
+      background: url('../img/navigation-prev.png')
+      left: 0
+    &.next
+      background: url('../img/navigation-next.png')
+      right: 0
 
   .m-courses-item
     +span-columns(3)
-    // +omega(4n)
+    +omega(4n)
     +box-sizing(border-box)
     border-radius: 5px
     border: 1px solid $medium-gray
@@ -57,6 +73,7 @@
       font-size: 0.563em
 
     .m-course-name
+      padding-top: 5px
       padding-bottom: 8px
 
     .m-course-content--text
