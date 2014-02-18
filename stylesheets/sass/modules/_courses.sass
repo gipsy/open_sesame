@@ -73,8 +73,16 @@
       font-size: 0.563em
 
     .m-course-name
-      padding-top: 5px
-      padding-bottom: 8px
+
+      $max-height: 50
+      $padding-top: 5
+      $padding-bottom: 8
+
+      +clearfix
+      +multiline-ellipsis($max-height + px, 24px, 20px)
+      min-height: $max-height + $padding-top + $padding-bottom + px
+      padding-top: $padding-top + px
+      padding-bottom: $padding-bottom + px
 
     .m-course-content--text
       padding-top: 3px
@@ -83,7 +91,13 @@
     .m-course-provider
       +inline-block
       padding-bottom: 8px
+      font-size: 0.813em
       font-weight: 400
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+      width: 100%
+      color: $orange
       span
         color: $medium-blue
 
@@ -140,3 +154,7 @@
     .m-course-info
       padding-top: 50px
 
+.m-courses-item--last
+  @extend .m-courses-item
+  background-color: black
+  height: 350px
