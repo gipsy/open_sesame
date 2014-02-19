@@ -133,7 +133,7 @@
                       <p class="uppercase">1 user</p>
                     </div>
                     <div class="m-pricing-bottom">
-                      <p class="price">$19.99</p>
+                      <p class="price">$219.89</p>
                       <p class="user-per-month">user/month</p>
                       <a href="#" class="m-btn-square--big">Choose Plan</a>
                     </div>
@@ -153,9 +153,9 @@
                       <span class="users-range text-right">100</span>
                     </div>
                     <div class="m-pricing-bottom">
-                      <p class="price">$19.99</p>
+                      <p id="annual_price" class="price">$219.09</p>
                       <p class="user-per-month">user/month</p>
-                      <p class="price-total quiet-color">$199.90 total/month</p>
+                      <p id="annual_total_price" class="price-total quiet-color">$438.17 total/month</p>
                       <a href="#" class="m-btn-square--big">Choose Plan</a>
                     </div>
                   </li>
@@ -343,7 +343,7 @@
       </script>
       <script>
         $(document).ready(function() {
-            var dataArr = {
+            var dataMonthlyArr = {
               "monthlyUsers":
                   [
                       {
@@ -734,14 +734,126 @@
                           pricePerMonth: "12.91",
                           priceTotal: "1264.79"
                       },
+                      {
+                          pricePerMonth: "12.83",
+                          priceTotal: "1270.47"
+                      },
+                      {
+                          pricePerMonth: "12.76",
+                          priceTotal: "1276.00"
+                      },
                   ]
               };
+
+            var dataAnnualArr = {
+              "annualUsers":
+              [
+                  {"pricePerYear":219.09,"priceTotal":438.17},
+                  {"pricePerYear":218.28,"priceTotal":654.85},
+                  {"pricePerYear":217.48,"priceTotal":869.92},
+                  {"pricePerYear":216.68,"priceTotal":1083.38},
+                  {"pricePerYear":215.87,"priceTotal":1295.24},
+                  {"pricePerYear":215.07,"priceTotal":1505.49},
+                  {"pricePerYear":214.27,"priceTotal":1714.13},
+                  {"pricePerYear":213.46,"priceTotal":1921.17},
+                  {"pricePerYear":212.66,"priceTotal":2126.60},
+                  {"pricePerYear":211.86,"priceTotal":2330.42},
+                  {"pricePerYear":211.05,"priceTotal":2532.64},
+                  {"pricePerYear":210.25,"priceTotal":2733.25},
+                  {"pricePerYear":209.45,"priceTotal":2932.25},
+                  {"pricePerYear":208.64,"priceTotal":3129.65},
+                  {"pricePerYear":207.84,"priceTotal":3325.44},
+                  {"pricePerYear":207.04,"priceTotal":3519.62},
+                  {"pricePerYear":206.23,"priceTotal":3712.20},
+                  {"pricePerYear":205.43,"priceTotal":3903.17},
+                  {"pricePerYear":204.63,"priceTotal":4092.53},
+                  {"pricePerYear":203.82,"priceTotal":4280.29},
+                  {"pricePerYear":203.02,"priceTotal":4466.44},
+                  {"pricePerYear":202.22,"priceTotal":4650.98},
+                  {"pricePerYear":201.41,"priceTotal":4833.92},
+                  {"pricePerYear":200.61,"priceTotal":5015.25},
+                  {"pricePerYear":199.81,"priceTotal":5194.97},
+                  {"pricePerYear":199.00,"priceTotal":5373.09},
+                  {"pricePerYear":198.20,"priceTotal":5549.60},
+                  {"pricePerYear":197.40,"priceTotal":5724.50},
+                  {"pricePerYear":196.59,"priceTotal":5897.80},
+                  {"pricePerYear":195.79,"priceTotal":6069.49},
+                  {"pricePerYear":194.99,"priceTotal":6239.57},
+                  {"pricePerYear":194.18,"priceTotal":6408.05},
+                  {"pricePerYear":193.38,"priceTotal":6574.92},
+                  {"pricePerYear":192.58,"priceTotal":6740.18},
+                  {"pricePerYear":191.77,"priceTotal":6903.84},
+                  {"pricePerYear":190.97,"priceTotal":7065.89},
+                  {"pricePerYear":190.17,"priceTotal":7226.33},
+                  {"pricePerYear":189.36,"priceTotal":7385.17},
+                  {"pricePerYear":188.56,"priceTotal":7542.40},
+                  {"pricePerYear":187.76,"priceTotal":7698.02},
+                  {"pricePerYear":186.95,"priceTotal":7852.04},
+                  {"pricePerYear":186.15,"priceTotal":8004.45},
+                  {"pricePerYear":185.35,"priceTotal":8155.25},
+                  {"pricePerYear":184.54,"priceTotal":8304.45},
+                  {"pricePerYear":183.74,"priceTotal":8452.04},
+                  {"pricePerYear":182.94,"priceTotal":8598.02},
+                  {"pricePerYear":182.13,"priceTotal":8742.40},
+                  {"pricePerYear":181.33,"priceTotal":8885.17},
+                  {"pricePerYear":180.53,"priceTotal":9026.33},
+                  {"pricePerYear":179.72,"priceTotal":9165.89},
+                  {"pricePerYear":178.92,"priceTotal":9303.84},
+                  {"pricePerYear":178.12,"priceTotal":9440.18},
+                  {"pricePerYear":177.31,"priceTotal":9574.92},
+                  {"pricePerYear":176.51,"priceTotal":9708.05},
+                  {"pricePerYear":175.71,"priceTotal":9839.57},
+                  {"pricePerYear":174.90,"priceTotal":9969.49},
+                  {"pricePerYear":174.10,"priceTotal":10097.80},
+                  {"pricePerYear":173.30,"priceTotal":10224.50},
+                  {"pricePerYear":172.49,"priceTotal":10349.60},
+                  {"pricePerYear":171.69,"priceTotal":10473.09},
+                  {"pricePerYear":170.89,"priceTotal":10594.97},
+                  {"pricePerYear":170.08,"priceTotal":10715.25},
+                  {"pricePerYear":169.28,"priceTotal":10833.92},
+                  {"pricePerYear":168.48,"priceTotal":10950.98},
+                  {"pricePerYear":167.67,"priceTotal":11066.44},
+                  {"pricePerYear":166.87,"priceTotal":11180.29},
+                  {"pricePerYear":166.07,"priceTotal":11292.53},
+                  {"pricePerYear":165.26,"priceTotal":11403.17},
+                  {"pricePerYear":164.46,"priceTotal":11512.20},
+                  {"pricePerYear":163.66,"priceTotal":11619.62},
+                  {"pricePerYear":162.85,"priceTotal":11725.44},
+                  {"pricePerYear":162.05,"priceTotal":11829.65},
+                  {"pricePerYear":161.25,"priceTotal":11932.25},
+                  {"pricePerYear":160.44,"priceTotal":12033.25},
+                  {"pricePerYear":159.64,"priceTotal":12132.64},
+                  {"pricePerYear":158.84,"priceTotal":12230.42},
+                  {"pricePerYear":158.03,"priceTotal":12326.60},
+                  {"pricePerYear":157.23,"priceTotal":12421.17},
+                  {"pricePerYear":156.43,"priceTotal":12514.13},
+                  {"pricePerYear":155.62,"priceTotal":12605.49},
+                  {"pricePerYear":154.82,"priceTotal":12695.24},
+                  {"pricePerYear":154.02,"priceTotal":12783.38},
+                  {"pricePerYear":153.21,"priceTotal":12869.92},
+                  {"pricePerYear":152.41,"priceTotal":12954.85},
+                  {"pricePerYear":151.61,"priceTotal":13038.17},
+                  {"pricePerYear":150.80,"priceTotal":13119.89},
+                  {"pricePerYear":150.00,"priceTotal":13200.00},
+                  {"pricePerYear":149.20,"priceTotal":13278.50},
+                  {"pricePerYear":148.39,"priceTotal":13355.40},
+                  {"pricePerYear":147.59,"priceTotal":13430.69},
+                  {"pricePerYear":146.79,"priceTotal":13504.37},
+                  {"pricePerYear":145.98,"priceTotal":13576.45},
+                  {"pricePerYear":145.18,"priceTotal":13646.92},
+                  {"pricePerYear":144.38,"priceTotal":13715.78},
+                  {"pricePerYear":143.57,"priceTotal":13783.04},
+                  {"pricePerYear":142.77,"priceTotal":13848.69},
+                  {"pricePerYear":141.97,"priceTotal":13912.73},
+                  {"pricePerYear":141.16,"priceTotal":13975.17},
+                  {"pricePerYear":140.36,"priceTotal":14036.03}
+              ]
+          };
 
 
           $( "#pricing_tabs" ).tabs({ active: 1 });
 
           //Store frequently elements in variables
-          var items = [];
           var slider_monthly  = $('#slider_monthly');
           var slider_annual = $('#slider_annual');
           var tooltip_monthly = $('#tooltip_monthly');
@@ -757,7 +869,6 @@
             value: 2,
             range: "min",
             min: 2,
-            max: 100,
 
             start: function(event, ui) {
               tooltip_monthly.fadeIn('fast');
@@ -766,8 +877,8 @@
             slide: function(event, ui) { //When the slider is sliding
 
               var value  = slider_monthly.slider('value');
-              var pricePerMonth = dataArr.monthlyUsers[ui.value - 2].pricePerMonth;
-              var priceTotal = dataArr.monthlyUsers[ui.value -2].priceTotal;
+              var pricePerMonth = dataMonthlyArr.monthlyUsers[ui.value - 2].pricePerMonth;
+              var priceTotal = dataMonthlyArr.monthlyUsers[ui.value -2].priceTotal;
 
               $( "#monthly" ).find("#monthly_price").empty().append('$' + pricePerMonth);
               $( "#monthly" ).find("#monthly_total_price").empty().append('$' + priceTotal + ' total/month');
@@ -789,11 +900,11 @@
             slide: function(event, ui) { //When the slider is sliding
 
               var value = slider_annual.slider('value');
-              var pricePerYear = dataArr.annualUsers[value - 2].pricePerMonth;
-              var priceTotal = dataArr.annualUsers[value - 2].priceTotal;
+              var pricePerYear = dataAnnualArr.annualUsers[ui.value - 2].pricePerYear;
+              var priceTotal = dataAnnualArr.annualUsers[ui.value - 2].priceTotal;
 
-              $( "#annual" ).find("#annual_price").empty().append(pricePerYear);
-              $( "#annual" ).find("#annual_total_price").empty().append(priceTotal);
+              $( "#annual" ).find("#annual_price").empty().append('$' + pricePerYear);
+              $( "#annual" ).find("#annual_total_price").empty().append('$' + priceTotal + ' total/month');
 
               tooltip_annual.text(ui.value);
             },
