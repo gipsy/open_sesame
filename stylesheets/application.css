@@ -2298,7 +2298,7 @@ label {
   .m-filter-controls--short select {
     width: 150px; }
 
-.m-purchased-coures {
+.m-purchased-courses {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
@@ -2368,7 +2368,7 @@ label {
   .m-table-details td[colspan="4"] {
     border-right-color: #fafafa; }
 
-#slider {
+#slider_monthly, #slider_annual {
   border-width: 1px;
   border-bottom-width: 0;
   border-style: solid;

@@ -90,8 +90,8 @@
                       <p>Easily train your employees online.</p>
                     </div>
                     <div class="m-pricing-middle">
-                      <span class="tooltip"></span>
-                      <div id="slider"></div>
+                      <span id="tooltip_monthly" class="tooltip"></span>
+                      <div id="slider_monthly"></div>
                       <span class="users-range text-left">2</span>
                       <span class="users-range text-left">25</span>
                       <span class="users-range text-center">50</span>
@@ -99,9 +99,9 @@
                       <span class="users-range text-right">100</span>
                     </div>
                     <div class="m-pricing-bottom">
-                      <p class="price">$19.99</p>
+                      <p id="monthly_price" class="price">$19.99</p>
                       <p class="user-per-month">user/month</p>
-                      <p class="price-total quiet-color">$199.90 total/month</p>
+                      <p id="monthly_total_price" class="price-total quiet-color">$39.83 total/month</p>
                       <a href="#" class="m-btn-square--big">Choose Plan</a>
                     </div>
                   </li>
@@ -144,8 +144,8 @@
                       <p>Easily train your employees online.</p>
                     </div>
                     <div class="m-pricing-middle">
-                      <span class="tooltip"></span>
-                      <div id="slider"></div>
+                      <span id="tooltip_annual" class="tooltip"></span>
+                      <div id="slider_annual"></div>
                       <span class="users-range text-left">2</span>
                       <span class="users-range text-left">25</span>
                       <span class="users-range text-center">50</span>
@@ -343,34 +343,461 @@
       </script>
       <script>
         $(document).ready(function() {
+            var dataArr = {
+              "monthlyUsers":
+                  [
+                      {
+                          pricePerMonth: "19.92",
+                          priceTotal: "39.83"
+                      },
+                      {
+                          pricePerMonth: "19.84",
+                          priceTotal: "59.53"
+                      },
+                      {
+                          pricePerMonth: "19.77",
+                          priceTotal: "79.08"
+                      },
+                      {
+                          pricePerMonth: "19.70",
+                          priceTotal: "98.49"
+                      },
+                      {
+                          pricePerMonth: "19.62",
+                          priceTotal: "117.75"
+                      },
+                      {
+                          pricePerMonth: "19.55",
+                          priceTotal: "136.86"
+                      },
+                      {
+                          pricePerMonth: "19.48",
+                          priceTotal: "155.83"
+                      },
+                      {
+                          pricePerMonth: "19.41",
+                          priceTotal: "174.65"
+                      },
+                      {
+                          pricePerMonth: "19.33",
+                          priceTotal: "193.33"
+                      },
+                      {
+                          pricePerMonth: "19.26",
+                          priceTotal: "211.86"
+                      },
+                      {
+                          pricePerMonth: "19.19",
+                          priceTotal: "230.24"
+                      },
+                      {
+                          pricePerMonth: "19.11",
+                          priceTotal: "248.48"
+                      },
+                      {
+                          pricePerMonth: "19.04",
+                          priceTotal: "226.57"
+                      },
+                      {
+                          pricePerMonth: "18.97",
+                          priceTotal: "284.51"
+                      },
+                      {
+                          pricePerMonth: "18.89",
+                          priceTotal: "302.31"
+                      },
+                      {
+                          pricePerMonth: "18.82",
+                          priceTotal: "319.97"
+                      },
+                      {
+                          pricePerMonth: "18.75",
+                          priceTotal: "337.47"
+                      },
+                      {
+                          pricePerMonth: "18.68",
+                          priceTotal: "354.83"
+                      },
+                      {
+                          pricePerMonth: "18.60",
+                          priceTotal: "372.05"
+                      },
+                      {
+                          pricePerMonth: "18.53",
+                          priceTotal: "389.12"
+                      },
+                      {
+                          pricePerMonth: "18.46",
+                          priceTotal: "406.04"
+                      },
+                      {
+                          pricePerMonth: "18.38",
+                          priceTotal: "422.82"
+                      },
+                      {
+                          pricePerMonth: "18.31",
+                          priceTotal: "439.45"
+                      },
+                      {
+                          pricePerMonth: "18.24",
+                          priceTotal: "455.93"
+                      },
+                      {
+                          pricePerMonth: "18.16",
+                          priceTotal: "472.27"
+                      },
+                      {
+                          pricePerMonth: "18.09",
+                          priceTotal: "488.46"
+                      },
+                      {
+                          pricePerMonth: "18.02",
+                          priceTotal: "504.51"
+                      },
+                      {
+                          pricePerMonth: "17.95",
+                          priceTotal: "520.41"
+                      },
+                      {
+                          pricePerMonth: "17.87",
+                          priceTotal: "536.16"
+                      },
+                      {
+                          pricePerMonth: "17.80",
+                          priceTotal: "551.77"
+                      },
+                      {
+                          pricePerMonth: "17.73",
+                          priceTotal: "567.23"
+                      },
+                      {
+                          pricePerMonth: "17.65",
+                          priceTotal: "582.55"
+                      },
+                      {
+                          pricePerMonth: "17.58",
+                          priceTotal: "597.72"
+                      },
+                      {
+                          pricePerMonth: "17.51",
+                          priceTotal: "612.74"
+                      },
+                      {
+                          pricePerMonth: "17.43",
+                          priceTotal: "627.62"
+                      },
+                      {
+                          pricePerMonth: "17.36",
+                          priceTotal: "642.35"
+                      },
+                      {
+                          pricePerMonth: "17.29",
+                          priceTotal: "656.94"
+                      },
+                      {
+                          pricePerMonth: "17.21",
+                          priceTotal: "671.38"
+                      },
+                      {
+                          pricePerMonth: "17.14",
+                          priceTotal: "685.67"
+                      },
+                      {
+                          pricePerMonth: "17.07",
+                          priceTotal: "699.82"
+                      },
+                      {
+                          pricePerMonth: "17.00",
+                          priceTotal: "713.82"
+                      },
+                      {
+                          pricePerMonth: "16.92",
+                          priceTotal: "727.68"
+                      },
+                      {
+                          pricePerMonth: "16.85",
+                          priceTotal: "741.39"
+                      },
+                      {
+                          pricePerMonth: "16.78",
+                          priceTotal: "754.95"
+                      },
+                      {
+                          pricePerMonth: "16.70",
+                          priceTotal: "768.37"
+                      },
+                      {
+                          pricePerMonth: "16.63",
+                          priceTotal: "781.64"
+                      },
+                      {
+                          pricePerMonth: "16.56",
+                          priceTotal: "794.76"
+                      },
+                      {
+                          pricePerMonth: "16.48",
+                          priceTotal: "807.74"
+                      },
+                      {
+                          pricePerMonth: "16.41",
+                          priceTotal: "820.58"
+                      },
+                      {
+                          pricePerMonth: "16.34",
+                          priceTotal: "833.26"
+                      },
+                      {
+                          pricePerMonth: "16.27",
+                          priceTotal: "845.80"
+                      },
+                      {
+                          pricePerMonth: "16.19",
+                          priceTotal: "858.20"
+                      },
+                      {
+                          pricePerMonth: "16.12",
+                          priceTotal: "870.45"
+                      },
+                      {
+                          pricePerMonth: "16.05",
+                          priceTotal: "882.55"
+                      },
+                      {
+                          pricePerMonth: "15.97",
+                          priceTotal: "894.51"
+                      },
+                      {
+                          pricePerMonth: "15.90",
+                          priceTotal: "906.32"
+                      },
+                      {
+                          pricePerMonth: "15.83",
+                          priceTotal: "917.98"
+                      },
+                      {
+                          pricePerMonth: "15.75",
+                          priceTotal: "929.50"
+                      },
+                      {
+                          pricePerMonth: "15.68",
+                          priceTotal: "940.87"
+                      },
+                      {
+                          pricePerMonth: "15.61",
+                          priceTotal: "952.10"
+                      },
+                      {
+                          pricePerMonth: "15.54",
+                          priceTotal: "963.18"
+                      },
+                      {
+                          pricePerMonth: "15.46",
+                          priceTotal: "974.11"
+                      },
+                      {
+                          pricePerMonth: "15.39",
+                          priceTotal: "984.90"
+                      },
+                      {
+                          pricePerMonth: "15.32",
+                          priceTotal: "995.54"
+                      },
+                      {
+                          pricePerMonth: "15.24",
+                          priceTotal: "1006.04"
+                      },
+                      {
+                          pricePerMonth: "15.17",
+                          priceTotal: "1016.39"
+                      },
+                      {
+                          pricePerMonth: "15.10",
+                          priceTotal: "1026.59"
+                      },
+                      {
+                          pricePerMonth: "15.02",
+                          priceTotal: "1036.65"
+                      },
+                      {
+                          pricePerMonth: "14.95",
+                          priceTotal: "1046.56"
+                      },
+                      {
+                          pricePerMonth: "14.88",
+                          priceTotal: "1056.33"
+                      },
+                      {
+                          pricePerMonth: "14.80",
+                          priceTotal: "1065.95"
+                      },
+                      {
+                          pricePerMonth: "14.73",
+                          priceTotal: "1075.42"
+                      },
+                      {
+                          pricePerMonth: "14.66",
+                          priceTotal: "1084.75"
+                      },
+                      {
+                          pricePerMonth: "14.59",
+                          priceTotal: "1093.93"
+                      },
+                      {
+                          pricePerMonth: "14.51",
+                          priceTotal: "1102.97"
+                      },
+                      {
+                          pricePerMonth: "14.44",
+                          priceTotal: "1111.86"
+                      },
+                      {
+                          pricePerMonth: "14.37",
+                          priceTotal: "1120.60"
+                      },
+                      {
+                          pricePerMonth: "14.29",
+                          priceTotal: "1129.20"
+                      },
+                      {
+                          pricePerMonth: "14.22",
+                          priceTotal: "1137.65"
+                      },
+                      {
+                          pricePerMonth: "14.15",
+                          priceTotal: "1145.95"
+                      },
+                      {
+                          pricePerMonth: "14.07",
+                          priceTotal: "1154.11"
+                      },
+                      {
+                          pricePerMonth: "14.00",
+                          priceTotal: "1162.13"
+                      },
+                      {
+                          pricePerMonth: "13.93",
+                          priceTotal: "1169.99"
+                      },
+                      {
+                          pricePerMonth: "13.86",
+                          priceTotal: "1177.71"
+                      },
+                      {
+                          pricePerMonth: "13.78",
+                          priceTotal: "1185.29"
+                      },
+                      {
+                          pricePerMonth: "13.71",
+                          priceTotal: "1192.72"
+                      },
+                      {
+                          pricePerMonth: "13.64",
+                          priceTotal: "1200.00"
+                      },
+                      {
+                          pricePerMonth: "13.56",
+                          priceTotal: "1207.14"
+                      },
+                      {
+                          pricePerMonth: "13.49",
+                          priceTotal: "1214.13"
+                      },
+                      {
+                          pricePerMonth: "13.42",
+                          priceTotal: "1220.97"
+                      },
+                      {
+                          pricePerMonth: "13.34",
+                          priceTotal: "1227.67"
+                      },
+                      {
+                          pricePerMonth: "13.27",
+                          priceTotal: "1234.22"
+                      },
+                      {
+                          pricePerMonth: "13.20",
+                          priceTotal: "1240.63"
+                      },
+                      {
+                          pricePerMonth: "13.13",
+                          priceTotal: "1246.89"
+                      },
+                      {
+                          pricePerMonth: "13.05",
+                          priceTotal: "1253.00"
+                      },
+                      {
+                          pricePerMonth: "12.98",
+                          priceTotal: "1258.97"
+                      },
+                      {
+                          pricePerMonth: "12.91",
+                          priceTotal: "1264.79"
+                      },
+                  ]
+              };
+
 
           $( "#pricing_tabs" ).tabs({ active: 1 });
 
           //Store frequently elements in variables
-          var slider  = $('#slider'),
-          tooltip = $('.tooltip');
+          var items = [];
+          var slider_monthly  = $('#slider_monthly');
+          var slider_annual = $('#slider_annual');
+          var tooltip_monthly = $('#tooltip_monthly');
+          var tooltip_annual = $('#tooltip_annual');
 
           //Hide the Tooltip at first
-          tooltip.hide();
+          tooltip_monthly.hide();
+          tooltip_annual.hide();
 
           //Call the Slider
-          slider.slider({
+          slider_monthly.slider({
+            //Config
+            value: 2,
+            range: "min",
+            min: 2,
+            max: 100,
+
+            start: function(event, ui) {
+              tooltip_monthly.fadeIn('fast');
+            },
+            //Slider Event
+            slide: function(event, ui) { //When the slider is sliding
+
+              var value  = slider_monthly.slider('value');
+              var pricePerMonth = dataArr.monthlyUsers[ui.value - 2].pricePerMonth;
+              var priceTotal = dataArr.monthlyUsers[ui.value -2].priceTotal;
+
+              $( "#monthly" ).find("#monthly_price").empty().append('$' + pricePerMonth);
+              $( "#monthly" ).find("#monthly_total_price").empty().append('$' + priceTotal + ' total/month');
+
+              tooltip_monthly.text(ui.value);
+            },
+          }).find(".ui-slider-handle").append(tooltip_monthly);
+
+          slider_annual.slider({
             //Config
             value: 2,
             range: "min",
             min: 2,
 
-            start: function(event,ui) {
-              tooltip.fadeIn('fast');
+            start: function(event, ui) {
+              tooltip_annual.fadeIn('fast');
             },
             //Slider Event
             slide: function(event, ui) { //When the slider is sliding
 
-              var value  = slider.slider('value');
+              var value = slider_annual.slider('value');
+              var pricePerYear = dataArr.annualUsers[value - 2].pricePerMonth;
+              var priceTotal = dataArr.annualUsers[value - 2].priceTotal;
 
-              tooltip.text(ui.value);
+              $( "#annual" ).find("#annual_price").empty().append(pricePerYear);
+              $( "#annual" ).find("#annual_total_price").empty().append(priceTotal);
+
+              tooltip_annual.text(ui.value);
             },
-          }).find(".ui-slider-handle").append(tooltip);
+          }).find(".ui-slider-handle").append(tooltip_annual);
 
           //Liquid Carousel
           $('#liquid_carousel').liquidCarousel({
@@ -378,8 +805,6 @@
             hideNavigation: true,
             animationDuration: 800,
             noTransitions: false,
-            // onBeforeNext: function(){},
-            // onBeforePrevious: function(){}
           });
 
           $('#liquid_previous').click(function(){
