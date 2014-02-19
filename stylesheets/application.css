@@ -2032,6 +2032,7 @@ label {
     color: white; }
 
 .m-courses .title {
+  padding-bottom: 0;
   color: #192030; }
 .m-courses .read-all {
   color: #192030; }
