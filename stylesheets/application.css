@@ -836,7 +836,8 @@ label {
 .m-btn-round-dark, .m-btn-round-dark--full-width {
   border-radius: 5px;
   background-color: #3f4d57;
-  border-color: #242c31; }
+  border-color: #242c31;
+  font-weight: 300; }
 
 .m-btn-round-dark--full-width {
   text-align: center;
@@ -2480,6 +2481,9 @@ label {
 .ui-dialog-titlebar {
   font-size: 1.5em;
   font-weight: bold; }
+
+.ui-button {
+  margin: 0 9px; }
 
 .ui-dialog-title {
   display: inline-block;

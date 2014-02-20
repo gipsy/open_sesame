@@ -259,9 +259,9 @@
                       </div>
                     </div>
                     <div class="m-purchased-courses--actions">
-                      <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
+                      <button href="#" class="m-btn-round-dark--full-width">Take Course</button>
                       <button id="opener" href="#" class="m-btn-round-dark--full-width">Invite Team</button>
-                      <a href="#" class="m-btn-round-dark--full-width">Manage</a>
+                      <button href="#" class="m-btn-round-dark--full-width">Manage</button>
                     </div>
                   </div>
                 </div>
@@ -295,8 +295,8 @@
                       </div>
                     </div>
                     <div class="m-purchased-courses--actions">
-                      <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
-                      <a href="#" class="m-btn-round-dark--full-width">Invite Team</a>
+                      <button href="#" class="m-btn-round-dark--full-width">Take Course</button>
+                      <button id="opener" href="#" class="m-btn-round-dark--full-width">Invite Team</button>
                     </div>
                   </div>
                 </div>
@@ -354,14 +354,22 @@
               effect: "fade",
               duration: 200
             },
-            buttons: [{
-              Confirm: function() {
-                $( this ).dialog( "close" );
+            buttons: [
+              {
+                text: "Confirm",
+                'class': 'm-btn-square',
+                click: function(){
+                  $(this).dialog("close");
+                }
               },
-              Cancel: function() {
-                $( this ).dialog( "close" );
+              {
+                text: "Cancel",
+                'class': 'm-btn-square-dark',
+                click: function(){
+                  $(this).dialog("close");
+                }
               }
-            }
+            ]
           });
 
           $( "#opener" ).click(function() {
