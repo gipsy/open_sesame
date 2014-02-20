@@ -1919,9 +1919,7 @@ label {
   padding: 40px 0 80px; }
 
 .m-tabs {
-  *zoom: 1;
-  padding-top: 40px;
-  background-color: #fafafa; }
+  *zoom: 1; }
   .m-tabs:before, .m-tabs:after {
     content: " ";
     display: table; }
@@ -2306,7 +2304,13 @@ label {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
+  padding: 0;
+  margin-top: 0; }
+
+.m-purchased-courses--item {
   padding: 30px 15px; }
+  .m-purchased-courses--item:nth-child(odd) {
+    background-color: #fafafa; }
 
 .m-purchased-courses--middle {
   border-top: 1px solid #e1e1e1;
