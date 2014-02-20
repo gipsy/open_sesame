@@ -260,7 +260,7 @@
                     </div>
                     <div class="m-purchased-courses--actions">
                       <a href="#" class="m-btn-round-dark--full-width">Take Course</a>
-                      <a href="#" class="m-btn-round-dark--full-width">Invite Team</a>
+                      <button id="opener" href="#" class="m-btn-round-dark--full-width">Invite Team</button>
                       <a href="#" class="m-btn-round-dark--full-width">Manage</a>
                     </div>
                   </div>
@@ -332,12 +332,45 @@
           s.parentNode.insertBefore(g,s)}(document,"script"));
       </script>
       <script>
-        $( "#reports_tabs, #courses_tabs" ).tabs();
-        $( "#toggle_details" ).click(function() {
-            $( "#details" ).toggle( "fast", function() {
-            // Animation complete.
-            });
+        $(function() {
+          $( "#reports_tabs, #courses_tabs" ).tabs();
+
+          $( "#toggle_details" ).click(function() {
+              $( "#details" ).toggle( "fast", function() {
+              // Animation complete.
+              });
+          });
+
+          // Modal Popup
+          $( "#modal" ).dialog({
+            autoOpen: false,
+            width: 630,
+            modal: true,
+            show: {
+              effect: "fade",
+              duration: 200
+            },
+            hide: {
+              effect: "fade",
+              duration: 200
+            },
+            buttons: [{
+              Confirm: function() {
+                $( this ).dialog( "close" );
+              },
+              Cancel: function() {
+                $( this ).dialog( "close" );
+              }
+            }
+          });
+
+          $( "#opener" ).click(function() {
+            $( "#modal" ).dialog( "open" );
+          });
         });
       </script>
     </body>
+    <div id="modal" title="Your files have downloaded successfully into the My Downloads folder.">
+      <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
 </html>

@@ -403,12 +403,17 @@
           s.parentNode.insertBefore(g,s)}(document,"script"));
       </script>
       <script>
-          $('#responsive-menu-button').sidr({
-              name: 'sidr-main',
-              source: '#navigation',
-              side: 'right'
+          $(function() {
+            // Responsive navigation
+            $('#responsive-menu-button').sidr({
+                name: 'sidr-main',
+                source: '#navigation',
+                side: 'right'
+            });
+
+            // Mobile Menu
+            $( '#dl-menu' ).dlmenu();
           });
-          $( '#dl-menu' ).dlmenu();
       </script>
     </body>
 </html>
