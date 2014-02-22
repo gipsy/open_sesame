@@ -2374,12 +2374,18 @@ label {
     border: 1px solid #e1e1e1;
     padding: 14px; }
 
-.m-table--link {
+.m-table--link, .m-table--link-remove {
+  margin-right: 10px;
   text-decoration: underline; }
+
+.m-table--link-remove {
+  color: #36444b; }
+  .m-table--link-remove:hover {
+    color: #192030; }
 
 .m-table-details {
   background-color: #fafafa; }
-  .m-table-details td[colspan="4"] {
+  .m-table-details td[colspan="3"] {
     border-right-color: #fafafa; }
 
 #slider_monthly, #slider_annual {

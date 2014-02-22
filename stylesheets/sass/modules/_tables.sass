@@ -11,10 +11,17 @@
     padding: 14px
 
 .m-table--link
+  margin-right: 10px
   text-decoration: underline
+
+.m-table--link-remove
+  @extend .m-table--link
+  color: #36444b
+  &:hover
+    color: $medium-blue
 
 .m-table-details
   background-color: $near-white
-  td[colspan="4"]
+  td[colspan="3"]
     border-right-color: $near-white
 

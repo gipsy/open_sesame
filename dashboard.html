@@ -89,15 +89,6 @@
                     <input type="text" name="course">
                   </div>
                 </div>
-                <div class="m-filter-wrapper">
-                  <label class="m-filter-label" for="course">Delivery Preference</label>
-                  <div class="m-filter-controls">
-                    <select>
-                      <option>test</option>
-                      <option>test2</option>
-                    </select>
-                  </div>
-                </div>
               </form>
             </div>
 
@@ -139,18 +130,9 @@
                     <th class="text-center" scope="col">Date Added</th>
                     <th class="text-center" scope="col">Last Access</th>
                     <th class="text-center" scope="col">Completed</th>
-                    <th class="text-center" scope="col">Enrolled</th>
-                    <th class="text-center" scope="col">Score</th>
                     <th class="text-left" scope="col">Action</th>
                   </tr>
                 </thead>
-                <!-- <tfoot> -->
-                <!--   <tr> -->
-                <!--     <td>Darth Vader</td> -->
-                <!--     <td>Dark</td> -->
-                <!--     <td>Sith</td> -->
-                <!--   </tr> -->
-                <!-- </tfoot> -->
                 <tbody>
                   <tr>
                     <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
@@ -158,21 +140,20 @@
                     <td class="text-center"><time>7/16/12</time></td>
                     <td class="text-center"><time>6/20/13</time></td>
                     <td class="text-center"><strong>2</strong></td>
-                    <td class="text-center"><strong>5</strong></td>
-                    <td class="text-center">85%</td>
-                    <td class="text-left"><a class="m-table--link" id="toggle_details" href="#"><strong>View Detail &#x25BE;</strong></a></td>
+                    <td class="text-left"><a id="toggle_details_1" class="m-table--link" href="#"><strong>View Detail &#x25BE;</strong></a></td>
                   </tr>
-                  <tbody id="details" style="display: none;">
+                  <tbody id="details_1" style="display: none;">
                     <tr class="m-table-details">
-                      <td class="text-right" colspan="4"><a class="m-table--link" href="#">Safety Training 101</a></td>
+                      <td class="text-right" colspan="3"><a class="m-table--link" href="#">Safety Training 101</a></td>
                       <td>Enrolled on June 23, 2013</td>
-                      <td class="text-center">85%</td>
-                      <td><a class="m-btn-square-dark" href="#">Resend Invite</a>
+                      <td>
+                        <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                        <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                      </td>
                     </tr>
                     <tr class="m-table-details">
-                      <td class="text-right" colspan="4"><a class="m-table--link" href="#">Sexual Harrassment</a></td>
+                      <td class="text-right" colspan="3"><a class="m-table--link" href="#">Sexual Harrassment</a></td>
                       <td>Enrolled on June 23, 2013</td>
-                      <td class="text-center">85%</td>
                       <td><a class="m-btn-square" href="#"><span class="icon-certificate tiny">Certificate</span></a></td>
                     </tr>
                   </tbody>
@@ -182,10 +163,23 @@
                     <td class="text-center"><time>7/16/12</time></td>
                     <td class="text-center"><time>6/20/13</time></td>
                     <td class="text-center"><strong>2</strong></td>
-                    <td class="text-center"><strong>5</strong></td>
-                    <td class="text-center">85%</td>
-                    <td class="text-left"><a class="m-table--link" href="#"><strong>View Detail &#x25BE;</strong</a></td>
+                    <td class="text-left"><a id="toggle_details_2" class="m-table--link" href="#"><strong>View Detail &#x25BE;</strong</a></td>
                   </tr>
+                  <tbody id="details_2" style="display: none;">
+                    <tr class="m-table-details">
+                      <td class="text-right" colspan="3"><a class="m-table--link" href="#">Safety Training 101</a></td>
+                      <td>Enrolled on June 23, 2013</td>
+                      <td>
+                        <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                        <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                      </td>
+                    </tr>
+                    <tr class="m-table-details">
+                      <td class="text-right" colspan="3"><a class="m-table--link" href="#">Sexual Harrassment</a></td>
+                      <td>Enrolled on June 23, 2013</td>
+                      <td><a class="m-btn-square" href="#"><span class="icon-certificate tiny">Certificate</span></a></td>
+                    </tr>
+                  </tbody>
                 </tbody>
               </table>
             </div>
@@ -335,8 +329,14 @@
         $(function() {
           $( "#reports_tabs, #courses_tabs" ).tabs();
 
-          $( "#toggle_details" ).click(function() {
-              $( "#details" ).toggle( "fast", function() {
+          $( "#toggle_details_1" ).click(function() {
+              $( "#details_1" ).toggle( "fast", function() {
+              // Animation complete.
+              });
+          });
+
+          $( "#toggle_details_2" ).click(function() {
+              $( "#details_2" ).toggle( "fast", function() {
               // Animation complete.
               });
           });
