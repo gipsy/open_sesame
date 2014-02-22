@@ -2032,6 +2032,12 @@ label {
     background-color: black;
     color: white; }
 
+#ui-id-2:after {
+  border-radius: 30px;
+  background-color: white;
+  position: absolute;
+  right: 0; }
+
 .m-courses .title {
   padding-bottom: 0;
   color: #192030; }
@@ -2403,7 +2409,7 @@ label {
   background-color: #f58220;
   min-width: 73px;
   font-size: 0.688em; }
-  .tooltip:after {
+  .tooltip:before {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -2414,8 +2420,8 @@ label {
     margin: 24px 0 0 42%;
     position: absolute;
     top: 0; }
-  .tooltip:before {
-    content: "users "; }
+  .tooltip:after {
+    content: " users"; }
 
 .m-pricing-middle .ui-slider {
   position: relative;

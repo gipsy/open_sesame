@@ -153,9 +153,9 @@
                       <span class="users-range text-right">100</span>
                     </div>
                     <div class="m-pricing-bottom">
-                      <p id="annual_price" class="price">$219.09</p>
+                      <p id="annual_price" class="price">$180.53</p>
                       <p class="user-per-month">user/year</p>
-                      <p id="annual_total_price" class="price-total quiet-color">$438.17 total/month</p>
+                      <p id="annual_total_price" class="price-total quiet-color">$9026.33 total/month</p>
                       <a href="#" class="m-btn-square--big">Choose Plan</a>
                     </div>
                   </li>
@@ -851,7 +851,7 @@
           };
 
 
-          $( "#pricing_tabs" ).tabs({ active: 1 });
+          $( "#pricing_tabs" ).tabs();
 
           //Store frequently elements in variables
           var slider_monthly  = $('#slider_monthly');
@@ -866,7 +866,7 @@
           //Call the Slider
           slider_monthly.slider({
             //Config
-            value: 2,
+            value: 50,
             range: "min",
             min: 2,
 
@@ -889,7 +889,7 @@
 
           slider_annual.slider({
             //Config
-            value: 2,
+            value: 50,
             range: "min",
             min: 2,
 
