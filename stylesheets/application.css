@@ -2021,7 +2021,22 @@ label {
       border-bottom-right-radius: 0; }
     .m-tabs-list--pricing .m-tabs-list--pricing-item.right {
       border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
+      border-bottom-left-radius: 0;
+      position: relative; }
+  .m-tabs-list--pricing .m-tabs-list--pricing-free {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 45px;
+    height: 45px;
+    line-height: 10px;
+    border-radius: 25px;
+    padding-top: 13px;
+    text-align: center;
+    font-size: 0.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #f58220; }
   .m-tabs-list--pricing .ui-state-default a {
     padding: 10px 29px;
     font-weight: 300;
