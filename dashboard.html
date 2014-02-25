@@ -254,8 +254,8 @@
                     </div>
                     <div class="m-purchased-courses--actions">
                       <button href="#" class="m-btn-round-dark--full-width">Take Course</button>
-                      <button id="opener" href="#" class="m-btn-round-dark--full-width">Invite Team</button>
-                      <button href="#" class="m-btn-round-dark--full-width">Manage</button>
+                      <button id="opener_invite_team" href="#" class="m-btn-round-dark--full-width">Invite Team</button>
+                      <button id="opener_manage" href="#" class="m-btn-round-dark--full-width">Manage</button>
                     </div>
                   </div>
                 </div>
@@ -341,8 +341,12 @@
               });
           });
 
-          // Modal Popup
-          $( "#modal" ).dialog({
+          $( "#opener_invite_team" ).click(function() {
+            $( "#modal_invite_team" ).dialog( "open" );
+          })
+
+          // Modal Invite Team Popup
+          $( "#modal_invite_team" ).dialog({
             autoOpen: false,
             width: 630,
             modal: true,
@@ -372,13 +376,43 @@
             ]
           });
 
-          $( "#opener" ).click(function() {
-            $( "#modal" ).dialog( "open" );
+          $( "#opener_manage" ).click(function() {
+            $( "#modal_manage" ).dialog( "open" );
+          });
+
+          // Modal Manage Popup
+          $( "#modal_manage" ).dialog({
+            autoOpen: false,
+            width: 880,
+            modal: true,
+            show: {
+              effect: "fade",
+              duration: 200
+            },
+            hide: {
+              effect: "fade",
+              duration: 200
+            },
+            buttons: [
+              {
+                text: "Confirm",
+                'class': 'm-btn-square',
+                click: function() {
+                  $(this).dialog("close");
+                },
+                cancel: function() {
+                  $('.ui-dialog').append('<span class="m-btn-modal--close"></span>');
+                },
+              },
+            ]
           });
         });
       </script>
     </body>
-    <div id="modal" title="Your files have downloaded successfully into the My Downloads folder.">
+    <div id="modal_invite_team" title="Your files have downloaded successfully into the My Downloads folder.">
+      <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
+    <div id="modal_manage" title="Your files have downloaded successfully into the My Downloads folder.">
       <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
     </div>
 </html>
