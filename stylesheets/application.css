@@ -2334,6 +2334,8 @@ label {
     margin-right: 0; }
   .m-filter-wrapper.action input {
     width: 60%; }
+  .m-filter-wrapper.action button {
+    padding: 5px 20px; }
 
 .m-filter-label, .m-filter-label--short {
   display: inline;
