@@ -9,7 +9,6 @@
 
   .m-tabs-list--item
     +inline-block
-    // margin-bottom: -1px
 
   // Jquery UI styles
   .ui-state-default a
@@ -26,6 +25,11 @@
     padding: 15px 50px
     color: $orange
 
+.m-tabs-list
+  &.transparent
+    .ui-tabs-active a
+      background-color: transparent
+      border-bottom-color: white
 
 .m-tabs-list--pricing
   +horizontal-list

@@ -73,14 +73,66 @@
                     <h4>Add Users</h4>
                     <p>Enter email addresses to add users to the <strong>full OpenSesame+ subscription</strong>. To invite users to <strong>specific courses
                     only</strong>, invite from the course page.</p>
-                    <div id="reports_tabs">
-                        <ul class="m-tabs-list">
-                            <li><a class="m-tabs-list--item" href="#overview"><span>New users</span></a></li>
-                            <li><a class="m-tabs-list--item" href="#charges"><span>Paste a recipient list</span></a></li>
+                    <div id="add_users_tabs">
+                        <ul class="m-tabs-list transparent">
+                            <li><a class="m-tabs-list--item" href="#newUsers"><span>New users</span></a></li>
+                            <li><a class="m-tabs-list--item" href="#recipientList"><span>Paste a recipient list</span></a></li>
                         </ul>
+
+                        <div class="m-filter--transparent">
+                            <form id="" method="" action="">
+                                <div class="m-filter-wrapper">
+                                    <input type="text" name="user" placeholder="First name">
+                                </div>
+                                <div class="m-filter-wrapper">
+                                    <input type="text" name="user" placeholder="Last name">
+                                </div>
+                                <div class="m-filter-wrapper action">
+                                    <input type="text" name="user" placeholder="Email address">
+                                    <button class="m-btn-square-dark">Add</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div id="newUsers" class="m-tabs">
+                            <div class="l-third-column">
+                                <h6 class="tiny">First Name, Last Name</h6>
+                                <p>Josh Blank</p>
+                                <p>Aaron Bridges</p>
+                            </div>
+                            <div class="l-third-column">
+                                <h6 class="tiny">Added email address</h6>
+                                <span><address>josh@opensesame.com</address></span>
+                                <span><a href="#" class="">(Remove)</a></span>
+                            </div>
+                            <div class="l-third-column">
+                                <h6 class="tiny">Invitation Type</h5>
+                                <p>Full Opensesame+ Access</p>
+                                <p>Full Opensesame+ Access</p>
+                            </div>
+                        </div>
+
+                        <div id="recipientList" class="m-tabs">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        </script>
+        <script>
+            $(function() {
+                $( "#add_users_tabs" ).tabs();
+            });
+        </script>
     </body>
 </html>

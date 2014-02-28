@@ -2001,6 +2001,10 @@ label {
     padding: 15px 50px;
     color: #f58220; }
 
+.m-tabs-list.transparent .ui-tabs-active a {
+  background-color: transparent;
+  border-bottom-color: white; }
+
 .m-tabs-list--pricing {
   margin: 0;
   padding: 0;
@@ -2299,7 +2303,7 @@ label {
   background-color: black;
   height: 350px; }
 
-.m-filter {
+.m-filter, .m-filter--transparent {
   *zoom: 1;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -2307,14 +2311,19 @@ label {
   border-top-color: #fafafa;
   background-color: #fafafa;
   padding: 13px; }
-  .m-filter:before, .m-filter:after {
+  .m-filter:before, .m-filter--transparent:before, .m-filter:after, .m-filter--transparent:after {
     content: " ";
     display: table; }
-  .m-filter:after {
+  .m-filter:after, .m-filter--transparent:after {
     clear: both; }
-  .m-filter input[type="text"] {
+  .m-filter input[type="text"], .m-filter--transparent input[type="text"] {
     border-radius: 0.3125em;
     padding: 5px 7px; }
+
+.m-filter--transparent {
+  background-color: transparent;
+  border: 0;
+  padding: 13px 0; }
 
 .m-filter-wrapper {
   float: left;
@@ -2323,6 +2332,8 @@ label {
   width: 31.91489%; }
   .m-filter-wrapper:last-child {
     margin-right: 0; }
+  .m-filter-wrapper.action input {
+    width: 60%; }
 
 .m-filter-label, .m-filter-label--short {
   display: inline;
