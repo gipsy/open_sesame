@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <!-- For IE8 media query compatibility -->
+        <!--[if lte IE 8]>
+          <script src="js/vendor/respond.js"></script>
+          <script src="js/vendor/selectivizr-min.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="stylesheets/application.css">
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="js/vendor/modernizr.custom.js"></script>
+    </head>
+    <body>
+        <section class="l-single-centered-column">
+            <div class="m-dashboard-management">
+                <header class="m-dashboard-management--plate m-dashboard-management--header">
+                    <h3 class="float-left">Microsoft Office</h3>
+                    <img class="float-right" src="img/os-plus-logo-small.png">
+                </header>
+
+                <div class="m-dashboard-management--plate">
+                    <div class="m-seats">
+                        <div class="l-row">
+                            <span class="icon-users left-oriented small float-left">You have used <b>75 seats</b> of <b>100 seats</b></span>
+                            <a href="#" class="m-btn-square float-right">Change Seats</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-dashboard-management--plate">
+                    <div id="users_tabs">
+                        <ul class="m-tabs-list">
+                            <li><a class="m-tabs-list--item" href="#newUsers"><span>New Users</span></a></li>
+                            <li><a class="m-tabs-list--item" href="#existingUsers"><span>Existing Users</span></a></li>
+                            <li><a class="m-tabs-list--item" href="#recipientList"><span>Paste a recipient list</span></a></li>
+                        </ul>
+
+                        <div class="m-filter">
+                            <form id="" method="" action="">
+                                <div class="m-filter-wrapper">
+                                    <input type="text" name="user" placeholder="First name">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="l-content">
+                            <div id="newUsers" class="m-tabs">
+                                <table class="m-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left" scope="col">User</th>
+                                            <th class="text-left">Email address</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Blank, Josh</td>
+                                            <td>josh@opensesame.com</td>
+                                            <td><button class="m-btn-square-dark">Add</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bridges, Aaron</td>
+                                            <td>aaron@opensesame.com</td>
+                                            <td><button class="m-btn-square-dark">Add</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Day, Jason</td>
+                                            <td>jason@opensesame.com</td>
+                                            <td><button class="m-btn-square-dark">Add</button</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="l-content m-users-info">
+                                    <div class="l-third-column">
+                                        <h6 class="uppercase">First Name, Last Name</h6>
+                                        <p class="m-users-name">Josh Blank</p>
+                                        <p class="m-users-name">Aaron Bridges</p>
+                                    </div>
+                                    <div class="l-third-column">
+                                        <h6 class="uppercase">Added email address</h6>
+                                        <span><address>josh@opensesame.com</address></span>
+                                        <span><a href="#" class="m-users-info--link">(Remove)</a></span>
+                                    </div>
+                                    <div class="l-third-column">
+                                        <h6 class="uppercase">Invitation Type</span></h5>
+                                        <form id="" method="" action="">
+                                            <label><input type="checkbox" name="checkbox" value="value"> Full Opensesame+ Access</label>
+                                            <label><input type="checkbox" name="checkbox" value="value"> Full Opensesame+ Access</label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <button id="opener_save" class="m-btn-square float-right">Save</button>
+                            </div>
+                        </div>
+
+                        <div id="existingUsers" class="m-tabs">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </div>
+
+                        <div id="recipientList" class="m-tabs">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m-dashboard-management--plate">
+                    <h4>Track Users</h4>
+                    <div class="m-filter--transparent">
+                        <form id="" method="" action="">
+                            <div class="m-filter-wrapper--long">
+                                <label class="m-filter-label--short" for="user">Filter by Users</label>
+                                <div class="m-filter-controls--short">
+                                    <input type="text" name="user">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <table class="m-table">
+                        <!-- <colgroup /> -->
+                        <!-- <colgroup span="2" title="title" /> -->
+                        <thead>
+                            <tr>
+                                <th class="text-left" scope="col">User</th>
+                                <th class="text-left" scope="col">Status</th>
+                                <th class="text-center" scope="col">Score</th>
+                                <th class="text-center" scope="col">Last Access</th>
+                                <th class="text-center" scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left"><span>Not started
+                                Enrolled on June 23, 2013</span></td>
+                                <td class="text-center"><time><strong>--</strong></time></td>
+                                <td class="text-center"><time>1/3/2014</time></td>
+                                <td>
+                                    <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left"><time class="green-color"><strong>7/16/12</strong></time></td>
+                                <td class="text-center"><time><strong>--</strong></time></td>
+                                <td class="text-center">1/2/2014</td>
+                                <td>
+                                    <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left"><time class="blue-color"><strong>7/16/12</strong></time></td>
+                                <td class="text-center"><time class="blue-color">100%</time></td>
+                                <td class="text-center">1/3/2014</td>
+                                <td>
+                                    <a href="#" class="m-btn-square"><span class="icon-certificate tiny">Certificate</span></a>
+                                    <p>
+                                        <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                                        <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+            s.parentNode.insertBefore(g,s)}(document,"script"));
+        </script>
+        <script>
+            $(function() {
+                $( "#users_tabs" ).tabs();
+
+                $( "#opener_save" ).click(function() {
+                    $( "#modal_save" ).dialog( "open" );
+                })
+
+                // Modal Invite Team Popup
+                $( "#modal_save" ).dialog({
+                    autoOpen: false,
+                    width: 630,
+                    modal: true,
+                    show: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    hide: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    buttons: [
+                        {
+                            text: "Confirm",
+                            'class': 'm-btn-square',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        },
+                        {
+                            text: "Cancel",
+                            'class': 'm-btn-square-dark',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        }
+                    ]
+                });
+            });
+        </script>
+    </body>
+    <div id="modal_save" title="You are about to add 30 users to OpenSesame Plus">
+        <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
+</html>
