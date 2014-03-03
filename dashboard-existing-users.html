@@ -166,39 +166,44 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
-                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left">
+                                    <span>Blank, Josh</span>
+                                    </br><a class="m-table--link" href="#">josh@opensesame.com</a></td>
                                 <td class="text-left"><span>Not started
                                 Enrolled on June 23, 2013</span></td>
                                 <td class="text-center"><time><strong>--</strong></time></td>
                                 <td class="text-center"><time>1/3/2014</time></td>
                                 <td>
                                     <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
-                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                    <a class="opener_remove m-table--link-remove" href="#"><strong>Remove</strong></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
-                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left">
+                                    <span>Bridges, Aaron</span>
+                                    </br><a class="m-table--link" href="#">Sesame, Open aaron.bridges@opensesame.com</a>
+                                </td>
                                 <td class="text-left"><time class="green-color"><strong>7/16/12</strong></time></td>
                                 <td class="text-center"><time><strong>--</strong></time></td>
                                 <td class="text-center">1/2/2014</td>
                                 <td>
                                     <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
-                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                    <a class="opener_remove m-table--link-remove" href="#"><strong>Remove</strong></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
-                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-left">
+                                    <span>Day, Jason</span>
+                                    </br><a class="m-table--link" href="#">Sesame, Open aaron.bridges@opensesame.com</a>
+                                </td>
                                 <td class="text-left"><time class="blue-color"><strong>7/16/12</strong></time></td>
-                                <td class="text-center"><time class="blue-color">100%</time></td>
+                                <td class="text-center"><time class="blue-color"><strong>100%</strong></time></td>
                                 <td class="text-center">1/3/2014</td>
                                 <td>
                                     <a href="#" class="m-btn-square"><span class="icon-certificate tiny">Certificate</span></a>
                                     <p>
                                         <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
-                                        <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                        <a class="opener_remove m-table--link-remove" href="#"><strong>Remove</strong></a>
                                     </p>
                                 </td>
                             </tr>
@@ -225,8 +230,42 @@
                     $( "#modal_save" ).dialog( "open" );
                 })
 
+                $( ".opener_remove" ).click(function() {
+                    $( "#modal_remove" ).dialog( "open" );
+                })
+
                 // Modal Invite Team Popup
                 $( "#modal_save" ).dialog({
+                    autoOpen: false,
+                    width: 630,
+                    modal: true,
+                    show: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    hide: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    buttons: [
+                        {
+                            text: "Confirm",
+                            'class': 'm-btn-square',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        },
+                        {
+                            text: "Cancel",
+                            'class': 'm-btn-square-dark',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        }
+                    ]
+                });
+
+                $( "#modal_remove" ).dialog({
                     autoOpen: false,
                     width: 630,
                     modal: true,
@@ -260,5 +299,10 @@
     </body>
     <div id="modal_save" title="You are about to add 30 users to OpenSesame Plus">
         <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
+
+    <div id="modal_remove" title="Josh will be removed from this
+        OpenSesame Plus subscription at the
+        end of the current month.">
     </div>
 </html>

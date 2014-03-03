@@ -159,7 +159,7 @@
                                 <td class="text-center">All OpenSesame</td>
                                 <td>
                                     <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
-                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                    <a class="m-table--link-remove opener_remove" href="#"><strong>Remove</strong></a>
                                 </td>
                             </tr>
                             <tr>
@@ -172,7 +172,7 @@
                                 <td class="text-center">Course-specific</td>
                                 <td>
                                     <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
-                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                    <a class="m-table--link-remove opener_remove" href="#"><strong>Remove</strong></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -201,8 +201,42 @@
                     $( "#modal_save" ).dialog( "open" );
                 })
 
+                $( ".opener_remove" ).click(function() {
+                    $( "#modal_remove" ).dialog( "open" );
+                })
+
                 // Modal Invite Team Popup
                 $( "#modal_save" ).dialog({
+                    autoOpen: false,
+                    width: 630,
+                    modal: true,
+                    show: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    hide: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    buttons: [
+                        {
+                            text: "Confirm",
+                            'class': 'm-btn-square',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        },
+                        {
+                            text: "Cancel",
+                            'class': 'm-btn-square-dark',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        }
+                    ]
+                });
+
+                $( "#modal_remove" ).dialog({
                     autoOpen: false,
                     width: 630,
                     modal: true,
@@ -236,5 +270,10 @@
     </body>
     <div id="modal_save" title="You are about to add 30 users to OpenSesame Plus">
       <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
+
+    <div id="modal_remove" title="Josh will be removed from this
+        OpenSesame Plus subscription at the
+        end of the current month.">
     </div>
 </html>
