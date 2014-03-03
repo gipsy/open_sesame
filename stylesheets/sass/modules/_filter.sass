@@ -19,9 +19,12 @@
 .m-filter-wrapper
   +span-columns(4)
   &.action input
-    width: 60%
+    width: 70%
   &.action button
     padding: 5px 20px
+
+.m-filter-wrapper--long
+  +span-columns(6)
 
 .m-filter-label
   +float(left)
@@ -34,7 +37,7 @@
 
 .m-filter-label--short
   @extend .m-filter-label
-  width: 80px
+  width: 90px
 
 .m-filter-controls
   margin-left: 160px

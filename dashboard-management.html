@@ -95,27 +95,90 @@
                         </div>
 
                         <div id="newUsers" class="m-tabs">
-                            <div class="l-third-column">
-                                <h6 class="tiny uppercase">First Name, Last Name</h6>
-                                <p>Josh Blank</p>
-                                <p>Aaron Bridges</p>
+                            <div class="l-content thin m-users-info">
+                                <div class="l-third-column">
+                                    <h6 class="uppercase">First Name, Last Name</h6>
+                                    <p class="m-users-name">Josh Blank</p>
+                                    <p class="m-users-name">Aaron Bridges</p>
+                                </div>
+                                <div class="l-third-column">
+                                    <h6 class="uppercase">Added email address</h6>
+                                    <span><address>josh@opensesame.com</address></span>
+                                    <span><a href="#" class="m-users-info--link">(Remove)</a></span>
+                                </div>
+                                <div class="l-third-column">
+                                    <h6 class="uppercase"><span class="icon-question right-oriented">Invitation Type</span></h5>
+                                    <p class="m-users-name">Full Opensesame+ Access</p>
+                                    <p class="m-users-name">Full Opensesame+ Access</p>
+                                </div>
                             </div>
-                            <div class="l-third-column">
-                                <h6 class="tiny uppercase">Added email address</h6>
-                                <span><address>josh@opensesame.com</address></span>
-                                <span><a href="#" class="">(Remove)</a></span>
-                            </div>
-                            <div class="l-third-column">
-                                <h6 class="tiny uppercase">Invitation Type</h5>
-                                <p>Full Opensesame+ Access</p>
-                                <p>Full Opensesame+ Access</p>
-                            </div>
-                            <button class="m-btn-square float-right">Save</button>
+                            <button id="opener_save" class="m-btn-square float-right">Save</button>
                         </div>
 
                         <div id="recipientList" class="m-tabs">
                             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                         </div>
+                    </div>
+                </div>
+
+                <div class="m-dashboard-management--plate">
+                    <h4>Track Users</h4>
+                    <div class="m-filter--transparent">
+                        <form id="" method="" action="">
+                            <div class="m-filter-wrapper--long">
+                                <label class="m-filter-label--short" for="user">Filter by Title</label>
+                                <div class="m-filter-controls--short">
+                                    <input type="text" name="user">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <table class="m-table">
+                        <!-- <colgroup /> -->
+                        <!-- <colgroup span="2" title="title" /> -->
+                        <thead>
+                            <tr>
+                                <th class="text-left" scope="col">User</th>
+                                <th class="text-center" scope="col">Date Added</th>
+                                <th class="text-center" scope="col">Last Access</th>
+                                <th class="text-center" scope="col">Completed</th>
+                                <th class="text-center" scope="col">Enrolled</th>
+                                <th class="text-center" scope="col">Invitation Type</th>
+                                <th class="text-left" scope="col">User Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-center"><time>7/16/12</time></td>
+                                <td class="text-center"><time>6/20/13</time></td>
+                                <td class="text-center"><strong>5</strong></td>
+                                <td class="text-center"><strong>2</strong></td>
+                                <td class="text-center">All OpenSesame</td>
+                                <td>
+                                    <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left"><a class="m-table--link" href="#">Sesame, Open
+                                aaron.bridges@opensesame.com</a></td>
+                                <td class="text-center"><time>7/16/12</time></td>
+                                <td class="text-center"><time>6/20/13</time></td>
+                                <td class="text-center"><strong>5</strong></td>
+                                <td class="text-center"><strong>2</strong></td>
+                                <td class="text-center">Course-specific</td>
+                                <td>
+                                    <a class="m-table--link" href="#"><strong>Resend Invite</strong></a>
+                                    <a class="m-table--link-remove" href="#"><strong>Remove</strong></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="l-content">
+                        <a class="float-right" href="#">CSV Download</a>
                     </div>
                 </div>
             </div>
@@ -133,7 +196,45 @@
         <script>
             $(function() {
                 $( "#add_users_tabs" ).tabs();
+
+                $( "#opener_save" ).click(function() {
+                    $( "#modal_save" ).dialog( "open" );
+                })
+
+                // Modal Invite Team Popup
+                $( "#modal_save" ).dialog({
+                    autoOpen: false,
+                    width: 630,
+                    modal: true,
+                    show: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    hide: {
+                    effect: "fade",
+                    duration: 200
+                    },
+                    buttons: [
+                        {
+                            text: "Confirm",
+                            'class': 'm-btn-square',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        },
+                        {
+                            text: "Cancel",
+                            'class': 'm-btn-square-dark',
+                            click: function(){
+                            $(this).dialog("close");
+                            }
+                        }
+                    ]
+                });
             });
         </script>
     </body>
+    <div id="modal_save" title="You are about to add 30 users to OpenSesame Plus">
+      <p class="m-modal-content">These users will have full access to the OS+ subscription. You can assign users to specific courses from the course pages.</p>
+    </div>
 </html>

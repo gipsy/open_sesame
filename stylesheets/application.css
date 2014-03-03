@@ -155,6 +155,8 @@ table {
     display: table; }
   .l-content:after {
     clear: both; }
+  .l-content.thin {
+    padding: 10px 0; }
 
 .l-content-thin {
   *zoom: 1;
@@ -412,10 +414,12 @@ label {
   [class^="icon-"].left-oriented, [class*=" icon-"].left-oriented {
     padding-left: 70px;
     background-position: 5px center;
+    display: inline;
     line-height: 40px; }
   [class^="icon-"].right-oriented, [class*=" icon-"].right-oriented {
     padding-right: 20px;
-    background-position: right center; }
+    background-position: right center;
+    display: inline; }
   [class^="icon-"].small, [class*=" icon-"].small {
     padding-left: 50px; }
   [class^="icon-"].tiny, [class*=" icon-"].tiny {
@@ -2333,9 +2337,17 @@ label {
   .m-filter-wrapper:last-child {
     margin-right: 0; }
   .m-filter-wrapper.action input {
-    width: 60%; }
+    width: 70%; }
   .m-filter-wrapper.action button {
     padding: 5px 20px; }
+
+.m-filter-wrapper--long {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  .m-filter-wrapper--long:last-child {
+    margin-right: 0; }
 
 .m-filter-label, .m-filter-label--short {
   display: inline;
@@ -2352,7 +2364,7 @@ label {
   font-weight: bold; }
 
 .m-filter-label--short {
-  width: 80px; }
+  width: 90px; }
 
 .m-filter-controls {
   margin-left: 160px; }
@@ -2573,7 +2585,7 @@ label {
   display: none; }
 
 .m-dashboard-management {
-  width: 70%;
+  width: 95%;
   background-color: #fafafa;
   border-radius: 0.3125em;
   margin: 0 auto;
@@ -2622,6 +2634,22 @@ label {
     display: table; }
   .m-seats:after {
     clear: both; }
+
+.m-users-info h6 {
+  font-size: 0.688em;
+  color: #36444b; }
+.m-users-info address {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto; }
+.m-users-info .m-users-name {
+  font-size: 0.875em;
+  color: #36444b; }
+
+.m-users-info--link {
+  font-size: 0.875em; }
 
 .m-packages-block {
   padding: 70px 0;
@@ -2854,8 +2882,14 @@ label {
   min-height: 460px; }
 
 .m-pricing-top {
+  *zoom: 1;
   padding: 75px 0 10px 0;
   background-position: center 25px; }
+  .m-pricing-top:before, .m-pricing-top:after {
+    content: " ";
+    display: table; }
+  .m-pricing-top:after {
+    clear: both; }
   .m-pricing-top h4 {
     padding-bottom: 5px; }
 
