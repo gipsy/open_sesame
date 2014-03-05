@@ -852,8 +852,6 @@ label {
   text-shadow: 0px -1px 0px #080a0e;
   background-color: #192030;
   border: 1px solid #192030;
-  border-top-color: #0095fe;
-  border-left-color: #0095fe;
   text-decoration: none; }
   .m-btn-square-dark:hover, .m-btn-round-dark:hover, .m-btn-round-dark--full-width:hover, .m-btn-square-dark.is-selected, .is-selected.m-btn-round-dark, .is-selected.m-btn-round-dark--full-width {
     background-color: #192030;
