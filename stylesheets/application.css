@@ -2662,6 +2662,8 @@ label {
   font-size: 0.875em;
   font-weight: 300;
   color: #36444b; }
+.m-users-info .m-invitation-type {
+  font-size: 0.813em; }
 
 .m-users-info--link {
   font-size: 0.875em; }
