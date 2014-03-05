@@ -2656,9 +2656,13 @@ label {
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
-  *vertical-align: auto; }
+  *vertical-align: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #36444b; }
 .m-users-info .m-users-name {
   font-size: 0.875em;
+  font-weight: 300;
   color: #36444b; }
 
 .m-users-info--link {
