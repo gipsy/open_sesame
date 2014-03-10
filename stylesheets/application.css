@@ -356,6 +356,10 @@ label {
 .uppercase {
   text-transform: uppercase; }
 
+.link {
+  text-decoration: underline;
+  color: #f58220; }
+
 .read-all {
   font-size: 12px;
   font-weight: 400;
@@ -2561,12 +2565,13 @@ label {
   height: 100%;
   z-index: 1000; }
 
+.m-modal--sign-in .m-modal--sign-in-inner {
+  padding: 0 20px 20px 20px; }
 .m-modal--sign-in .ui-dialog {
   *zoom: 1;
   border-radius: 3px;
   background-color: #fafafa;
   background-color: #fafafa;
-  padding: 0 20px 20px 20px;
   z-index: 10000; }
   .m-modal--sign-in .ui-dialog:before, .m-modal--sign-in .ui-dialog:after {
     content: " ";
@@ -2578,7 +2583,7 @@ label {
   left: -9999px; }
 .m-modal--sign-in .ui-dialog-titlebar-close {
   outline: none;
-  left: 10570px;
+  left: 10590px;
   top: -45px; }
 .m-modal--sign-in label {
   color: #999999;
@@ -2719,6 +2724,17 @@ label {
 
 .m-social--item {
   margin: 8px 0; }
+
+.m-social-bottom {
+  color: #192030;
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.813em;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
 
 .m-packages-block {
   padding: 70px 0;
