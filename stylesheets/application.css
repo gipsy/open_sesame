@@ -305,7 +305,7 @@ cite {
   cite:before {
     content: "\2014 \00A0"; }
 
-input[type="search"], input[type="email"], input[type="text"] {
+input[type="search"], input[type="email"], input[type="text"], input[type="password"] {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
@@ -2562,19 +2562,39 @@ label {
   z-index: 1000; }
 
 .m-modal--sign-in .ui-dialog {
+  *zoom: 1;
   border-radius: 3px;
   background-color: #fafafa;
   background-color: #fafafa;
-  border: 20px solid #fafafa;
-  padding: 20px;
-  text-align: center;
+  padding: 0 20px 20px 20px;
   z-index: 10000; }
+  .m-modal--sign-in .ui-dialog:before, .m-modal--sign-in .ui-dialog:after {
+    content: " ";
+    display: table; }
+  .m-modal--sign-in .ui-dialog:after {
+    clear: both; }
 .m-modal--sign-in .ui-dialog-titlebar {
   position: relative;
   left: -9999px; }
 .m-modal--sign-in .ui-dialog-titlebar-close {
-  left: 10550px;
-  top: -85px; }
+  outline: none;
+  left: 10570px;
+  top: -45px; }
+.m-modal--sign-in label {
+  color: #999999;
+  font-size: 0.625em;
+  font-weight: bold;
+  margin-bottom: 5px; }
+.m-modal--sign-in input[type="email"], .m-modal--sign-in input[type="password"] {
+  border: 1px solid #e1e1e1;
+  border-radius: 0.3125em;
+  padding: 10px 7px;
+  margin-bottom: 5px; }
+.m-modal--sign-in .m-modal-psw-recovery a {
+  font-style: italic;
+  color: #999999;
+  font-size: 0.625em;
+  text-decoration: underline; }
 
 .m-modal--default .ui-dialog {
   border-radius: 3px;
@@ -2692,6 +2712,13 @@ label {
 
 .m-users-info--link {
   font-size: 0.875em; }
+
+.m-social {
+  list-style: none;
+  padding: 0; }
+
+.m-social--item {
+  margin: 8px 0; }
 
 .m-packages-block {
   padding: 70px 0;

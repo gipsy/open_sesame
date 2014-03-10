@@ -437,29 +437,51 @@
                     $('.ui-widget-overlay').each(function () {
                         $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--sign-in" />');
                     });
+                    $(".ui-dialog-titlebar-close").show() 
                     $('form').attr("id","example");
                 },
-                buttons: [
-                    {
-                        text: "Confirm",
-                        'class': 'm-btn-square',
-                        click: function(){
-                        $(this).dialog("close");
-                        }
-                    },
-                    {
-                        text: "Cancel",
-                        'class': 'm-btn-square-dark',
-                        click: function(){
-                        $(this).dialog("close");
-                        }
-                    }
-                ]
+                // buttons: [
+                //     {
+                //         text: "Confirm",
+                //         'class': 'm-btn-square',
+                //         click: function(){
+                //         $(this).dialog("close");
+                //         }
+                //     },
+                //     {
+                //         text: "Cancel",
+                //         'class': 'm-btn-square-dark',
+                //         click: function(){
+                //         $(this).dialog("close");
+                //         }
+                //     }
+                // ]
             });
           });
       </script>
     </body>
     <div id="modal_sign_in">
-      saoheunshaoeu
+      <section class="l-half-column">
+        <h4>Sign in to your account</h4>
+        <label class="uppercase">Email Address</label>
+        <input type="email" name="email">
+        <label class="uppercase">Password</label>
+        <input type="password" name="pwd">
+        <div class="m-modal-psw-recovery text-right">
+          <a href="#">Forgot your password?</a>
+        </div>
+        <div class="l-content thin text-right">
+          <button class="m-btn-square" type="submit">Login</button>
+        </div>
+      </section>
+      <section class="l-half-column">
+        <h4>Or use a social sign in</h4>
+        <ul class="m-social text-center">
+          <li class="m-social--item"><a href="#"><img src="img/btn-social-twitter.png"></a></li>
+          <li class="m-social--item"><a href="#"><img src="img/btn-social-facebook.png"></a></li>
+          <li class="m-social--item"><a href="#"><img src="img/btn-social-linkedin.png"></a></li>
+          <li class="m-social--item"><a href="#"><img src="img/btn-social-google.png"></a></li>
+        </ul>
+      </section>
     </div>
 </html>
