@@ -41,6 +41,7 @@
 
         <link rel="stylesheet" href="stylesheets/application.css">
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/vendor/jquery-ui-1.10.4.custom.min.js"></script>
         <script src="js/vendor/modernizr.custom.js"></script>
     </head>
     <body>
@@ -58,8 +59,8 @@
                 <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">BLOG</a></li>
                 <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">RESOURCES</a></li>
                 <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">HELP</a></li>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn" href="/open_sesame">Sign In</a>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn is-selected" href="/open_sesame">Sign Up</a>
+                <li class="m-header-nav-item"><a id="opener_sign_in" class="m-header-nav-item--link m-btn" href="javascript:void(0)">Sign In</a></li>
+                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn is-selected" href="/open_sesame">Sign Up</a></li>
               </ul>
             </nav>
           </div>
@@ -413,7 +414,52 @@
 
             // Mobile Menu
             $( '#dl-menu' ).dlmenu();
+
+            $( "#opener_sign_in" ).click(function() {
+                $( "#modal_sign_in" ).dialog( "open" );
+            })
+
+            // Modal Popup
+            $( "#modal_sign_in" ).dialog({
+                autoOpen: false,
+                width: 630,
+                modal: true,
+                show: {
+                effect: "fade",
+                duration: 200
+                },
+                hide: {
+                effect: "fade",
+                duration: 200
+                },
+                appendTo: "form",
+                open: function () {
+                    $('.ui-widget-overlay').each(function () {
+                        $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--sign-in" />');
+                    });
+                    $('form').attr("id","example");
+                },
+                buttons: [
+                    {
+                        text: "Confirm",
+                        'class': 'm-btn-square',
+                        click: function(){
+                        $(this).dialog("close");
+                        }
+                    },
+                    {
+                        text: "Cancel",
+                        'class': 'm-btn-square-dark',
+                        click: function(){
+                        $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
           });
       </script>
     </body>
+    <div id="modal_sign_in">
+      saoheunshaoeu
+    </div>
 </html>

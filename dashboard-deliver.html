@@ -215,7 +215,7 @@
                   $( "#modal_remove" ).dialog( "open" );
               })
 
-              // Modal Invite Team Popup
+              // Modal Popup
               $( "#modal_save" ).dialog({
                   autoOpen: false,
                   width: 630,
@@ -227,6 +227,11 @@
                   hide: {
                   effect: "fade",
                   duration: 200
+                  },
+                  open: function () {
+                      $('.ui-widget-overlay').each(function () {
+                          $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--default" />');
+                      });
                   },
                   buttons: [
                       {
@@ -257,6 +262,11 @@
                   hide: {
                   effect: "fade",
                   duration: 200
+                  },
+                  open: function () {
+                      $('.ui-widget-overlay').each(function () {
+                          $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--default" />');
+                      });
                   },
                   buttons: [
                       {

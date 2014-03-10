@@ -420,12 +420,10 @@ label {
   [class^="icon-"].left-oriented, [class*=" icon-"].left-oriented {
     padding-left: 70px;
     background-position: 5px center;
-    display: inline;
     line-height: 40px; }
   [class^="icon-"].right-oriented, [class*=" icon-"].right-oriented {
     padding-right: 20px;
-    background-position: right center;
-    display: inline; }
+    background-position: right center; }
   [class^="icon-"].small, [class*=" icon-"].small {
     padding-left: 50px; }
   [class^="icon-"].tiny, [class*=" icon-"].tiny {
@@ -759,17 +757,23 @@ label {
       padding-opposite-position(left): 0; }
     .m-menu .m-courses-menu li.last {
       padding-opposite-position(left): 0; }
-  .m-menu .m-courses-menu .m-courses-menu-item {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 14.89362%; }
-    .m-menu .m-courses-menu .m-courses-menu-item:last-child {
-      margin-right: 0; }
-    .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6n) {
-      margin-right: 0; }
-    .m-menu .m-courses-menu .m-courses-menu-item:nth-child(6n+1) {
-      clear: left; }
+.m-menu .m-courses-menu-item {
+  *zoom: 1;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 14.89362%; }
+  .m-menu .m-courses-menu-item:before, .m-menu .m-courses-menu-item:after {
+    content: " ";
+    display: table; }
+  .m-menu .m-courses-menu-item:after {
+    clear: both; }
+  .m-menu .m-courses-menu-item:last-child {
+    margin-right: 0; }
+  .m-menu .m-courses-menu-item:nth-child(6n) {
+    margin-right: 0; }
+  .m-menu .m-courses-menu-item:nth-child(6n+1) {
+    clear: left; }
 
 .m-btn {
   display: inline-block;
@@ -784,7 +788,8 @@ label {
 
 .m-btn {
   margin: 0 5px;
-  padding: 11px 27px; }
+  padding: 11px 27px;
+  background: transparent; }
   .m-btn:hover, .m-btn.is-selected {
     border: 1px solid #f58220;
     background-color: #f58220; }
@@ -2537,6 +2542,15 @@ label {
 .m-modal-content {
   font-size: 0.813em; }
 
+.ui-dialog-titlebar-close {
+  display: block;
+  background: transparent url("../img/icon-modal-close.png");
+  text-indent: -9999px;
+  position: absolute;
+  border: 0;
+  width: 35px;
+  height: 35px; }
+
 .ui-widget-overlay {
   background-color: black;
   opacity: 0.9;
@@ -2544,16 +2558,33 @@ label {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  z-index: 1000; }
 
-.ui-dialog {
+.m-modal--sign-in .ui-dialog {
   border-radius: 3px;
   background-color: #fafafa;
   background-color: #fafafa;
   border: 20px solid #fafafa;
   padding: 20px;
-  text-align: center; }
-  .ui-dialog:after {
+  text-align: center;
+  z-index: 10000; }
+.m-modal--sign-in .ui-dialog-titlebar {
+  position: relative;
+  left: -9999px; }
+.m-modal--sign-in .ui-dialog-titlebar-close {
+  left: 10550px;
+  top: -85px; }
+
+.m-modal--default .ui-dialog {
+  border-radius: 3px;
+  background-color: #fafafa;
+  background-color: #fafafa;
+  border: 20px solid #fafafa;
+  padding: 20px;
+  text-align: center;
+  z-index: 10000; }
+  .m-modal--default .ui-dialog:after {
     content: "";
     display: block;
     position: absolute;
@@ -2565,28 +2596,22 @@ label {
     bottom: 0;
     left: 0;
     right: 0; }
-
-.ui-dialog-titlebar {
+.m-modal--default .ui-dialog-titlebar {
   font-size: 1.5em;
   font-weight: bold; }
-
-.ui-button {
-  margin: 0 9px; }
-
-.ui-dialog-title {
+.m-modal--default .ui-dialog-title {
   display: inline-block;
   vertical-align: baseline;
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
   padding-bottom: 10px; }
-
-.ui-dialog-titlebar, .ui-dialog-content, .ui-dialog-buttonpane {
+.m-modal--default .ui-dialog-titlebar, .m-modal--default .ui-dialog-content, .m-modal--default .ui-dialog-buttonpane {
   position: relative;
   z-index: 10; }
-
-.ui-dialog-titlebar-close {
-  display: none; }
+.m-modal--default .ui-dialog-titlebar-close {
+  right: -40px;
+  top: -85px; }
 
 .m-dashboard-management {
   width: 95%;

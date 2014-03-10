@@ -2,6 +2,15 @@
   font-size: 0.813em
 
 // jquery-ui styles
+.ui-dialog-titlebar-close
+  display: block
+  background: transparent url('../img/icon-modal-close.png')
+  text-indent: -9999px
+  position: absolute
+  border: 0
+  width: 35px
+  height: 35px
+
 .ui-widget-overlay
   background-color: black
   opacity: .9
@@ -10,40 +19,58 @@
   left: 0
   width: 100%
   height: 100%
+  z-index: 1000
 
-.ui-dialog
-  border-radius: 3px
-  background-color: $near-white
-  background-color: $near-white
-  border: 20px solid $near-white
-  padding: 20px
-  text-align: center
-  &:after
-    content: ""
-    display: block
-    position: absolute
-    width: 100%
-    height: 100%
-    border-radius: 5px
-    background-color: #FFF
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
+.m-modal--sign-in
+  .ui-dialog
+    border-radius: 3px
+    background-color: $near-white
+    background-color: $near-white
+    border: 20px solid $near-white
+    padding: 20px
+    text-align: center
+    z-index: 10000
+  .ui-dialog-titlebar
+    position: relative
+    left: -9999px
+  .ui-dialog-titlebar-close
+    left: 10550px
+    top: -85px
 
-.ui-dialog-titlebar
-  font-size: 1.5em
-  font-weight: bold
+.m-modal--default
+  .ui-dialog
+    border-radius: 3px
+    background-color: $near-white
+    background-color: $near-white
+    border: 20px solid $near-white
+    padding: 20px
+    text-align: center
+    z-index: 10000
+    &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 100%
+      height: 100%
+      border-radius: 5px
+      background-color: #FFF
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
 
-.ui-button
-  margin: 0 9px
-.ui-dialog-title
-  +inline-block
-  padding-bottom: 10px
+  .ui-dialog-titlebar
+    font-size: 1.5em
+    font-weight: bold
 
-.ui-dialog-titlebar, .ui-dialog-content, .ui-dialog-buttonpane
-  position: relative
-  z-index: 10
+  .ui-dialog-title
+    +inline-block
+    padding-bottom: 10px
 
-.ui-dialog-titlebar-close
-  display: none
+  .ui-dialog-titlebar, .ui-dialog-content, .ui-dialog-buttonpane
+    position: relative
+    z-index: 10
+
+  .ui-dialog-titlebar-close
+    right: -40px
+    top: -85px

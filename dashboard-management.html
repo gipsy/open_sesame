@@ -221,6 +221,11 @@
                     effect: "fade",
                     duration: 200
                     },
+                    open: function () {
+                        $('.ui-widget-overlay').each(function () {
+                            $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--default" />');
+                        });
+                    },
                     buttons: [
                         {
                             text: "Confirm",
@@ -250,6 +255,11 @@
                     hide: {
                     effect: "fade",
                     duration: 200
+                    },
+                    open: function () {
+                        $('.ui-widget-overlay').each(function () {
+                            $(this).next('.ui-dialog').andSelf().wrapAll('<div class="m-modal--default" />');
+                        });
                     },
                     buttons: [
                         {
