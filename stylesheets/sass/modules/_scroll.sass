@@ -1,0 +1,50 @@
+.m-scroll
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+.m-scroll-nav
+  +horizontal-list
+  background-color: $medium-blue
+  padding: 10px 0
+
+.m-scroll-nav--item
+  text-transform: uppercase
+  font-size: 0.688em
+  a
+    color: white
+
+.m-scroll-nav--registration
+  +float(right)
+  a
+    color: $orange
+
+.m-scroll--content
+  +clearfix
+  text-align: left
+  display: block
+  background-color: $near-white
+  padding: 10px 0
+  border-bottom: 1px solid $light-light-blue
+  .m-logo
+    margin: 15px 30px 0 0
+
+.m-scroll--search
+  +span-columns(7)
+  .m-search-wrapper
+    +span-columns(5 of 7)
+    margin-top: 0
+
+.m-scroll--explore
+  +float(left)
+  text-transform: uppercase
+  margin: 20px 0 0 30px
+  span
+    +inline-block
+    +float(left)
+    font-weight: bold
+    font-size: 0.813em
+    line-height: 30px
+    margin-right: 10px
+

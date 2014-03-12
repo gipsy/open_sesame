@@ -512,6 +512,14 @@ label {
         background-image: url("../img/icon-active-software@2x.png");
         background-size: 47px 44px; } }
 
+.icon-play-video {
+  background: url("../img/icon-play-video.png");
+  width: 107px;
+  height: 107px;
+  border-radius: 54px; }
+  .icon-play-video:hover, .icon-play-video.is-selected {
+    background: rgba(255, 255, 255, 0.3) url("../img/icon-play-video.png"); }
+
 .icon-enterprise {
   background-image: url("../img/icon-enterprise.png"); }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
@@ -890,6 +898,16 @@ label {
   right: -20px;
   top: -70px;
   outline: none; }
+
+.m-btn-explore {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  background: url("../img/icon-plus-button.png");
+  width: 31px;
+  height: 30px; }
 
 .m-media {
   *zoom: 1; }
@@ -2738,6 +2756,101 @@ label {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
 
+.m-scroll {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.m-scroll-nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  background-color: #192030;
+  padding: 10px 0; }
+  .m-scroll-nav:before, .m-scroll-nav:after {
+    content: " ";
+    display: table; }
+  .m-scroll-nav:after {
+    clear: both; }
+  .m-scroll-nav li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .m-scroll-nav li:first-child, .m-scroll-nav li.first {
+      padding-left: 0; }
+    .m-scroll-nav li:last-child {
+      padding-opposite-position(left): 0; }
+    .m-scroll-nav li.last {
+      padding-opposite-position(left): 0; }
+
+.m-scroll-nav--item {
+  text-transform: uppercase;
+  font-size: 0.688em; }
+  .m-scroll-nav--item a {
+    color: white; }
+
+.m-scroll-nav--registration {
+  display: inline;
+  float: right; }
+  .m-scroll-nav--registration a {
+    color: #f58220; }
+
+.m-scroll--content {
+  *zoom: 1;
+  text-align: left;
+  display: block;
+  background-color: #fafafa;
+  padding: 10px 0;
+  border-bottom: 1px solid #91999d; }
+  .m-scroll--content:before, .m-scroll--content:after {
+    content: " ";
+    display: table; }
+  .m-scroll--content:after {
+    clear: both; }
+  .m-scroll--content .m-logo {
+    margin: 15px 30px 0 0; }
+
+.m-scroll--search {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 57.44681%; }
+  .m-scroll--search:last-child {
+    margin-right: 0; }
+  .m-scroll--search .m-search-wrapper {
+    float: left;
+    display: block;
+    margin-right: 3.7037%;
+    width: 70.37037%;
+    margin-top: 0; }
+    .m-scroll--search .m-search-wrapper:last-child {
+      margin-right: 0; }
+
+.m-scroll--explore {
+  display: inline;
+  float: left;
+  text-transform: uppercase;
+  margin: 20px 0 0 30px; }
+  .m-scroll--explore span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    display: inline;
+    float: left;
+    font-weight: bold;
+    font-size: 0.813em;
+    line-height: 30px;
+    margin-right: 10px; }
+
 .m-packages-block {
   padding: 70px 0;
   background: white;
@@ -2761,8 +2874,8 @@ label {
 
 .m-testimonials-block, .m-testimonials-block_others {
   *zoom: 1;
-  background-image: url("../img/fc-logo-bg.png");
-  background-image: url("../img/fc-logo-bg.png");
+  background-image: url("../img/vi-logo-bg.gif");
+  background-image: url("../img/vi-logo-bg.gif");
   padding: 50px 0;
   text-align: center;
   color: white;
@@ -2861,6 +2974,25 @@ label {
   .m-news-block .m-body h6 {
     font-size: 1.125em;
     color: #f58220; }
+
+.m-how-it-works-block {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+  background-color: #f58220; }
+  .m-how-it-works-block:before {
+    background-image: url("../img/vid-bg.jpg");
+    background-image: url("../img/vid-bg.jpg");
+    content: "";
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1; }
 
 .m-dashboard-top {
   padding: 40px 0;
