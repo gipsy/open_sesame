@@ -430,6 +430,8 @@ label {
     background-position: right center; }
   [class^="icon-"].small, [class*=" icon-"].small {
     padding-left: 50px; }
+  [class^="icon-"].smaller, [class*=" icon-"].smaller {
+    padding-left: 30px; }
   [class^="icon-"].tiny, [class*=" icon-"].tiny {
     padding-left: 20px;
     background-position: 0 center; }
@@ -519,6 +521,12 @@ label {
   border-radius: 54px; }
   .icon-play-video:hover, .icon-play-video.is-selected {
     background: rgba(255, 255, 255, 0.3) url("../img/icon-play-video.png"); }
+
+.icon-my-courses {
+  background: url("../img/icon-courses.png") no-repeat; }
+
+.icon-circle {
+  background: url("../img/icon-circle.png") no-repeat; }
 
 .icon-enterprise {
   background-image: url("../img/icon-enterprise.png"); }
@@ -2850,6 +2858,38 @@ label {
     font-size: 0.813em;
     line-height: 30px;
     margin-right: 10px; }
+
+.m-scroll--courses {
+  display: inline;
+  float: right;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  margin-top: 15px;
+  text-transform: uppercase; }
+  .m-scroll--courses:before, .m-scroll--courses:after {
+    content: " ";
+    display: table; }
+  .m-scroll--courses:after {
+    clear: both; }
+  .m-scroll--courses li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .m-scroll--courses li:first-child, .m-scroll--courses li.first {
+      padding-left: 0; }
+    .m-scroll--courses li:last-child {
+      padding-opposite-position(left): 0; }
+    .m-scroll--courses li.last {
+      padding-opposite-position(left): 0; }
+  .m-scroll--courses a {
+    font-size: 0.813em; }
 
 .m-packages-block {
   padding: 70px 0;
