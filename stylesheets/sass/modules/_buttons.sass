@@ -16,7 +16,7 @@
 
 .m-btn-alt
   +inline-block
-  border-radius: 5px
+  border-radius: $base-border-radius
   &:hover, &.is-selected
     background-color: rgba(#222222, 0.8)
     color: $orange
@@ -43,8 +43,6 @@
   color: white
   border-radius: 3px
   border: 1px solid $orange
-  border-top-color: $light-orange
-  border-left-color: $light-orange
   outline: none
   &.m-btn-spaces
     margin: 0 8px
@@ -53,9 +51,17 @@
     border: 1px solid $medium-orange
     color: white
 
-.m-btn-square--disabled
-  @extend .m-btn-square
+.m-btn-square--is-disabled
+  +inline-block
+  padding: 9px 22px
+  color: white
+  border-radius: 3px
+  border: 1px solid $medium-gray
   background-color: $medium-gray
+  text-shadow: none
+  outline: none
+  &:hover
+    color: white
 
 .m-btn-square--small
   @extend .m-btn-square
@@ -103,3 +109,13 @@
   background: url('../img/icon-plus-button.png')
   width: 31px
   height: 30px
+
+.m-btn-bundle
+  +inline-block
+  width: 90px
+  font-size: 0.750em
+  padding: 10px
+  border-radius: $base-border-radius
+  border: 1px solid $orange
+  text-align: center
+  line-height: 15px

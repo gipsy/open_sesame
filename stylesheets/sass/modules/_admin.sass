@@ -4,13 +4,13 @@
     padding-left: 12px
 
 .m-admin-summary-flank
-  +span-columns(3)
+  +span-columns(4)
+  position: relative
+  margin-right: 0
   box-shadow: 0px 0 8px 3px  rgba(0,0,0,0.15)
-  padding: 0
 
 .m-admin-content
-  +span-columns(9)
-  +reset-display
+  +span-columns(8)
   padding: 0
 
 
@@ -56,6 +56,7 @@
   color: $pale-blue
 
 .m-admin-step
+  +clearfix
   padding: 15px 20px
   background-color: $medium-medium-gray
 
@@ -73,6 +74,8 @@
 
 .m-admin-step--list
   +horizontal-list
+  +inline-block
+  margin-top: 10px
 
 .m-admin-step--item
   color: $medium-gray
@@ -83,3 +86,28 @@
     color: white
     .m-admin-step--number
       background-color: white
+
+.m-admin-bundle--list
+  +no-bullet
+  +span-columns(5)
+  margin: 0
+  padding: 0
+  background-color: $near-white
+  color: $near-black
+
+.m-admin-bundle--item
+  +clearfix
+  padding: 15px 20px 25px 20px
+  color: $near-black
+  &.is-selected
+    background-color: white
+
+.m-admin-bundle--title
+  font-size: 0.875em
+  font-weight: bold
+  line-height: 17px
+  margin-bottom: 0
+  text-transform: uppercase
+
+.m-admin-bundle--description
+  font-size: 0.750em
