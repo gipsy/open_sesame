@@ -3,14 +3,19 @@
     +span-columns(7)
     padding-left: 12px
 
-.m-admin-summary-flank
-  +span-columns(4)
+.m-admin-summary-aside
+  width: 300px
   position: relative
   margin-right: 0
   box-shadow: 0px 0 8px 3px  rgba(0,0,0,0.15)
+  position: absolute
+  padding-top: 20px
+  top: 0
+  bottom: 0
 
 .m-admin-content
-  +span-columns(8)
+  width: auto
+  margin-left: 300px
   padding: 0
 
 
@@ -87,9 +92,11 @@
     .m-admin-step--number
       background-color: white
 
+.m-admin-bundle
+  +span-columns(5)
+
 .m-admin-bundle--list
   +no-bullet
-  +span-columns(5)
   margin: 0
   padding: 0
   background-color: $near-white
@@ -97,7 +104,7 @@
 
 .m-admin-bundle--item
   +clearfix
-  padding: 15px 20px 25px 20px
+  padding: 15px 20px
   color: $near-black
   &.is-selected
     background-color: white
@@ -109,5 +116,16 @@
   margin-bottom: 0
   text-transform: uppercase
 
+.m-admin-courses
+  +span-columns(7)
+  p
+    font-size: 0.750em
+    line-height: 18px
+
+.m-admin-courses--list
+  +no-bullet
+  padding: 0
+
 .m-admin-bundle--description
   font-size: 0.750em
+

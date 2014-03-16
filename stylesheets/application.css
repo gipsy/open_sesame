@@ -225,7 +225,8 @@ body {
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5em;
-  font-weight: 400; }
+  font-weight: 400;
+  position: relative; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
@@ -2931,25 +2932,20 @@ label {
   .m-admin .m-logo:last-child {
     margin-right: 0; }
 
-.m-admin-summary-flank {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 31.91489%;
+.m-admin-summary-aside {
+  width: 300px;
   position: relative;
   margin-right: 0;
-  box-shadow: 0px 0 8px 3px rgba(0, 0, 0, 0.15); }
-  .m-admin-summary-flank:last-child {
-    margin-right: 0; }
+  box-shadow: 0px 0 8px 3px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  padding-top: 20px;
+  top: 0;
+  bottom: 0; }
 
 .m-admin-content {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 65.95745%;
+  width: auto;
+  margin-left: 300px;
   padding: 0; }
-  .m-admin-content:last-child {
-    margin-right: 0; }
 
 .m-logo-slogan {
   display: inline;
@@ -3073,24 +3069,26 @@ label {
     .m-admin-step--item.is-active .m-admin-step--number {
       background-color: white; }
 
+.m-admin-bundle {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 40.42553%; }
+  .m-admin-bundle:last-child {
+    margin-right: 0; }
+
 .m-admin-bundle--list {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 40.42553%;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
   color: #1d1d1d; }
-  .m-admin-bundle--list:last-child {
-    margin-right: 0; }
 
 .m-admin-bundle--item {
   *zoom: 1;
-  padding: 15px 20px 25px 20px;
+  padding: 15px 20px;
   color: #1d1d1d; }
   .m-admin-bundle--item:before, .m-admin-bundle--item:after {
     content: " ";
@@ -3106,6 +3104,23 @@ label {
   line-height: 17px;
   margin-bottom: 0;
   text-transform: uppercase; }
+
+.m-admin-courses {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 57.44681%; }
+  .m-admin-courses:last-child {
+    margin-right: 0; }
+  .m-admin-courses p {
+    font-size: 0.75em;
+    line-height: 18px; }
+
+.m-admin-courses--list {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0; }
 
 .m-admin-bundle--description {
   font-size: 0.75em; }
