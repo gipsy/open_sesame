@@ -1,0 +1,85 @@
+.m-admin
+  .m-logo
+    +span-columns(7)
+    padding-left: 12px
+
+.m-admin-summary-flank
+  +span-columns(3)
+  box-shadow: 0px 0 8px 3px  rgba(0,0,0,0.15)
+  padding: 0
+
+.m-admin-content
+  +span-columns(9)
+  +reset-display
+  padding: 0
+
+
+.m-logo-slogan
+  +float(left)
+  font-size: 0.688em
+  line-height: 14px
+  margin-left: 5px
+  color: $dark-dark-blue
+
+.m-admin-title
+  +inline-block
+  background-color: lighten($dark-blue, 5%)
+  padding: 0 12px
+  margin: 10px 0 15px 0
+  color: white
+  font-size: 0.625em
+  font-weight: bold
+  text-transform: uppercase
+  width: 100%
+  line-height: 25px
+
+.m-amount-number
+  +inline-block
+  width: 100%
+  text-align: center
+  font-size: 2.125em
+  font-weight: bold
+  color: $near-black
+
+.m-amount-number-description
+  +inline-block
+  width: 100%
+  text-align: center
+  text-transform: uppercase
+  line-height: 15px
+  font-size: 0.688em
+
+.m-admin-message
+  padding-left: 12px
+  line-height: 18px
+  font-size: 0.750em
+  color: $pale-blue
+
+.m-admin-step
+  padding: 15px 20px
+  background-color: $medium-medium-gray
+
+.m-admin-step--number
+  +inline-block
+  text-align: center
+  font-size: 0.688em
+  font-weight: bold
+  color: $dark-blue
+  background-color: $medium-gray
+  width: 22px
+  height: 22px
+  border-radius: 11px
+  margin-right: 10px
+
+.m-admin-step--list
+  +horizontal-list
+
+.m-admin-step--item
+  color: $medium-gray
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 0.688em
+  &.is-active
+    color: white
+    .m-admin-step--number
+      background-color: white
