@@ -219,6 +219,30 @@ table {
       .l-third-column:last-child {
         margin-right: 0; } }
 
+.l-three-fours-column {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 57.44681%; }
+  .l-three-fours-column:last-child {
+    margin-right: 0; }
+
+.l-two-fours-column {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 40.42553%; }
+  .l-two-fours-column:last-child {
+    margin-right: 0; }
+
+.l-one-fours-column {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 14.89362%; }
+  .l-one-fours-column:last-child {
+    margin-right: 0; }
+
 body {
   color: #333333;
   font-family: "Open Sans", sans-serif;
@@ -3222,6 +3246,12 @@ label {
 
 .m-admin-billing-info {
   padding-left: 20px; }
+
+.m-admin-card-info {
+  padding-left: 30px; }
+
+.m-admin-security-img {
+  margin-top: 25px; }
 
 .m-packages-block {
   padding: 70px 0;

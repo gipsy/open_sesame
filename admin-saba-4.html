@@ -133,10 +133,10 @@
               </section>
             </div>
 
-            <section class="l-half-column">
-              <div class="m-admin-billing-info">
-                <h5>Billing Information</h5>
-                <form class="m-default-form">
+            <form class="m-default-form">
+              <section class="l-three-fours-column">
+                <div class="m-admin-billing-info">
+                  <h5>Billing Information</h5>
                   <section class="l-half-column">
                     <label for="firstname">First name</label>
                     <input id="firstname" type="text" placeholder="Pete">
@@ -157,14 +157,32 @@
                     <label for="phonenumber">Phone number</label>
                     <input id="phonenumber" type="text" placeholder="(415) 227-3817">
                   </section>
-                </form>
-              </div>
-            </section>
+                </div>
+              </section>
 
-            <section class="l-half-column">
-              <div class="m-admin-card-info">
-              </div>
-            </section>
+              <section class="l-two-fours-column">
+                <div class="m-admin-card-info">
+                  <h5>Card Information</h5>
+                  <section class="l-three-fours-column">
+                    <label for="card_number">Card number</label>
+                    <input id="card_number" type="text" placeholder="173638164838">
+                    <label for="name_on_card">Name on card</label>
+                    <input id="name_on_card" type="text" placeholder="Peter U Jackson">
+                  </section>
+                  <section class="l-one-fours-column">
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" type="text" placeholder="000">
+                  </section>
+                  <section class="l-half-column">
+                    <label for="expiration_date">Expiration date</label>
+                    <input id="expiration_date" type="text">
+                  </section>
+                  <section class="l-half-column">
+                    <img class="m-admin-security-img" src="img/icon-security.jpg">
+                  </section>
+                </div>
+              </section>
+            </form>
 
           </div><!-- /m-admin-content -->
         </div><!-- /m-admin -->
