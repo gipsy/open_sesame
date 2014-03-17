@@ -2539,14 +2539,13 @@ label {
   .m-table-details td[colspan="3"] {
     border-right-color: #fafafa; }
 
-#slider_monthly, #slider_annual {
+#slider_monthly, #slider_annual, #slider_bundle_plan {
   border-width: 1px;
   border-bottom-width: 0;
   border-style: solid;
   border-color: #333333 #333333 #777777 #333333;
   height: 3px;
-  background-color: #8e8d8d;
-  background: url("../img/bg-track.png") repeat top left;
+  background-color: white;
   margin-top: 15px; }
 
 .tooltip {
@@ -2580,18 +2579,18 @@ label {
   .tooltip:after {
     content: " users"; }
 
-.m-pricing-middle .ui-slider {
+.m-pricing-middle .ui-slider, .m-admin-plan-summary .ui-slider {
   position: relative;
   text-align: left; }
-.m-pricing-middle .ui-state-default {
+.m-pricing-middle .ui-state-default, .m-admin-plan-summary .ui-state-default {
   background: #f58220 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
   font-weight: normal;
   color: #555555; }
-.m-pricing-middle .ui-widget-content {
+.m-pricing-middle .ui-widget-content, .m-admin-plan-summary .ui-widget-content {
   border: 1px solid #aaaaaa;
   background: white url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
   color: #222222; }
-.m-pricing-middle .ui-slider-handle {
+.m-pricing-middle .ui-slider-handle, .m-admin-plan-summary .ui-slider-handle {
   top: -0.55em;
   margin-left: -4px;
   position: absolute;
@@ -2600,18 +2599,21 @@ label {
   width: 9px;
   height: 20px;
   cursor: pointer; }
-.m-pricing-middle .ui-slider-range {
+.m-pricing-middle .ui-slider-range, .m-admin-plan-summary .ui-slider-range {
   background: #f58220;
   position: absolute;
   border: 0;
   top: 0;
   height: 100%; }
-.m-pricing-middle .users-range {
+.m-pricing-middle .users-range, .m-pricing-middle .users-range-bundle-plan, .m-admin-plan-summary .users-range, .m-admin-plan-summary .users-range-bundle-plan {
   display: inline;
   float: left;
   margin-top: 5px;
   width: 20%;
+  color: white;
   font-size: 0.625em; }
+.m-pricing-middle .users-range-bundle-plan, .m-admin-plan-summary .users-range-bundle-plan {
+  width: 16.66%; }
 
 .m-modal-content {
   font-size: 0.813em; }
@@ -2955,9 +2957,14 @@ label {
   bottom: 0; }
 
 .m-admin-content {
-  width: auto;
+  *zoom: 1;
   margin-left: 300px;
   padding: 0; }
+  .m-admin-content:before, .m-admin-content:after {
+    content: " ";
+    display: table; }
+  .m-admin-content:after {
+    clear: both; }
 
 .m-logo-slogan {
   display: inline;
@@ -3151,7 +3158,28 @@ label {
     margin-bottom: 5px; }
 
 .m-admin-bundle--description {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+  font-weight: 300; }
+
+.m-admin-plan-summary {
+  *zoom: 1;
+  background-color: #263137;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 25px 20px; }
+  .m-admin-plan-summary:before, .m-admin-plan-summary:after {
+    content: " ";
+    display: table; }
+  .m-admin-plan-summary:after {
+    clear: both; }
+
+.m-admin-slider-wrapper {
+  bottom: 20px; }
+
+.m-admin-plan--title {
+  color: white;
+  font-size: 0.75em;
+  text-transform: uppercase; }
 
 .m-packages-block {
   padding: 70px 0;
