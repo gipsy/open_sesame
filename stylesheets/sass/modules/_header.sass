@@ -8,13 +8,13 @@
   .m-logo
     +span-columns(4)
 .m-header-nav
+  +span-columns(8)
+  +omega
   list-style-type: none
   padding: 0
   margin: 0
   margin-top: -13px
   text-align: right
-  +span-columns(8)
-  +omega
   .m-header-nav-item
     +inline-block
     margin: 5px 10px
@@ -115,6 +115,7 @@
   +breakpoint($mobile)
     display: none
   .m-courses-menu
+    +clearfix
     +horizontal-list
   .m-courses-menu-item
     +clearfix

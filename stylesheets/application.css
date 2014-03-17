@@ -634,16 +634,16 @@ label {
       margin-right: 0; }
 
 .m-header-nav {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: -13px;
-  text-align: right;
   float: left;
   display: block;
   margin-right: 2.12766%;
   width: 65.95745%;
-  margin-right: 0; }
+  margin-right: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: -13px;
+  text-align: right; }
   .m-header-nav:last-child {
     margin-right: 0; }
   .m-header-nav .m-header-nav-item {
@@ -771,10 +771,16 @@ label {
   .m-menu {
     display: none; } }
 .m-menu .m-courses-menu {
+  *zoom: 1;
   margin: 0;
   padding: 0;
   border: 0;
   *zoom: 1; }
+  .m-menu .m-courses-menu:before, .m-menu .m-courses-menu:after {
+    content: " ";
+    display: table; }
+  .m-menu .m-courses-menu:after {
+    clear: both; }
   .m-menu .m-courses-menu:before, .m-menu .m-courses-menu:after {
     content: " ";
     display: table; }
@@ -3343,6 +3349,7 @@ label {
 
 .m-how-it-works-block {
   padding: 50px 0;
+  position: relative;
   text-align: center;
   background-color: #f58220; }
   .m-how-it-works-block:before {

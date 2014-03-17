@@ -45,6 +45,49 @@
         <script src="js/vendor/modernizr.custom.js"></script>
     </head>
     <body>
+      <div class="m-scroll">
+        <ul class="m-scroll-nav">
+          <section class="l-single-centered-column">
+            <li class="m-scroll-nav--item"><a href="#">About</a></li>
+            <li class="m-scroll-nav--item"><a href="#">Blog</a></li>
+            <li class="m-scroll-nav--item"><a href="#">Resources</a></li>
+            <li class="m-scroll-nav--item"><a href="#">Enterprise</a></li>
+            <li class="m-scroll-nav--item"><a href="#">Help</a></li>
+
+            <!-- language switcher should be here -->
+
+            <ul class="m-scroll-nav--registration">
+              <li class="m-scroll-nav--item text-right"><a href="#">Sign in</a></li>
+              <li class="m-scroll-nav--item text-right"><a href="#">Sign up</a></li>
+            </ul>
+          </section>
+        </ul>
+
+        <div class="m-scroll--content">
+          <section class="l-single-centered-column">
+            <a class="m-logo float-left" href="/"><img src="img/logo-inverted.png"></a>
+            <div class="m-scroll--search">
+              <form id="" method="" action="">
+                <span class="m-search-wrapper">
+                  <input type="search" name="search" placeholder="Search for courses (Try: Business, Safety, Microsoft...)">
+                  <input type="submit" value="search">
+                </span>
+              </form>
+
+              <div class="m-scroll--explore">
+                <span class="">Explore</span>
+                <a href="#" class="m-btn-explore"></a>
+              </div>
+            </div>
+
+            <ul class="m-scroll--courses">
+              <li><a href="#" class="icon-my-courses left-oriented smaller accent-color">My Courses</a></li>
+              <li><a href="#" class="icon-circle left-oriented smaller">Shopping Cart</a></li>
+            </ul>
+          </section>
+        </div>
+      </div><!-- /m-scroll -->
+
       <header class="m-header">
         <section class="l-single-centered-column">
           <a class="m-logo" href="/"><img src="img/logo.png"></a>
@@ -53,16 +96,14 @@
             <a id="responsive-menu-button" class="m-mobile-header-nav--link" href="#sidr-main">Toggle menu</a>
           </div>
           <div id="navigation">
-            <nav role="navigation">
-              <ul class="m-header-nav">
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">ABOUT</a></li>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">BLOG</a></li>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">RESOURCES</a></li>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">HELP</a></li>
-                <li class="m-header-nav-item"><a id="opener_sign_in" class="m-header-nav-item--link m-btn" href="javascript:void(0)">Sign In</a></li>
-                <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn is-selected" href="/open_sesame">Sign Up</a></li>
-              </ul>
-            </nav>
+            <ul class="m-header-nav">
+              <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">ABOUT</a></li>
+              <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">BLOG</a></li>
+              <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">RESOURCES</a></li>
+              <li class="m-header-nav-item"><a class="m-header-nav-item--link" href="/open_sesame">HELP</a></li>
+              <li class="m-header-nav-item"><a id="opener_sign_in" class="m-header-nav-item--link m-btn" href="javascript:void(0)">Sign In</a></li>
+              <li class="m-header-nav-item"><a class="m-header-nav-item--link m-btn is-selected" href="/open_sesame">Sign Up</a></li>
+            </ul>
           </div>
           <div class="m-search">
             <h1>Thousands of online courses delivered instantly</h1>
@@ -87,7 +128,6 @@
           <ul>
         </div>
         <div class="m-menu">
-          <nav role="navigation">
             <section class="l-single-centered-column">
               <h5 class="m-menu-browse-all">Popular Online Courses <a class="read-all" href="#"> (BROWSE ALL)</a></h5>
               <ul class="m-courses-menu">
@@ -99,7 +139,6 @@
                 <li class="m-courses-menu-item"><a href="#" class="m-btn-alt icon-software centered uppercase"><span>Software</span></a></li>
               </ul>
             </section>
-          </nav>
         </div>
       </header>
 
@@ -131,48 +170,6 @@
           <a class="icon-play-video" href="#"></a>
           <p class="inverted">Learn how it works. Simple and easy.</p>
         </section>
-        <div class="m-scroll">
-          <ul class="m-scroll-nav">
-            <section class="l-single-centered-column">
-              <li class="m-scroll-nav--item"><a href="#">About</a></li>
-              <li class="m-scroll-nav--item"><a href="#">Blog</a></li>
-              <li class="m-scroll-nav--item"><a href="#">Resources</a></li>
-              <li class="m-scroll-nav--item"><a href="#">Enterprise</a></li>
-              <li class="m-scroll-nav--item"><a href="#">Help</a></li>
-
-              <!-- language switcher should be here><--!>
-
-              <ul class="m-scroll-nav--registration">
-                <li class="m-scroll-nav--item text-right"><a href="#">Sign in</a></li>
-                <li class="m-scroll-nav--item text-right"><a href="#">Sign up</a></li>
-              </ul>
-            </section>
-          </ul>
-
-          <div class="m-scroll--content">
-            <section class="l-single-centered-column">
-              <a class="m-logo float-left" href="/"><img src="img/logo-inverted.png"></a>
-              <div class="m-scroll--search">
-                <form id="" method="" action="">
-                  <span class="m-search-wrapper">
-                    <input type="search" name="search" placeholder="Search for courses (Try: Business, Safety, Microsoft...)">
-                    <input type="submit" value="search">
-                  </span>
-                </form>
-
-                <div class="m-scroll--explore">
-                  <span class="">Explore</span>
-                  <a href="#" class="m-btn-explore"></a>
-                </div>
-              </div>
-
-              <ul class="m-scroll--courses">
-                <li><a href="#" class="icon-my-courses left-oriented smaller accent-color">My Courses</a></li>
-                <li><a href="#" class="icon-circle left-oriented smaller">Shopping Cart</a></li>
-              </ul>
-            </section>
-          </div>
-        </div>
       </section>
 
       <section class="m-testimonials-block">
@@ -347,20 +344,18 @@
       <footer class="m-footer">
         <section class="l-single-centered-column">
           <header>
-            <nav role="navigation">
-              <ul class="m-footer-nav">
-                <li class="m-footer-nav-item"><a href="#">Buy</a></li>
-                <li class="m-footer-nav-item"><a href="#">Sell</a></li>
-                <li class="m-footer-nav-item"><a href="#">Careers</a></li>
-                <li class="m-footer-nav-item"><a href="#">Contact Us</a></li>
-                <li class="m-footer-nav-item"><a href="#">LMS</a></li>
-                <li class="m-footer-nav-item"><a href="#">Authoring Tools</a></li>
-                <li class="m-footer-nav-item"><a href="#">API</a></li>
-                <li class="m-footer-nav-item"><a href="#">Privacy</a></li>
-                <li class="m-footer-nav-item"><a href="#">Terms</a></li>
-                <li class="m-footer-nav-item"><a href="#">Sitemap</a></li>
-              </ul>
-            </nav>
+            <ul class="m-footer-nav">
+              <li class="m-footer-nav-item"><a href="#">Buy</a></li>
+              <li class="m-footer-nav-item"><a href="#">Sell</a></li>
+              <li class="m-footer-nav-item"><a href="#">Careers</a></li>
+              <li class="m-footer-nav-item"><a href="#">Contact Us</a></li>
+              <li class="m-footer-nav-item"><a href="#">LMS</a></li>
+              <li class="m-footer-nav-item"><a href="#">Authoring Tools</a></li>
+              <li class="m-footer-nav-item"><a href="#">API</a></li>
+              <li class="m-footer-nav-item"><a href="#">Privacy</a></li>
+              <li class="m-footer-nav-item"><a href="#">Terms</a></li>
+              <li class="m-footer-nav-item"><a href="#">Sitemap</a></li>
+            </ul>
             <ul class="m-footer-sitemap">
               <li class="m-footer-sitemap-col">
                 <ul>
