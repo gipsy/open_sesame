@@ -106,7 +106,7 @@
   +clearfix
   padding: 15px 20px
   color: $near-black
-  &.is-selected
+  &:hover, &.is-selected
     background-color: white
 
 .m-admin-bundle--title
@@ -118,13 +118,25 @@
 
 .m-admin-courses
   +span-columns(7)
+  padding-right: 10px
+  .m-object
+    margin-top: 8px
   p
     font-size: 0.750em
     line-height: 18px
 
+.m-admin-courses--time
+  font-size: 0.750em
+
 .m-admin-courses--list
   +no-bullet
   padding: 0
+
+.m-admin-courses--item
+  padding-bottom: 30px
+  a
+    +inline-block
+    margin-bottom: 5px
 
 .m-admin-bundle--description
   font-size: 0.750em

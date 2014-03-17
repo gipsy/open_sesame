@@ -426,8 +426,7 @@ label {
       text-align: center; }
   [class^="icon-"].left-oriented, [class*=" icon-"].left-oriented {
     padding-left: 70px;
-    background-position: 5px center;
-    line-height: 40px; }
+    background-position: 5px center; }
   [class^="icon-"].right-oriented, [class*=" icon-"].right-oriented {
     padding-right: 20px;
     background-position: right center; }
@@ -602,6 +601,9 @@ label {
 
 .icon-question {
   background-image: url("../img/icon-question.png"); }
+
+.icon-clock {
+  background-image: url("../img/icon-clock.png"); }
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
@@ -969,6 +971,15 @@ label {
     width: 65.21739%; }
     .m-media .m-body:last-child {
       margin-right: 0; }
+    .m-media .m-body .m-body-wrapper {
+      *zoom: 1;
+      line-height: 15px;
+      padding-bottom: 10px; }
+      .m-media .m-body .m-body-wrapper:before, .m-media .m-body .m-body-wrapper:after {
+        content: " ";
+        display: table; }
+      .m-media .m-body .m-body-wrapper:after {
+        clear: both; }
 
 .m-media--small {
   *zoom: 1; }
@@ -2796,10 +2807,11 @@ label {
   border-bottom-right-radius: 5px; }
 
 .m-scroll {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 2000; }
 
 .m-scroll-nav {
   margin: 0;
@@ -3095,7 +3107,7 @@ label {
     display: table; }
   .m-admin-bundle--item:after {
     clear: both; }
-  .m-admin-bundle--item.is-selected {
+  .m-admin-bundle--item:hover, .m-admin-bundle--item.is-selected {
     background-color: white; }
 
 .m-admin-bundle--title {
@@ -3109,18 +3121,34 @@ label {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 57.44681%; }
+  width: 57.44681%;
+  padding-right: 10px; }
   .m-admin-courses:last-child {
     margin-right: 0; }
+  .m-admin-courses .m-object {
+    margin-top: 8px; }
   .m-admin-courses p {
     font-size: 0.75em;
     line-height: 18px; }
+
+.m-admin-courses--time {
+  font-size: 0.75em; }
 
 .m-admin-courses--list {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0px;
   padding: 0; }
+
+.m-admin-courses--item {
+  padding-bottom: 30px; }
+  .m-admin-courses--item a {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    margin-bottom: 5px; }
 
 .m-admin-bundle--description {
   font-size: 0.75em; }
@@ -3252,7 +3280,6 @@ label {
 .m-how-it-works-block {
   padding: 50px 0;
   text-align: center;
-  position: relative;
   background-color: #f58220; }
   .m-how-it-works-block:before {
     background-image: url("../img/vid-bg.jpg");
