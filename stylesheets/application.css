@@ -171,7 +171,22 @@ table {
   padding: 55px 0; }
 
 .l-box {
+  *zoom: 1;
   padding: 20px 35px; }
+  .l-box:before, .l-box:after {
+    content: " ";
+    display: table; }
+  .l-box:after {
+    clear: both; }
+
+.l-box--small {
+  *zoom: 1;
+  padding: 10px 20px; }
+  .l-box--small:before, .l-box--small:after {
+    content: " ";
+    display: table; }
+  .l-box--small:after {
+    clear: both; }
 
 .l-single-centered-column, .l-single-centered-column--shadow {
   *zoom: 1;
@@ -382,7 +397,7 @@ label {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
-  padding-bottom: 5px; }
+  padding-bottom: 4px; }
 
 .title {
   color: #192030; }
@@ -899,6 +914,7 @@ label {
   zoom: 1;
   *display: inline;
   *vertical-align: auto;
+  font-weight: 300;
   text-shadow: 0px -1px 0px #d8690a;
   text-decoration: none;
   background-color: #f58220;
@@ -946,6 +962,7 @@ label {
   padding: 12px 27px; }
 
 .m-btn-square-dark, .m-btn-round-dark, .m-btn-round-dark--full-width {
+  font-weight: 300;
   text-shadow: 0px -1px 0px #080a0e;
   background-color: #192030;
   border: 1px solid #192030;
@@ -960,8 +977,7 @@ label {
 .m-btn-round-dark, .m-btn-round-dark--full-width {
   border-radius: 5px;
   background-color: #3f4d57;
-  border-color: #242c31;
-  font-weight: 300; }
+  border-color: #242c31; }
 
 .m-btn-round-dark--full-width {
   text-align: center;
@@ -3010,7 +3026,7 @@ label {
 .m-admin-content {
   *zoom: 1;
   margin-left: 300px;
-  min-height: 500px;
+  min-height: 800px;
   padding: 0; }
   .m-admin-content:before, .m-admin-content:after {
     content: " ";
@@ -3255,12 +3271,21 @@ label {
 
 .m-admin-billing-info {
   padding-left: 20px; }
+  .m-admin-billing-info label {
+    font-size: 0.75em; }
 
 .m-admin-card-info {
   padding-left: 30px; }
+  .m-admin-card-info label {
+    font-size: 0.75em; }
 
 .m-admin-security-img {
+  display: inline;
+  float: left;
   margin-top: 25px; }
+
+.m-admin-billing-info--terms {
+  font-size: 0.75em; }
 
 .m-packages-block {
   padding: 70px 0;
