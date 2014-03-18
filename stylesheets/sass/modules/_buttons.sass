@@ -36,7 +36,6 @@
 
 .m-btn-square
   +inline-block
-  font-weight: 300
   text-shadow: 0px -1px 0px darken($orange, 10%)
   text-decoration: none
   background-color: $orange
@@ -51,6 +50,10 @@
     +linear-gradient($orange 0, lighten($orange, 3%) 49%, darken($orange, 3%) 53%)
     border: 1px solid $medium-orange
     color: white
+
+//Fixing the font weight when using button tag
+button.m-btn-square
+  font-weight: 300
 
 .m-btn-square--fixed-width
   @extend .m-btn-square
@@ -81,7 +84,6 @@
 
 .m-btn-square-dark
   @extend .m-btn-square
-  font-weight: 300
   text-shadow: 0px -1px 0px darken($medium-blue, 10%)
   background-color: $medium-blue
   border: 1px solid $medium-blue
@@ -89,6 +91,10 @@
   &:hover, &.is-selected
     +linear-gradient($medium-blue 0, lighten($medium-blue, 3%) 49%, darken($medium-blue, 3%) 53%)
     border: 1px solid $dark-dark-blue
+
+//Fixing the font weight when using button tag
+button.m-btn-square-dark
+  font-weight: 300
 
 .m-btn-round-dark
   @extend .m-btn-square-dark
