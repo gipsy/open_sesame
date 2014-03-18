@@ -95,95 +95,21 @@
             <div class="m-admin-step">
               <ul class="m-admin-step--list">
                 <li class="m-admin-step--item"><span class="m-admin-step--number">1</span>Select a bundle</li>
-                <li class="m-admin-step--item"><span class="m-admin-step--number">2</span>Number of users</li>
-                <li class="m-admin-step--item is-selected"><span class="m-admin-step--number">3</span>Payment</li>
+                <li class="m-admin-step--item is-selected"><span class="m-admin-step--number">2</span>Number of users</li>
+                <li class="m-admin-step--item"><span class="m-admin-step--number">3</span>Payment</li>
               </ul>
               <div class="float-right">
                 <a href="#" class="m-btn-square--is-disabled">Add to Saba</a>
               </div>
             </div>
 
-            <div class="m-admin-plan-summary">
-              <section class="l-half-column">
-                <h6 class="m-admin-plan--title">You currently have 10 seats</br> in your plan</h6>
-                <div class="m-admin-slider-wrapper">
-                  <span id="tooltip_bundle_plan" class="tooltip">350 </span>
-                  <div id="slider_bundle_plan"></div>
-                  <span class="users-range-bundle-plan text-left">2</span>
-                  <span class="users-range-bundle-plan text-left">250</span>
-                  <span class="users-range-bundle-plan text-center">500</span>
-                  <span class="users-range-bundle-plan text-right">750</span>
-                  <span class="users-range-bundle-plan text-right">1000</span>
-                  <span class="users-range-bundle-plan text-right">2500+</span>
-                </div>
+            <section class="l-box">
+              <h5>You currently have 70 seats remaining.</br> Would you like to purchase more?</h5>
+              <section class="l-content">
+                <a href="#" class="m-btn-square--fixed-width">Yes</a>
+                <a href="#" class="m-btn-square--fixed-width">No</a>
               </section>
-              <section class="l-half-column">
-                <div class="m-admin-prices-summary">
-                  <section class="l-half-column">
-                    <span class="m-admin-prices-summary--amount">$XX</span>
-                    </br>
-                    <span class="m-admin-prices-summary--description">per user</span>
-                  </section>
-                  <section class="l-half-column">
-                    <span class="m-admin-prices-summary--amount">$XX</span>
-                    </br>
-                    <span class="m-admin-prices-summary--description">per user</span>
-                  </section>
-                </div>
-              </section>
-            </div>
-
-            <form class="m-default-form">
-              <section class="l-three-fours-column">
-                <div class="m-admin-billing-info">
-                  <h5>Billing Information</h5>
-                  <section class="l-half-column">
-                    <label for="firstname">First name</label>
-                    <input id="firstname" type="text" placeholder="Pete">
-                    <label for="addres_1">Address 1</label>
-                    <input id="address_1" type="text" placeholder="3371 W Overstock St.">
-                    <label for="sity">Sity</label>
-                    <input id="sity" type="text" placeholder="San Francisco">
-                    <label for="zipcode">Zip Code</label>
-                    <input id="zipcode" type="text" placeholder="91103">
-                  </section>
-                  <section class="l-half-column">
-                    <label for="lastname">Last name</label>
-                    <input id="lastname" type="text" placeholder="Jackson">
-                    <label for="addres_2">Address 2</label>
-                    <input id="address_2" type="text" placeholder="">
-                    <label for="state">State</label>
-                    <input id="state" type="text" placeholder="CA">
-                    <label for="phonenumber">Phone number</label>
-                    <input id="phonenumber" type="text" placeholder="(415) 227-3817">
-                  </section>
-                </div>
-              </section>
-
-              <section class="l-two-fours-column">
-                <div class="m-admin-card-info">
-                  <h5>Card Information</h5>
-                  <section class="l-three-fours-column">
-                    <label for="card_number">Card number</label>
-                    <input id="card_number" type="text" placeholder="173638164838">
-                    <label for="name_on_card">Name on card</label>
-                    <input id="name_on_card" type="text" placeholder="Peter U Jackson">
-                  </section>
-                  <section class="l-one-fours-column">
-                    <label for="cvv">CVV</label>
-                    <input id="cvv" type="text" placeholder="000">
-                  </section>
-                  <section class="l-half-column">
-                    <label for="expiration_date">Expiration date</label>
-                    <input id="expiration_date" type="text">
-                  </section>
-                  <section class="l-half-column">
-                    <img class="m-admin-security-img" src="img/icon-security.jpg">
-                  </section>
-                </div>
-              </section>
-            </form>
-
+            </section>
           </div><!-- /m-admin-content -->
         </div><!-- /m-admin -->
       </section>
@@ -198,36 +124,6 @@
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
           g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
           s.parentNode.insertBefore(g,s)}(document,"script"));
-      </script>
-      <script>
-        $(function() {
-          //Store frequently elemnents in variables
-          var slider_bundle_plan = $('#slider_bundle_plan');
-          var tooltip_bundle_plan = $('#tooltip_bundle_plan');
-
-          //Call the slider
-          slider_bundle_plan.slider ({
-            //Config
-            value: 350,
-            range: "min",
-            min: 2,
-
-            start: function(event, ui) {
-              tooltip_bundle_plan.fadeIn('fast');
-            },
-            //Slider Event
-            slide: function(event, ui) { //When the slider is sliding
-              var  value = slider_bundle_plan('value');
-              // var pricePerPlan = dataAnnualArr.annualUsers[ui.value - 2].pricePerYear;
-              // var priceTotal = dataAnnualArr.annualUsers[ui.value - 2].priceTotal;
-
-              // $( "#monthly" ).find("#monthly_price").empty().append('$' + pricePerMonth);
-              // $( "#monthly" ).find("#monthly_total_price").empty().append('$' + priceTotal + ' total/month');
-
-              tooltip_bundle_plan.text(ui.value);
-            },
-          }).find(".ui-slider-handle").append(tooltip_bundle_plan);
-        });
       </script>
     </body>
 </html>
