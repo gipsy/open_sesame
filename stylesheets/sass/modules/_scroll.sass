@@ -1,9 +1,12 @@
 .m-scroll
-  position: fixed
   top: 0
   left: 0
   right: 0
   z-index: 2000
+
+.m-scroll--fixed
+  @extend .m-scroll
+  position: fixed
 
 .m-scroll-nav
   +horizontal-list

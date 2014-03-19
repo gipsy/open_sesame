@@ -1,0 +1,24 @@
+.m-breadcrumbs
+  +horizontal-list
+  background-color: white
+  border-bottom: 1px solid $medium-gray
+  line-height: 34px
+
+.m-breadcrumbs--item
+  position: relative
+  font-size: 0.688em
+  font-weight: bold
+  margin-right: 10px
+  &:after
+    color: $orange
+    content: '\25BA'
+    position: absolute
+    font-size: 80%
+    right: -10px
+    bottom: -1px
+  &.is-selected
+    a
+      color: $medium-blue
+    &:after
+      content: ''
+
