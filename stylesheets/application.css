@@ -1000,7 +1000,8 @@ label {
     margin: 5px 0;
     width: 100%; }
   .m-btn-square.big, .big.m-btn-square--fixed-width, .big.m-btn-square-dark, .big.m-btn-round-dark {
-    padding: 12px 27px; }
+    padding: 12px 27px;
+    font-size: 1.063em; }
   .m-btn-square.small, .small.m-btn-square--fixed-width, .small.m-btn-square-dark, .small.m-btn-round-dark {
     padding: 4px 16px;
     font-size: 0.75em; }
@@ -1033,7 +1034,8 @@ label {
     margin: 5px 0;
     width: 100%; }
   .m-btn-square--blue.big {
-    padding: 12px 27px; }
+    padding: 12px 27px;
+    font-size: 1.063em; }
   .m-btn-square--blue.small {
     padding: 4px 16px;
     font-size: 0.75em; }
@@ -1042,6 +1044,9 @@ button.m-btn-square, button.m-btn-square--fixed-width, button.m-btn-square-dark,
   font-weight: 300; }
 
 button.m-btn-square--blue {
+  font-weight: 300; }
+
+button.m-btn-square-dark, button.m-btn-round-dark {
   font-weight: 300; }
 
 .m-btn-square--fixed-width {
@@ -1083,13 +1088,11 @@ button.m-btn-square--blue {
     margin: 5px 0;
     width: 100%; }
   .m-btn-square-dark.big, .big.m-btn-round-dark {
-    padding: 12px 27px; }
+    padding: 12px 27px;
+    font-size: 1.063em; }
   .m-btn-square-dark.small, .small.m-btn-round-dark {
     padding: 4px 16px;
     font-size: 0.75em; }
-
-button.m-btn-square-dark, button.m-btn-round-dark {
-  font-weight: 300; }
 
 .m-btn-round-dark {
   border-radius: 5px;
@@ -1265,6 +1268,8 @@ button.m-btn-square-dark, button.m-btn-round-dark {
         padding-opposite-position(left): 0; }
       .m-footer .m-footer-sitemap li.last {
         padding-opposite-position(left): 0; }
+  .m-footer .m-footer-sitemap li {
+    padding-left: 0; }
   .m-footer .m-footer-sitemap-col {
     color: white;
     padding: 40px 0;
