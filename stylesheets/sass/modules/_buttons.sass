@@ -44,15 +44,53 @@
   border-radius: 3px
   border: 1px solid $orange
   outline: none
-  &.m-btn-spaces
-    margin: 0 8px
   &:hover, &.is-selected
     +linear-gradient($orange 0, lighten($orange, 3%) 49%, darken($orange, 3%) 53%)
     border: 1px solid $medium-orange
     color: white
+  &.m-btn-spaces
+    margin: 0 8px
+  &.full-width
+    text-align: center
+    margin: 5px 0
+    width: 100%
+  &.big
+    padding: 12px 27px
+  &.small
+    padding: 4px 16px
+    font-size: 0.750em
+
+.m-btn-square--blue
+  +inline-block
+  text-shadow: 0px -1px 0px darken($blue, 10%)
+  text-decoration: none
+  background-color: $blue
+  padding: 9px 22px
+  color: white
+  border-radius: 3px
+  border: 1px solid $blue
+  outline: none
+  &.m-btn-spaces
+    margin: 0 8px
+  &:hover, &.is-selected
+    +linear-gradient($blue 0, lighten($blue, 3%) 49%, darken($blue, 3%) 53%)
+    border: 1px solid $medium-blue
+    color: white
+  &.full-width
+    text-align: center
+    margin: 5px 0
+    width: 100%
+  &.big
+    padding: 12px 27px
+  &.small
+    padding: 4px 16px
+    font-size: 0.750em
 
 //Fixing the font weight when using button tag
 button.m-btn-square
+  font-weight: 300
+
+button.m-btn-square--blue
   font-weight: 300
 
 .m-btn-square--fixed-width
@@ -60,12 +98,6 @@ button.m-btn-square
   text-align: center
   width: 150px
   margin-right: 8px
-
-.m-btn-square--full-width
-  @extend .m-btn-square
-  text-align: center
-  margin: 5px 0
-  width: 100%
 
 .m-btn-square--is-disabled
   +inline-block
@@ -79,15 +111,6 @@ button.m-btn-square
   &:hover
     color: white
 
-.m-btn-square--small
-  @extend .m-btn-square
-  padding: 4px 16px
-  font-size: 0.750em
-
-.m-btn-square--big
-  @extend .m-btn-square
-  padding: 12px 27px
-
 .m-btn-square-dark
   @extend .m-btn-square
   text-shadow: 0px -1px 0px darken($medium-blue, 10%)
@@ -97,6 +120,17 @@ button.m-btn-square
   &:hover, &.is-selected
     +linear-gradient($medium-blue 0, lighten($medium-blue, 3%) 49%, darken($medium-blue, 3%) 53%)
     border: 1px solid $dark-dark-blue
+  &.m-btn-spaces
+    margin: 0 8px
+  &.full-width
+    text-align: center
+    margin: 5px 0
+    width: 100%
+  &.big
+    padding: 12px 27px
+  &.small
+    padding: 4px 16px
+    font-size: 0.750em
 
 //Fixing the font weight when using button tag
 button.m-btn-square-dark
@@ -107,12 +141,6 @@ button.m-btn-square-dark
   border-radius: 5px
   background-color: $dark-blue
   border-color: $dark-dark-blue
-
-.m-btn-round-dark--full-width
-  @extend .m-btn-round-dark
-  text-align: center
-  margin: 5px 0
-  width: 100%
 
 .m-btn-modal--close
   background: url('../img/icon-modal-close.png')
