@@ -500,6 +500,7 @@ label {
   float: left; }
 
 .m-box {
+  font-size: 0.813em;
   background: white;
   border-radius: 0.3125em;
   border: 1px solid #192030;
@@ -718,6 +719,10 @@ label {
   background-image: url("../img/icon-play-alt-video.png");
   width: 53px;
   height: 60px; }
+
+.icon-question-mark-big {
+  background-position: left top !important;
+  background-image: url("../img/icon-question-mark-big.png"); }
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
