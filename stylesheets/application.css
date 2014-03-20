@@ -214,7 +214,7 @@ table {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%; }
+  width: 44.68085%; }
   .l-content-narrow:last-child {
     margin-right: 0; }
 
@@ -222,7 +222,7 @@ table {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 19.14894%; }
+  width: 23.40426%; }
   .l-aside-right:last-child {
     margin-right: 0; }
 
@@ -723,6 +723,21 @@ label {
 .icon-question-mark-big {
   background-position: left top !important;
   background-image: url("../img/icon-question-mark-big.png"); }
+
+.icon-facebook {
+  background-image: url("../img/icon-facebook.png"); }
+
+.icon-twitter {
+  background-image: url("../img/icon-twitter.png"); }
+
+.icon-linkedin {
+  background-image: url("../img/icon-linkedin.png"); }
+
+.icon-google-plus {
+  background-image: url("../img/icon-google-plus.png"); }
+
+.icon-mail {
+  background-image: url("../img/icon-mail.png"); }
 
 .m-header {
   background: url("../img/header-bg.jpg") center center;
@@ -2586,11 +2601,13 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   background-color: black;
   height: 350px; }
 
-.m-courses-features h6 {
-  font-size: 0.813em;
-  padding-bottom: 5px; }
-.m-courses-features P {
-  font-size: 0.813em; }
+.m-courses-features {
+  margin-top: 20px; }
+  .m-courses-features h6 {
+    font-size: 0.813em;
+    padding-bottom: 5px; }
+  .m-courses-features P {
+    font-size: 0.813em; }
 
 .m-skills, .m-skills--inverted {
   display: inline-block;
@@ -3007,14 +3024,14 @@ button.m-btn-square-dark, button.m-btn-round-dark {
 .m-users-info--link {
   font-size: 0.875em; }
 
-.m-social {
+.m-social-sign--list {
   list-style: none;
   padding: 0; }
 
-.m-social--item {
+.m-social-sign--item {
   margin: 8px 0; }
 
-.m-social-bottom {
+.m-social-sign-bottom {
   color: #192030;
   background: white;
   width: 100%;
@@ -3024,6 +3041,46 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   padding-left: 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
+
+.m-social-btn--list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  *zoom: 1;
+  margin-top: 25px; }
+  .m-social-btn--list:before, .m-social-btn--list:after {
+    content: " ";
+    display: table; }
+  .m-social-btn--list:after {
+    clear: both; }
+  .m-social-btn--list li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+    white-space: nowrap;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .m-social-btn--list li:first-child, .m-social-btn--list li.first {
+      padding-left: 0; }
+    .m-social-btn--list li:last-child {
+      padding-opposite-position(left): 0; }
+    .m-social-btn--list li.last {
+      padding-opposite-position(left): 0; }
+
+.m-social-btn--list li {
+  padding-left: 0;
+  padding-right: 11px; }
+
+.m-social-btn--item {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  width: 42px;
+  height: 41px; }
 
 .m-scroll, .m-scroll--fixed {
   top: 0;
@@ -3521,7 +3578,8 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   text-align: center; }
 
 .m-booking-box {
-  margin-top: -68px; }
+  margin-top: -68px;
+  font-size: 1em; }
 
 .m-booking-box--top {
   height: 67px;
@@ -3567,6 +3625,25 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   font-size: 0.688em;
   font-weight: bold;
   text-transform: uppercase; }
+
+.m-reviews--list {
+  margin: 0;
+  padding: 0; }
+
+.m-reviews--item {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px; }
+
+.m-reviews--title {
+  text-transform: uppercase;
+  font-size: 0.813em;
+  font-weight: bold; }
+
+.m-reviews--date {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold; }
 
 .m-packages-block {
   padding: 70px 0;
