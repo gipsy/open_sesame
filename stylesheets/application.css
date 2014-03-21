@@ -635,7 +635,9 @@ label {
   background: url("../img/icon-courses.png") no-repeat; }
 
 .icon-circle {
-  background: url("../img/icon-circle.png") no-repeat; }
+  background: url("../img/icon-circle.png") no-repeat;
+  width: 23px;
+  height: 24px; }
 
 .icon-enterprise {
   background-image: url("../img/icon-enterprise.png"); }
@@ -1159,36 +1161,37 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   text-align: center;
   line-height: 15px; }
 
-.m-signup {
+.m-signup--subscription {
   *zoom: 1;
+  border-top: 1px solid #91999d;
   background-color: #313b43;
   text-align: center;
   padding-top: 20px; }
-  .m-signup:before, .m-signup:after {
+  .m-signup--subscription:before, .m-signup--subscription:after {
     content: " ";
     display: table; }
-  .m-signup:after {
+  .m-signup--subscription:after {
     clear: both; }
-  .m-signup .m-signup-wrapper {
+  .m-signup--subscription .m-signup-wrapper {
     width: 400px;
     margin: 10px 0; }
-  .m-signup form {
+  .m-signup--subscription form {
     height: 100%; }
-  .m-signup label {
+  .m-signup--subscription label {
     margin-right: 15px;
     height: 45px;
     line-height: 40px;
     color: white;
     font-size: 1.5em; }
-  .m-signup input[type="email"], .m-signup input[type="submit"] {
+  .m-signup--subscription input[type="email"], .m-signup--subscription input[type="submit"] {
     font-size: 0.813em;
     border-radius: 0.3125em;
     margin: 0 5px;
     margin-bottom: 20px; }
-  .m-signup input[type="email"] {
+  .m-signup--subscription input[type="email"] {
     width: 400px; }
     @media screen and (max-width: 480px) {
-      .m-signup input[type="email"] {
+      .m-signup--subscription input[type="email"] {
         width: 90%; } }
 
 .m-media {
@@ -3231,7 +3234,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   padding: 0;
   border: 0;
   *zoom: 1;
-  margin-top: 15px;
+  margin-top: 22px;
   text-transform: uppercase; }
   .m-scroll--courses:before, .m-scroll--courses:after {
     content: " ";
@@ -3256,6 +3259,13 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   .m-scroll--courses a {
     font-size: 0.813em;
     font-weight: bold; }
+
+.m-scroll--cart-item-amount {
+  color: white;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 0.813em;
+  font-weight: bold; }
 
 .m-admin .m-logo {
   float: left;
