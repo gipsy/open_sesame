@@ -473,6 +473,9 @@ label {
 .pale-blue-color {
   color: #36444b; }
 
+.highlighted-color {
+  color: #f58220; }
+
 .green-color {
   color: #00b627; }
 
@@ -3809,6 +3812,29 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   width: 100%;
   height: 100%;
   z-index: 100; }
+
+.icon-bulb-big {
+  background-position: center 30%; }
+
+.m-explore--help {
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  width: 100%; }
+  .m-explore--help span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    bottom: 0;
+    line-height: 20px;
+    font-size: 1.063em;
+    font-weight: normal;
+    color: white !important; }
+  .m-explore--help h6 {
+    text-transform: uppercase; }
 
 .grayscale {
   /* Firefox 10+, Firefox on Android */

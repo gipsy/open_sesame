@@ -221,7 +221,7 @@
                   <div class="m-explore--icon icon-business-big">
                     <span class="m-explore--name">Business</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-business.jpg">
+                  <img src="img/bg-business.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item">
@@ -229,7 +229,7 @@
                   <div class="m-explore--icon icon-safety-big">
                     <span class="m-explore--name">Safetry</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-safety.jpg">
+                  <img src="img/bg-safety.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item">
@@ -237,7 +237,7 @@
                   <div class="m-explore--icon icon-compliance-big">
                     <span class="m-explore--name">Compliance</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-compliance.jpg">
+                  <img src="img/bg-compliance.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item">
@@ -245,7 +245,7 @@
                   <div class="m-explore--icon icon-technology-big">
                     <span class="m-explore--name">Technology</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-technology.jpg">
+                  <img src="img/bg-technology.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item icon-healthcare-big">
@@ -253,7 +253,7 @@
                   <div class="m-explore--icon icon-healthcare-big">
                     <span class="m-explore--name">Healthcare</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-healthcare.jpg">
+                  <img src="img/bg-healthcare.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item">
@@ -261,16 +261,19 @@
                   <div class="m-explore--icon icon-industry-big">
                     <span class="m-explore--name">Industry Specific</span>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-industry-specific.jpg">
+                  <img src="img/bg-industry-specific.jpg">
                 </a>
               </li>
               <li class="m-explore-category--item">
                 <a href="#">
                   <div class="m-explore--icon icon-bulb-big">
-                    <span class="">Need help finding a course?</span>
-                    <p class="accent-color">Let us Help You</p>
+                    <div class="m-explore--help">
+                      <span>Need help finding a course?</span>
+                      </br>
+                      <h6>Let us Help You</h6>
+                    </div>
                   </div>
-                  <img class="my-grayscale fade" src="img/bg-explore-category-placeholder.jpg">
+                  <img src="img/bg-explore-category-placeholder.jpg">
                 </a>
               </li>
             </ul>
@@ -388,7 +391,7 @@
         </section>
       </footer>
       <script src="js/vendor/zepto.min.js"></script>
-      <script src="js/vendor/jquery.gray.min.js"</script>
+      <script src="js/vendor/jQuery.BlackAndWhite.js"</script>
       <script src="js/helper.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -425,9 +428,23 @@
             $('#liquid_carousel').liquidCarousel('next');
           });
 
-          $('.m-explore-category--item').on('hover', function() {
-            console.log('snaoehusnaoeh');
-            $('.m-explore-category--item .my-grayscale').gray();
+          $('.m-explore-category--item').BlackAndWhite({
+              hoverEffect : true, // default true
+              // set the path to BnWWorker.js for a superfast implementation
+              webworkerPath : false,
+              // for the images with a fluid width and height
+              responsive:true,
+              // to invert the hover effect
+              invertHoverEffect: true,
+              // this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+              intensity:1,
+              speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+                  fadeIn: 100, // 200ms for fadeIn animations
+                  fadeOut: 800 // 800ms for fadeOut animations
+              },
+              onImageReady:function(img) {
+                  // this callback gets executed anytime an image is converted
+              }
           });
         });
       </script>
