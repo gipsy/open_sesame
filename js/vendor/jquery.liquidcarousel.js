@@ -162,7 +162,6 @@
       }
 
     }
-    
 
     /**
      * Returns the additional pixels to be added to items

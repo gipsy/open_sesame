@@ -786,6 +786,9 @@ label {
 .icon-bulb-big {
   background-image: url("../img/icon-active-bulb-big.png"); }
 
+.icon-safety--inverted {
+  background-image: url("../img/icon-safety--inverted.png"); }
+
 .m-header {
   background: url("../img/header-bg.jpg") center center;
   background-size: cover;
@@ -2520,7 +2523,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 23.40426%;
+  width: 16.59574%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2528,10 +2531,6 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   border: 1px solid #999999; }
   .m-courses .m-courses-item:last-child, .m-courses--bg .m-courses-item:last-child, .m-courses .m-courses-item--last:last-child, .m-courses--bg .m-courses-item--last:last-child {
     margin-right: 0; }
-  .m-courses .m-courses-item:nth-child(4n), .m-courses--bg .m-courses-item:nth-child(4n), .m-courses .m-courses-item--last:nth-child(4n), .m-courses--bg .m-courses-item--last:nth-child(4n) {
-    margin-right: 0; }
-  .m-courses .m-courses-item:nth-child(4n+1), .m-courses--bg .m-courses-item:nth-child(4n+1), .m-courses .m-courses-item--last:nth-child(4n+1), .m-courses--bg .m-courses-item--last:nth-child(4n+1) {
-    clear: left; }
   @media screen and (max-width: 480px) {
     .m-courses .m-courses-item, .m-courses--bg .m-courses-item, .m-courses .m-courses-item--last, .m-courses--bg .m-courses-item--last {
       float: left;
