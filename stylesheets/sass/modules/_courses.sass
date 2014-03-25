@@ -15,18 +15,28 @@
   .read-all
     color: $medium-blue
 
-  .m-courses-list
+  .m-courses--tags
+    font-size: 0.750em
+    text-transform: uppercase
+
+  .m-courses--list
     +clearfix
     padding: 0
     margin: 0
 
-  #liquid_carousel .m-courses-item
+  #TODO take a look where to put it better
+  .icon-safety--inverted
+    width: 100%
+    height: 48px
+    background-position: center center
+
+  #liquid_carousel .m-courses--item
     // height: 345px
     // +span-columns(3)
     margin-right: 0
 
   #week_popular_sellers_carousel
-    .m-courses-item
+    .m-courses--item
       +span-columns(6)
 
   .navigation
@@ -44,7 +54,7 @@
       background: url('../img/navigation-next.png')
       right: 0
 
-  .m-courses-item
+  .m-courses--item
     +span-columns(2.2)
     +box-sizing(border-box)
     border-radius: 5px
@@ -52,7 +62,7 @@
     +breakpoint($mobile)
       +span-columns(4)
       margin: 10px 0
-    .m-courses-item--link
+    .m-courses--item-link
       cursor: pointer
     .img-wrapper
       position: relative
@@ -68,11 +78,14 @@
         font-size: 0.688em
       img
         display: block
-        border-top-left-radius: 5px
-        border-top-right-radius: 5px
+        border-top-left-radius: $base-border-radius
+        border-top-right-radius: $base-border-radius
         width: 100%
 
     .m-course-content
+      background-color: white
+      border-bottom-left-radius: $base-border-radius
+      border-bottom-right-radius: $base-border-radius
       position: relative
       padding: 13px
 
@@ -162,8 +175,8 @@
     .m-course-info
       padding-top: 50px
 
-.m-courses-item--last
-  @extend .m-courses-item
+.m-courses--item-last
+  @extend .m-courses--item
   background-color: black
   height: 350px
 
