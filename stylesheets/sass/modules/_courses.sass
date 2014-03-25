@@ -30,9 +30,7 @@
     height: 48px
     background-position: center center
 
-  #liquid_carousel .m-courses--item
-    // height: 345px
-    // +span-columns(3)
+  #liquid_carousel .m-courses--item, #week_popular_sellers_carousel .m-courses--item, #favorite_courses_carousel .m-courses--item, #top_safety_courses_carousel .m-courses--item
     margin-right: 0
 
   #week_popular_sellers_carousel
@@ -55,7 +53,7 @@
       right: 0
 
   .m-courses--item
-    +span-columns(2.2)
+    +span-columns(2.3)
     +box-sizing(border-box)
     border-radius: 5px
     border: 1px solid $medium-gray
@@ -82,7 +80,7 @@
         border-top-right-radius: $base-border-radius
         width: 100%
 
-    .m-course-content
+    .m-course--content
       background-color: white
       border-bottom-left-radius: $base-border-radius
       border-bottom-right-radius: $base-border-radius
@@ -93,7 +91,7 @@
       color: $medium-gray
       font-size: 0.563em
 
-    .m-course-name
+    .m-course--name
 
       $max-height: 50
       $padding-top: 5
@@ -109,7 +107,7 @@
       padding-top: 3px
       font-size: 0.813em
 
-    .m-course-provider
+    .m-course--provider
       +inline-block
       padding-bottom: 8px
       font-size: 0.813em

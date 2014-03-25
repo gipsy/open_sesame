@@ -2502,7 +2502,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   width: 100%;
   height: 48px;
   background-position: center center; }
-.m-courses #liquid_carousel .m-courses--item, .m-courses--bg #liquid_carousel .m-courses--item, .m-courses #liquid_carousel .m-courses--item-last, .m-courses--bg #liquid_carousel .m-courses--item-last {
+.m-courses #liquid_carousel .m-courses--item, .m-courses--bg #liquid_carousel .m-courses--item, .m-courses #liquid_carousel .m-courses--item-last, .m-courses--bg #liquid_carousel .m-courses--item-last, .m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last, .m-courses #favorite_courses_carousel .m-courses--item, .m-courses--bg #favorite_courses_carousel .m-courses--item, .m-courses #favorite_courses_carousel .m-courses--item-last, .m-courses--bg #favorite_courses_carousel .m-courses--item-last, .m-courses #top_safety_courses_carousel .m-courses--item, .m-courses--bg #top_safety_courses_carousel .m-courses--item, .m-courses #top_safety_courses_carousel .m-courses--item-last, .m-courses--bg #top_safety_courses_carousel .m-courses--item-last {
   margin-right: 0; }
 .m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last {
   float: left;
@@ -2533,7 +2533,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 16.59574%;
+  width: 17.44681%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2569,7 +2569,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
       border-top-left-radius: 0.3125em;
       border-top-right-radius: 0.3125em;
       width: 100%; }
-  .m-courses .m-courses--item .m-course-content, .m-courses--bg .m-courses--item .m-course-content, .m-courses .m-courses--item-last .m-course-content, .m-courses--bg .m-courses--item-last .m-course-content {
+  .m-courses .m-courses--item .m-course--content, .m-courses--bg .m-courses--item .m-course--content, .m-courses .m-courses--item-last .m-course--content, .m-courses--bg .m-courses--item-last .m-course--content {
     background-color: white;
     border-bottom-left-radius: 0.3125em;
     border-bottom-right-radius: 0.3125em;
@@ -2578,17 +2578,17 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   .m-courses .m-courses--item .volume-available, .m-courses--bg .m-courses--item .volume-available, .m-courses .m-courses--item-last .volume-available, .m-courses--bg .m-courses--item-last .volume-available {
     color: #999999;
     font-size: 0.563em; }
-  .m-courses .m-courses--item .m-course-name, .m-courses--bg .m-courses--item .m-course-name, .m-courses .m-courses--item-last .m-course-name, .m-courses--bg .m-courses--item-last .m-course-name {
+  .m-courses .m-courses--item .m-course--name, .m-courses--bg .m-courses--item .m-course--name, .m-courses .m-courses--item-last .m-course--name, .m-courses--bg .m-courses--item-last .m-course--name {
     *zoom: 1;
     min-height: 63px;
     padding-top: 5px;
     padding-bottom: 8px; }
-    .m-courses .m-courses--item .m-course-name:before, .m-courses--bg .m-courses--item .m-course-name:before, .m-courses .m-courses--item-last .m-course-name:before, .m-courses--bg .m-courses--item-last .m-course-name:before, .m-courses .m-courses--item .m-course-name:after, .m-courses--bg .m-courses--item .m-course-name:after, .m-courses .m-courses--item-last .m-course-name:after, .m-courses--bg .m-courses--item-last .m-course-name:after {
+    .m-courses .m-courses--item .m-course--name:before, .m-courses--bg .m-courses--item .m-course--name:before, .m-courses .m-courses--item-last .m-course--name:before, .m-courses--bg .m-courses--item-last .m-course--name:before, .m-courses .m-courses--item .m-course--name:after, .m-courses--bg .m-courses--item .m-course--name:after, .m-courses .m-courses--item-last .m-course--name:after, .m-courses--bg .m-courses--item-last .m-course--name:after {
       content: " ";
       display: table; }
-    .m-courses .m-courses--item .m-course-name:after, .m-courses--bg .m-courses--item .m-course-name:after, .m-courses .m-courses--item-last .m-course-name:after, .m-courses--bg .m-courses--item-last .m-course-name:after {
+    .m-courses .m-courses--item .m-course--name:after, .m-courses--bg .m-courses--item .m-course--name:after, .m-courses .m-courses--item-last .m-course--name:after, .m-courses--bg .m-courses--item-last .m-course--name:after {
       clear: both; }
-    .m-courses .m-courses--item .m-course-name .ellipsis, .m-courses--bg .m-courses--item .m-course-name .ellipsis, .m-courses .m-courses--item-last .m-course-name .ellipsis, .m-courses--bg .m-courses--item-last .m-course-name .ellipsis {
+    .m-courses .m-courses--item .m-course--name .ellipsis, .m-courses--bg .m-courses--item .m-course--name .ellipsis, .m-courses .m-courses--item-last .m-course--name .ellipsis, .m-courses--bg .m-courses--item-last .m-course--name .ellipsis {
       float: left;
       position: relative;
       overflow: hidden;
@@ -2596,15 +2596,15 @@ button.m-btn-square-dark, button.m-btn-round-dark {
       line-height: 24px;
       text-overflow: ellipsis;
       width: 100%; }
-      .m-courses .m-courses--item .m-course-name .ellipsis:before, .m-courses--bg .m-courses--item .m-course-name .ellipsis:before, .m-courses .m-courses--item-last .m-course-name .ellipsis:before, .m-courses--bg .m-courses--item-last .m-course-name .ellipsis:before {
+      .m-courses .m-courses--item .m-course--name .ellipsis:before, .m-courses--bg .m-courses--item .m-course--name .ellipsis:before, .m-courses .m-courses--item-last .m-course--name .ellipsis:before, .m-courses--bg .m-courses--item-last .m-course--name .ellipsis:before {
         content: "";
         float: left;
         max-height: 50px; }
-      .m-courses .m-courses--item .m-course-name .ellipsis > *:first-child, .m-courses--bg .m-courses--item .m-course-name .ellipsis > *:first-child, .m-courses .m-courses--item-last .m-course-name .ellipsis > *:first-child, .m-courses--bg .m-courses--item-last .m-course-name .ellipsis > *:first-child {
+      .m-courses .m-courses--item .m-course--name .ellipsis > *:first-child, .m-courses--bg .m-courses--item .m-course--name .ellipsis > *:first-child, .m-courses .m-courses--item-last .m-course--name .ellipsis > *:first-child, .m-courses--bg .m-courses--item-last .m-course--name .ellipsis > *:first-child {
         float: right;
         width: 100%;
         margin-left: -5px; }
-      .m-courses .m-courses--item .m-course-name .ellipsis:after, .m-courses--bg .m-courses--item .m-course-name .ellipsis:after, .m-courses .m-courses--item-last .m-course-name .ellipsis:after, .m-courses--bg .m-courses--item-last .m-course-name .ellipsis:after {
+      .m-courses .m-courses--item .m-course--name .ellipsis:after, .m-courses--bg .m-courses--item .m-course--name .ellipsis:after, .m-courses .m-courses--item-last .m-course--name .ellipsis:after, .m-courses--bg .m-courses--item-last .m-course--name .ellipsis:after {
         background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white 50%, white);
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
         content: "\02026";
@@ -2616,7 +2616,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   .m-courses .m-courses--item .m-course-content--text, .m-courses--bg .m-courses--item .m-course-content--text, .m-courses .m-courses--item-last .m-course-content--text, .m-courses--bg .m-courses--item-last .m-course-content--text {
     padding-top: 3px;
     font-size: 0.813em; }
-  .m-courses .m-courses--item .m-course-provider, .m-courses--bg .m-courses--item .m-course-provider, .m-courses .m-courses--item-last .m-course-provider, .m-courses--bg .m-courses--item-last .m-course-provider {
+  .m-courses .m-courses--item .m-course--provider, .m-courses--bg .m-courses--item .m-course--provider, .m-courses .m-courses--item-last .m-course--provider, .m-courses--bg .m-courses--item-last .m-course--provider {
     display: inline-block;
     vertical-align: baseline;
     zoom: 1;
@@ -2630,7 +2630,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
     text-overflow: ellipsis;
     width: 100%;
     color: #f58220; }
-    .m-courses .m-courses--item .m-course-provider span, .m-courses--bg .m-courses--item .m-course-provider span, .m-courses .m-courses--item-last .m-course-provider span, .m-courses--bg .m-courses--item-last .m-course-provider span {
+    .m-courses .m-courses--item .m-course--provider span, .m-courses--bg .m-courses--item .m-course--provider span, .m-courses .m-courses--item-last .m-course--provider span, .m-courses--bg .m-courses--item-last .m-course--provider span {
       color: #192030; }
   .m-courses .m-courses--item .m-course-price-duration, .m-courses--bg .m-courses--item .m-course-price-duration, .m-courses .m-courses--item-last .m-course-price-duration, .m-courses--bg .m-courses--item-last .m-course-price-duration {
     *zoom: 1;
