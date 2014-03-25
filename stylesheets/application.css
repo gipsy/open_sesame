@@ -1024,7 +1024,7 @@ label {
   *display: inline;
   *vertical-align: auto;
   background-color: transparent;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   border: 1px solid #f58220;
   padding: 14px 28px;
   font-size: 1em;
@@ -1032,6 +1032,17 @@ label {
   .m-btn-orange:hover, .m-btn-orange.is-selected {
     background-color: #f58220;
     color: white; }
+  .m-btn-orange.square {
+    border-radius: 3px; }
+  .m-btn-orange.big {
+    padding: 12px 27px;
+    font-size: 1.063em; }
+  .m-btn-orange.medium {
+    padding: 9px 22px;
+    font-size: 0.875em; }
+  .m-btn-orange.small {
+    padding: 4px 16px;
+    font-size: 0.75em; }
 
 .m-btn-square, .m-btn-square--fixed-width, .m-btn-square-dark, .m-btn-round-dark {
   display: inline-block;
@@ -2487,7 +2498,13 @@ button.m-btn-square-dark, button.m-btn-round-dark {
 .m-courses .read-all, .m-courses--bg .read-all {
   color: #192030; }
 .m-courses .m-courses--tags, .m-courses--bg .m-courses--tags {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
   font-size: 0.75em;
+  line-height: 15px;
   text-transform: uppercase; }
 .m-courses .m-courses--list, .m-courses--bg .m-courses--list {
   *zoom: 1;
@@ -2508,9 +2525,26 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%; }
+  width: 48.93617%;
+  padding: 28px; }
   .m-courses #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses #week_popular_sellers_carousel .m-courses--item-last:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last:last-child {
     margin-right: 0; }
+.m-courses #week_popular_sellers_carousel .m-object h6, .m-courses--bg #week_popular_sellers_carousel .m-object h6 {
+  font-size: 0.875em; }
+.m-courses #week_popular_sellers_carousel .m-body, .m-courses--bg #week_popular_sellers_carousel .m-body {
+  color: #192030; }
+  .m-courses #week_popular_sellers_carousel .m-body p, .m-courses--bg #week_popular_sellers_carousel .m-body p {
+    *zoom: 1;
+    font-size: 0.875em;
+    line-height: 21px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+    .m-courses #week_popular_sellers_carousel .m-body p:before, .m-courses--bg #week_popular_sellers_carousel .m-body p:before, .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
+      content: " ";
+      display: table; }
+    .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
+      clear: both; }
 .m-courses .navigation, .m-courses--bg .navigation {
   display: inline-block;
   vertical-align: baseline;

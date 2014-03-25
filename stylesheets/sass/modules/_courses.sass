@@ -16,7 +16,9 @@
     color: $medium-blue
 
   .m-courses--tags
+    +inline-block
     font-size: 0.750em
+    line-height: 15px
     text-transform: uppercase
 
   .m-courses--list
@@ -36,6 +38,19 @@
   #week_popular_sellers_carousel
     .m-courses--item
       +span-columns(6)
+      padding: 28px
+    #TODO Required refactoring
+    .m-object h6
+      font-size: 0.875em
+    .m-body
+      color: $medium-blue
+      p
+        +clearfix
+        font-size: 0.875em
+        line-height: 21px
+        border-bottom: 1px solid $medium-gray
+        padding-bottom: 20px
+        margin-bottom: 20px
 
   .navigation
     +inline-block
