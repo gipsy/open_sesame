@@ -1075,11 +1075,9 @@ label {
     display: none; }
   .m-btn-square.is-disabled, .is-disabled.m-btn-square--fixed-width, .is-disabled.m-btn-square-dark, .is-disabled.m-btn-round-dark {
     border: 1px solid #999999;
-    background-color: #999999;
+    background: #999999;
     text-shadow: none;
     cursor: default; }
-  .m-btn-square:hover, .m-btn-square--fixed-width:hover, .m-btn-square-dark:hover, .m-btn-round-dark:hover {
-    color: white; }
   .m-btn-square.m-btn-spaces, .m-btn-spaces.m-btn-square--fixed-width, .m-btn-spaces.m-btn-square-dark, .m-btn-spaces.m-btn-round-dark {
     margin: 0 8px; }
   .m-btn-square.full-width, .full-width.m-btn-square--fixed-width, .full-width.m-btn-square-dark, .full-width.m-btn-round-dark {
