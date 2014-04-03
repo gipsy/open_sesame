@@ -47,16 +47,16 @@
     <body>
       <section class="l-single-centered-column--shadow">
         <div class="m-admin">
-          <div class="m-admin-summary-aside">
-            <section class="l-row">
+          <div class="m-admin-aside">
+            <section class="l-row l-content thin">
               <a href="#" class="m-logo"><img src="img/logo-inverted.png"></a>
               <section class="l-third-column">
                 <span class="m-logo-slogan uppercase">Course Marketplace</span>
               </section>
             </section>
 
-            <section class="l-row">
-              <span class="m-admin-title">Users</span>
+            <span class="m-admin-title">Users</span>
+            <section class="l-row m-admin-aside-booking-summary">
               <section class="l-half-column">
                 <span class="m-amount-number">0</span>
                 <span class="m-amount-number-description">Seats Purchased</span>
@@ -67,8 +67,8 @@
               </section>
             </section>
 
-            <section class="l-row">
-              <span class="m-admin-title">Courses</span>
+            <span class="m-admin-title">Courses</span>
+            <section class="l-row m-admin-aside-booking-summary">
               <section class="l-third-column">
                 <span class="m-amount-number">0</span>
                 <span class="m-amount-number-description">Courses</span>
@@ -85,11 +85,25 @@
 
             <section class="l-row">
               <span class="m-admin-title">Courses already sent to Saba</span>
-              <p class="m-admin-message">You haven’t sent any courses yet.
-              Choose a category to the right to get started!</p>
+              <div class="m-admin-message-wrapper">
+                <div class="m-admin-scroll-content">
+                  <p class="m-admin-message">You haven’t sent any courses yet.
+                  Choose a category to the right to get started!</p>
+                  <p class="m-admin-message">Lorem ipsum dolor sit amet. Aliquam erat volutpat. Maecenas non tortor nulla, non malesuada velit.</p>
+                  <p class="m-admin-message">Aliquam erat volutpat. Maecenas non tortor nulla, non malesuada velit. Nullam felis tellus, tristique nec egestas in, luctus sed diam. Suspendisse potenti. </p>
+                  <p class="m-admin-message">Consectetur adipiscing elit. Nulla consectetur libero consectetur quam consequat nec tincidunt massa feugiat. Donec egestas mi turpis. Fusce adipiscing dui eu metus gravida vel facilisis ligula iaculis. Cras a rhoncus massa. Donec sed purus eget nunc placerat consequat.</p>
+                  <p class="m-admin-message">Cras venenatis condimentum nibh a mollis. Duis id sapien nibh. Vivamus porttitor, felis quis blandit tincidunt, erat magna scelerisque urna, a faucibus erat nisl eget nisl. Aliquam consequat turpis id velit egestas a posuere orci semper. Mauris suscipit erat quis urna adipiscing ultricies. In hac habitasse platea dictumst. Nulla scelerisque lorem quis dui sagittis egestas.</p> 
+                  <p class="m-admin-message">Etiam sed massa felis, aliquam pellentesque est.</p>
+                  <p class="m-admin-message">Nam eu arcu at purus tincidunt pharetra ultrices at ipsum. Mauris urna nunc, vulputate quis gravida in, pharetra id mauris. Ut sit amet mi dictum nulla lobortis adipiscing quis a nulla. Etiam diam ante, imperdiet vel scelerisque eget, venenatis non eros. Praesent ipsum sem, eleifend ut gravida eget, tristique id orci. Nam adipiscing, sem in mattis vulputate, risus libero adipiscing risus, eu molestie mi justo eget nulla.</p> 
+                  <p class="m-admin-message">Cras venenatis metus et urna egestas non laoreet orci rutrum. Pellentesque ullamcorper dictum nisl a tincidunt. Quisque et lacus quam, sed hendrerit mi. Mauris pretium, sapien et malesuada pulvinar, lorem leo viverra leo, et egestas mi nisl quis odio. </p>
+                  <p class="m-admin-message">Aliquam erat volutpat. Sed urna arcu, tempus eu vulputate adipiscing, consectetur et orci. Vivamus congue, nunc vitae fringilla convallis, libero massa lacinia lorem, id convallis mauris elit ut leo. Nulla vel odio sem. Duis lorem urna, congue vitae rutrum sed, tincidunt vel tortor. In hac habitasse platea dictumst. Nunc vitae enim ante, vitae facilisis massa. Etiam sagittis sapien at nibh fermentum consectetur convallis lacus blandit.</p>
+                    <p>the end.</p>
+                  <p>&nbsp;</p>
+                </div>
+              </div>
             </section>
 
-          </div><!-- /m-admin-summary-aside -->
+          </div><!-- /m-admin-aside -->
 
           <div class="m-admin-content">
             <div class="m-admin-step">
@@ -99,180 +113,230 @@
                 <li class="m-admin-step--item"><span class="m-admin-step--number">3</span>Payment</li>
               </ul>
               <div class="float-right">
-                <a href="#" class="m-btn-square--is-disabled">Add to Saba</a>
+                <a href="#" class="m-btn-square is-disabled">Add to Saba</a>
               </div>
             </div>
 
             <div class="m-admin-bundle">
-              <ul class="m-admin-bundle--list">
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Business Basics</p>
-                      <p class="m-admin-bundle--description">Bundle of 15 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+              <div class="m-admin-scroll-content">
+                <ul class="m-admin-bundle--list">
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Business Basics</p>
+                        <p class="m-admin-bundle--description">Bundle of 15 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item is-selected">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Management Development</p>
-                      <p class="m-admin-bundle--description">Bundle of 15 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item is-selected">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Management Development</p>
+                        <p class="m-admin-bundle--description">Bundle of 15 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Safety Essentials</p>
-                      <p class="m-admin-bundle--description">Bundle of 15 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Safety Essentials</p>
+                        <p class="m-admin-bundle--description">Bundle of 15 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle is-selected float-right">Bundle Added</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Banking & Finance</p>
-                      <p class="m-admin-bundle--description">Bundle of 17 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Banking & Finance</p>
+                        <p class="m-admin-bundle--description">Bundle of 17 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle is-disabled float-right">Bundle Purchased</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Microsoft Office Essentials</p>
-                      <p class="m-admin-bundle--description">Bundle of 68 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Microsoft Office Essentials</p>
+                        <p class="m-admin-bundle--description">Bundle of 68 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Sales Effectiveness</p>
-                      <p class="m-admin-bundle--description">Bundle of 11 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Sales Effectiveness</p>
+                        <p class="m-admin-bundle--description">Bundle of 11 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Compliance Basics</p>
-                      <p class="m-admin-bundle--description">Bundle of 16 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Compliance Basics</p>
+                        <p class="m-admin-bundle--description">Bundle of 16 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">healthcare</p>
-                      <p class="m-admin-bundle--description">Bundle of 13 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">healthcare</p>
+                        <p class="m-admin-bundle--description">Bundle of 13 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
 
-                <li class="m-admin-bundle--item">
-                  <div class="m-media">
-                    <div class="m-body l-content thin">
-                      <p class="m-admin-bundle--title">Technical General</p>
-                      <p class="m-admin-bundle--description">Bundle of 245 courses</p>
-                    </div>
-                    <div class="m-object">
-                      <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
-                    </div>
-                  </div><!-- /m-media -->
-                </li>
-              </ul>
+                  <li class="m-admin-bundle--item">
+                    <div class="m-media">
+                      <div class="m-body l-content thin">
+                        <p class="m-admin-bundle--title">Technical General</p>
+                        <p class="m-admin-bundle--description">Bundle of 245 courses</p>
+                      </div>
+                      <div class="m-object">
+                        <a href="#" class="m-btn-bundle float-right">Add This Bundle</a>
+                      </div>
+                    </div><!-- /m-media -->
+                  </li>
+                </ul>
+              </div><!-- /m-admin-scroll-content -->
             </div><!-- /m-admin-bundle -->
 
             <div class="m-admin-courses">
-              <ul class="m-admin-courses--list">
-                <h6 class="m-admin-courses--title uppercase">Courses included in this bundle</h6>
-                <li class="m-admin-courses--item">
-                  <div class="m-media">
-                    <div class="m-object">
-                      <img src="img/content-images/1.jpg">
-                    </div>
-                    <div class="m-body">
-                      <a href="#">Ladder Safety</a>
-                      <div class="m-body-wrapper">
-                        <img class="float-left" src="img/stars.png">
-                        <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+              <div class="m-admin-scroll-content">
+                <ul class="m-admin-courses--list">
+                  <h6 class="m-admin-courses--title uppercase">Courses included in this bundle</h6>
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/1.jpg">
                       </div>
-                      <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      <div class="m-body">
+                        <a href="#">Ladder Safety</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="m-admin-courses--item">
-                  <div class="m-media">
-                    <div class="m-object">
-                      <img src="img/content-images/8.jpg">
-                    </div>
-                    <div class="m-body">
-                      <a href="#">Back Safety</a>
-                      <div class="m-body-wrapper">
-                        <img class="float-left" src="img/stars.png">
-                        <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/8.jpg">
                       </div>
-                      <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      <div class="m-body">
+                        <a href="#">Back Safety</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="m-admin-courses--item">
-                  <div class="m-media">
-                    <div class="m-object">
-                      <img src="img/content-images/9.jpg">
-                    </div>
-                    <div class="m-body">
-                      <a href="#">Eye Protection</a>
-                      <div class="m-body-wrapper">
-                        <img class="float-left" src="img/stars.png">
-                        <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/9.jpg">
                       </div>
-                      <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      <div class="m-body">
+                        <a href="#">Eye Protection</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
                     </div>
-                  </div>
-                </li>
-              </ul>
+                  </li>
+
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/1.jpg">
+                      </div>
+                      <div class="m-body">
+                        <a href="#">Ladder Safety</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/8.jpg">
+                      </div>
+                      <div class="m-body">
+                        <a href="#">Back Safety</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="m-admin-courses--item">
+                    <div class="m-media">
+                      <div class="m-object">
+                        <img src="img/content-images/9.jpg">
+                      </div>
+                      <div class="m-body">
+                        <a href="#">Eye Protection</a>
+                        <div class="m-body-wrapper">
+                          <img class="float-left" src="img/stars.png">
+                          <span class="icon-clock left-oriented tiny float-right"><strong class="m-admin-courses--time">1 hr 00 mins</strong></span>
+                        </div>
+                        <p>This course should be completed by all employees who deal with data in some form such as accessing...</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div><!-- /m-admin-courses -->
           </div><!-- /m-admin-content -->
         </div><!-- /m-admin -->
       </section>
       <script src="js/vendor/zepto.min.js"></script>
-      <script src="js/vendor/jquery.sidr.min.js"></script>
-      <script src="js/vendor/jquery.dlmenu.js"></script>
       <script src="js/helper.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -281,6 +345,13 @@
           (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
           g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
           s.parentNode.insertBefore(g,s)}(document,"script"));
+      </script>
+      <script>
+        $(window).load(function(){
+          $('.m-admin-message-wrapper').css('min-height', $(window).innerHeight() - 325);
+          $('.m-admin-bundle').css('min-height', $(window).innerHeight() - 75);
+          $('.m-admin-courses').css('min-height', $(window).innerHeight() - 75);
+        });
       </script>
     </body>
 </html>

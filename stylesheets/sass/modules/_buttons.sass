@@ -59,6 +59,16 @@
     +linear-gradient($orange 0, lighten($orange, 3%) 49%, darken($orange, 3%) 53%)
     border: 1px solid $medium-orange
     color: white
+  &.is-hidden
+    display: none
+  &.is-disabled
+    border: 1px solid $medium-gray
+    background-color: $medium-gray
+    text-shadow: none
+    cursor: default
+  &:hover
+    color: white
+
   &.m-btn-spaces
     margin: 0 8px
   &.full-width
@@ -116,18 +126,6 @@ button.m-btn-square-dark
   width: 150px
   margin-right: 8px
 
-.m-btn-square--is-disabled
-  +inline-block
-  padding: 9px 22px
-  color: white
-  border-radius: 3px
-  border: 1px solid $medium-gray
-  background-color: $medium-gray
-  text-shadow: none
-  outline: none
-  &:hover
-    color: white
-
 .m-btn-square-dark
   @extend .m-btn-square
   text-shadow: 0px -1px 0px darken($medium-blue, 10%)
@@ -180,3 +178,10 @@ button.m-btn-square-dark
   border: 1px solid $orange
   text-align: center
   line-height: 15px
+  &.is-selected
+    background-color: $orange
+    color: white
+  &.is-disabled
+    background-color: $light-light-gray
+    border-color: $light-light-gray
+    color: $medium-gray

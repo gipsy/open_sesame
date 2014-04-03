@@ -1,24 +1,31 @@
 .m-admin
+  +clearfix
   .m-logo
     +span-columns(7)
     padding-left: 12px
 
-.m-admin-summary-aside
+.m-admin-aside
   width: 300px
   position: relative
   margin-right: 0
   box-shadow: 0px 0 8px 3px  rgba(0,0,0,0.15)
   position: absolute
-  padding-top: 20px
+  padding-top: 10px
   top: 0
   bottom: 0
+  z-index: 10
+
+.m-admin-aside-booking-summary
+  margin: 18px 0 15px 0
 
 .m-admin-content
   +clearfix
   margin-left: 300px
-  min-height: 800px
+  min-height: 500px
   padding: 0
 
+.m-admin-scroll-content
+  position: absolute
 
 .m-logo-slogan
   +float(left)
@@ -31,7 +38,6 @@
   +inline-block
   background-color: lighten($dark-blue, 5%)
   padding: 0 12px
-  margin: 10px 0 15px 0
   color: white
   font-size: 0.625em
   font-weight: bold
@@ -55,8 +61,13 @@
   line-height: 15px
   font-size: 0.688em
 
+.m-admin-message-wrapper
+  position: relative
+  overflow: auto
+  padding: 0 12px
+
 .m-admin-message
-  padding-left: 12px
+  padding-top: 10px
   line-height: 18px
   font-size: 0.750em
   color: $pale-blue
@@ -95,6 +106,8 @@
 
 .m-admin-bundle
   +span-columns(5)
+  position: relative
+  overflow: auto
 
 .m-admin-bundle--list
   +no-bullet
@@ -120,6 +133,8 @@
 .m-admin-courses
   +span-columns(7)
   padding-right: 10px
+  position: relative
+  overflow: auto
   .m-object
     margin-top: 8px
   p
@@ -131,7 +146,7 @@
 
 .m-admin-courses--list
   +no-bullet
-  padding: 0
+  padding: 0 15px 0 0
 
 .m-admin-courses--item
   padding-bottom: 30px
