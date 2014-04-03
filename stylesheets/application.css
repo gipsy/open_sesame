@@ -508,6 +508,9 @@ label {
   display: inline;
   float: left; }
 
+.is-hidden {
+  display: none; }
+
 [class^="icon-"], [class*=" icon-"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
