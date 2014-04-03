@@ -3453,10 +3453,11 @@ button.m-btn-square-dark, button.m-btn-round-dark {
 .m-admin-message-wrapper {
   position: relative;
   overflow: auto;
-  padding: 0 12px; }
+  padding: 0 12px;
+  -webkit-overflow-scrolling: touch; }
 
 .m-admin-message {
-  padding-top: 10px;
+  padding: 10px 10px 0 0;
   line-height: 18px;
   font-size: 0.75em;
   color: #36444b; }
@@ -3535,7 +3536,8 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   margin-right: 2.12766%;
   width: 40.42553%;
   position: relative;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
   .m-admin-bundle:last-child {
     margin-right: 0; }
 
@@ -3574,7 +3576,8 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   width: 57.44681%;
   padding-right: 10px;
   position: relative;
-  overflow: auto; }
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
   .m-admin-courses:last-child {
     margin-right: 0; }
   .m-admin-courses .m-object {
