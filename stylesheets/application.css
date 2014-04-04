@@ -2522,36 +2522,6 @@ button.m-btn-square-dark, button.m-btn-round-dark {
     display: table; }
   .m-courses .m-courses--list:after, .m-courses--bg .m-courses--list:after {
     clear: both; }
-.m-courses .icon-safety--inverted, .m-courses--bg .icon-safety--inverted {
-  width: 100%;
-  height: 48px;
-  background-position: center center; }
-.m-courses #liquid_carousel .m-courses--item, .m-courses--bg #liquid_carousel .m-courses--item, .m-courses #liquid_carousel .m-courses--item-last, .m-courses--bg #liquid_carousel .m-courses--item-last, .m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last, .m-courses #favorite_courses_carousel .m-courses--item, .m-courses--bg #favorite_courses_carousel .m-courses--item, .m-courses #favorite_courses_carousel .m-courses--item-last, .m-courses--bg #favorite_courses_carousel .m-courses--item-last, .m-courses #top_safety_courses_carousel .m-courses--item, .m-courses--bg #top_safety_courses_carousel .m-courses--item, .m-courses #top_safety_courses_carousel .m-courses--item-last, .m-courses--bg #top_safety_courses_carousel .m-courses--item-last {
-  margin-right: 0; }
-.m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 48.93617%;
-  padding: 28px; }
-  .m-courses #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses #week_popular_sellers_carousel .m-courses--item-last:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last:last-child {
-    margin-right: 0; }
-.m-courses #week_popular_sellers_carousel .m-object h6, .m-courses--bg #week_popular_sellers_carousel .m-object h6 {
-  font-size: 0.875em; }
-.m-courses #week_popular_sellers_carousel .m-body, .m-courses--bg #week_popular_sellers_carousel .m-body {
-  color: #192030; }
-  .m-courses #week_popular_sellers_carousel .m-body p, .m-courses--bg #week_popular_sellers_carousel .m-body p {
-    *zoom: 1;
-    font-size: 0.875em;
-    line-height: 21px;
-    border-bottom: 1px solid #999999;
-    padding-bottom: 20px;
-    margin-bottom: 20px; }
-    .m-courses #week_popular_sellers_carousel .m-body p:before, .m-courses--bg #week_popular_sellers_carousel .m-body p:before, .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
-      content: " ";
-      display: table; }
-    .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
-      clear: both; }
 .m-courses .navigation, .m-courses--bg .navigation {
   display: inline-block;
   vertical-align: baseline;
@@ -2574,7 +2544,7 @@ button.m-btn-square-dark, button.m-btn-round-dark {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 17.44681%;
+  width: 23.40426%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2738,6 +2708,42 @@ button.m-btn-square-dark, button.m-btn-round-dark {
     color: #646464; }
   .m-courses .m-course-wrapper .m-course-info, .m-courses--bg .m-course-wrapper .m-course-info {
     padding-top: 50px; }
+.m-courses .icon-safety--inverted, .m-courses--bg .icon-safety--inverted {
+  width: 100%;
+  height: 48px;
+  background-position: center center; }
+.m-courses #liquid_carousel .m-courses--item, .m-courses--bg #liquid_carousel .m-courses--item, .m-courses #liquid_carousel .m-courses--item-last, .m-courses--bg #liquid_carousel .m-courses--item-last, .m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last, .m-courses #favorite_courses_carousel .m-courses--item, .m-courses--bg #favorite_courses_carousel .m-courses--item, .m-courses #favorite_courses_carousel .m-courses--item-last, .m-courses--bg #favorite_courses_carousel .m-courses--item-last, .m-courses #top_safety_courses_carousel .m-courses--item, .m-courses--bg #top_safety_courses_carousel .m-courses--item, .m-courses #top_safety_courses_carousel .m-courses--item-last, .m-courses--bg #top_safety_courses_carousel .m-courses--item-last {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 17.44681%;
+  margin-right: 0; }
+  .m-courses #liquid_carousel .m-courses--item:last-child, .m-courses--bg #liquid_carousel .m-courses--item:last-child, .m-courses #liquid_carousel .m-courses--item-last:last-child, .m-courses--bg #liquid_carousel .m-courses--item-last:last-child, .m-courses #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses #week_popular_sellers_carousel .m-courses--item-last:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last:last-child, .m-courses #favorite_courses_carousel .m-courses--item:last-child, .m-courses--bg #favorite_courses_carousel .m-courses--item:last-child, .m-courses #favorite_courses_carousel .m-courses--item-last:last-child, .m-courses--bg #favorite_courses_carousel .m-courses--item-last:last-child, .m-courses #top_safety_courses_carousel .m-courses--item:last-child, .m-courses--bg #top_safety_courses_carousel .m-courses--item:last-child, .m-courses #top_safety_courses_carousel .m-courses--item-last:last-child, .m-courses--bg #top_safety_courses_carousel .m-courses--item-last:last-child {
+    margin-right: 0; }
+.m-courses #week_popular_sellers_carousel .m-courses--item, .m-courses--bg #week_popular_sellers_carousel .m-courses--item, .m-courses #week_popular_sellers_carousel .m-courses--item-last, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  padding: 28px; }
+  .m-courses #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item:last-child, .m-courses #week_popular_sellers_carousel .m-courses--item-last:last-child, .m-courses--bg #week_popular_sellers_carousel .m-courses--item-last:last-child {
+    margin-right: 0; }
+.m-courses #week_popular_sellers_carousel .m-object h6, .m-courses--bg #week_popular_sellers_carousel .m-object h6 {
+  font-size: 0.875em; }
+.m-courses #week_popular_sellers_carousel .m-body, .m-courses--bg #week_popular_sellers_carousel .m-body {
+  color: #192030; }
+  .m-courses #week_popular_sellers_carousel .m-body p, .m-courses--bg #week_popular_sellers_carousel .m-body p {
+    *zoom: 1;
+    font-size: 0.875em;
+    line-height: 21px;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+    .m-courses #week_popular_sellers_carousel .m-body p:before, .m-courses--bg #week_popular_sellers_carousel .m-body p:before, .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
+      content: " ";
+      display: table; }
+    .m-courses #week_popular_sellers_carousel .m-body p:after, .m-courses--bg #week_popular_sellers_carousel .m-body p:after {
+      clear: both; }
 
 .m-courses--item-last {
   background-color: black;

@@ -26,32 +26,6 @@
     padding: 0
     margin: 0
 
-  #TODO take a look where to put it better
-  .icon-safety--inverted
-    width: 100%
-    height: 48px
-    background-position: center center
-
-  #liquid_carousel .m-courses--item, #week_popular_sellers_carousel .m-courses--item, #favorite_courses_carousel .m-courses--item, #top_safety_courses_carousel .m-courses--item
-    margin-right: 0
-
-  #week_popular_sellers_carousel
-    .m-courses--item
-      +span-columns(6)
-      padding: 28px
-    #TODO Required refactoring
-    .m-object h6
-      font-size: 0.875em
-    .m-body
-      color: $medium-blue
-      p
-        +clearfix
-        font-size: 0.875em
-        line-height: 21px
-        border-bottom: 1px solid $medium-gray
-        padding-bottom: 20px
-        margin-bottom: 20px
-
   .navigation
     +inline-block
     width: 66px
@@ -68,7 +42,7 @@
       right: 0
 
   .m-courses--item
-    +span-columns(2.3)
+    +span-columns(3)
     +box-sizing(border-box)
     border-radius: 5px
     border: 1px solid $medium-gray
@@ -187,6 +161,34 @@
       color: $medium-medium-gray
     .m-course-info
       padding-top: 50px
+
+  #TODO take a look where to put it better
+  .icon-safety--inverted
+    width: 100%
+    height: 48px
+    background-position: center center
+
+  #liquid_carousel .m-courses--item, #week_popular_sellers_carousel .m-courses--item, #favorite_courses_carousel .m-courses--item, #top_safety_courses_carousel .m-courses--item
+    +span-columns(2.3)
+    margin-right: 0
+
+  #week_popular_sellers_carousel
+    .m-courses--item
+      +span-columns(6)
+      padding: 28px
+    #TODO Required refactoring
+    .m-object h6
+      font-size: 0.875em
+    .m-body
+      color: $medium-blue
+      p
+        +clearfix
+        font-size: 0.875em
+        line-height: 21px
+        border-bottom: 1px solid $medium-gray
+        padding-bottom: 20px
+        margin-bottom: 20px
+
 
 .m-courses--item-last
   @extend .m-courses--item
